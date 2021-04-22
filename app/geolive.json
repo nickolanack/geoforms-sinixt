@@ -1404,6 +1404,7 @@
             "customScript": "console.log(\"hello\");",
             "language": "php",
             "returnsValue": false,
+            "cacheable": false,
             "readAccess": "public"
         }
     },
@@ -2043,6 +2044,7 @@
             "customScript": "echo \"hello\";",
             "language": "php",
             "returnsValue": false,
+            "cacheable": false,
             "readAccess": "public"
         }
     },
@@ -2670,7 +2672,8 @@
             "widgetTitle": "ContentFilter",
             "language": "javascript",
             "returnsValue": false,
-            "readAccess": "public"
+            "readAccess": "public",
+            "cacheable": true
         }
     }
 }
