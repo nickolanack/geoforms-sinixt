@@ -21,6 +21,6 @@
         "embedPortrait": true,
         "preferLocalContent": true,
         "portraitClip": true,
-        "formatTextScript": "\n\nif(text.indexOf('Personal Notes:')==-1){\n    return '';\n}\n\nreturn text.split('Personal Notes:').pop().split(\"\\n\").join(\"<br\/>\");"
+        "formatTextScript": "\nreturn ContentFilter.ParseNotesSectionHtml(text);"
     }
 }
