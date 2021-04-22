@@ -1400,10 +1400,10 @@
         "instance": "UserFunction",
         "parameters": {
             "widgetTitle": "layerContent",
-            "target": "layerContent",
+            "target": "forTheMap",
             "customScript": "",
-            "language": "php",
-            "returnsValue": true,
+            "language": "javascript",
+            "returnsValue": false,
             "readAccess": "public"
         }
     },
