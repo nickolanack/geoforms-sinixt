@@ -2661,13 +2661,6 @@
             "readAccess": "public"
         }
     },
-    "widget.54": {
-        "name": "Javascript",
-        "instance": "CustomBehaviorScript",
-        "parameters": {
-            "target": "none"
-        }
-    },
     "widget.55": {
         "name": "Content",
         "instance": "CustomContent",
