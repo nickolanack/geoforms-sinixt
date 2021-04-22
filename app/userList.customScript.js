@@ -9,7 +9,7 @@ return array("results"=>array_map(function($u){
 		
 		
 	$access=(new \attributes\Record('userTimedAccess'))->getValues($u['id'], 'user');
-    $u['roles']=GetClient()->userRolesFor($u['id']);
+    $u['roles']=GetClient()->getUsersAccessGroups($u['id']);
     $u['access']=$access;
     
     return $u;
