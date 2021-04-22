@@ -1129,16 +1129,16 @@
                             "widget.UserWizardBuilder.20.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 138,
-                            "y": 339
+                            "x": 148,
+                            "y": 349
                         },
                         "children": [
                             "widget.UserWizardBuilder.20.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 98,
-                                    "y": 505
+                                    "x": 108,
+                                    "y": 515
                                 }
                             },
                             {
@@ -1148,23 +1148,25 @@
                                     "widget.UserWizardBuilder.20.metadata.children.1.children.2.fields.0.json"
                                 ],
                                 "_diagramState": {
-                                    "x": 808,
-                                    "y": 287
+                                    "x": 818,
+                                    "y": 297
                                 },
                                 "children": [
                                     "widget.UserWizardBuilder.20.metadata.children.1.children.2.children.0.json",
                                     {
                                         "class": "InsertNode",
                                         "_diagramState": {
-                                            "x": 768,
-                                            "y": 453
+                                            "x": 778,
+                                            "y": 463
                                         }
                                     }
                                 ],
                                 "builderMetadata": {
                                     "positions": {
                                         "title": {
-                                            "modules": []
+                                            "modules": [
+                                                "widget.UserWizardBuilder.20.metadata.children.1.children.2.builderMetadata.positions.title.modules.0.json"
+                                            ]
                                         },
                                         "content": {
                                             "modules": [
@@ -1193,7 +1195,9 @@
                         "builderMetadata": {
                             "positions": {
                                 "title": {
-                                    "modules": []
+                                    "modules": [
+                                        "widget.UserWizardBuilder.20.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
                                 },
                                 "content": {
                                     "modules": [
