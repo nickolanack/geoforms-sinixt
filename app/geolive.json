@@ -2461,15 +2461,15 @@
         "name": "Generic Wizard",
         "instance": "WizardBuilder",
         "parameters": {
-            "widgetTitle": "",
+            "widgetTitle": "MapItemTemplateTab1",
             "target": "forTheMap",
-            "templateName": "MapItemTemplate",
+            "templateName": "MapItemTemplateTab1",
             "requireTarget": true,
             "resolveItemScript": "return item;",
-            "beforeSubmitScript": "widget.WizardBuilder.52.beforeSubmitScript.js",
-            "onCreateScript": "widget.WizardBuilder.52.onCreateScript.js",
+            "beforeSubmitScript": "MapItemTemplateTab1.beforeSubmitScript.js",
+            "onCreateScript": "MapItemTemplateTab1.onCreateScript.js",
             "onUpdateScript": "",
-            "onSaveScript": "widget.WizardBuilder.52.onSaveScript.js",
+            "onSaveScript": "MapItemTemplateTab1.onSaveScript.js",
             "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
@@ -2478,19 +2478,19 @@
                     "y": 118
                 },
                 "children": [
-                    "widget.WizardBuilder.52.metadata.children.0.json",
+                    "MapItemTemplateTab1.metadata.children.0.json",
                     {
                         "title": "New Empty Step",
                         "class": "AttributesTableNode",
                         "fields": [
-                            "widget.WizardBuilder.52.metadata.children.1.fields.0.json"
+                            "MapItemTemplateTab1.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
                             "x": 439,
                             "y": 425
                         },
                         "children": [
-                            "widget.WizardBuilder.52.metadata.children.1.children.0.json",
+                            "MapItemTemplateTab1.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
@@ -2503,12 +2503,12 @@
                             "positions": {
                                 "title": {
                                     "modules": [
-                                        "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                        "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.title.modules.0.json"
                                     ]
                                 },
                                 "content": {
                                     "modules": [
-                                        "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.content.modules.0.json",
                                         {
                                             "type": "WizardDescriptionField",
                                             "config": {
@@ -2533,7 +2533,7 @@
                                             "type": "plugin.Attributes.WizardTagCloud",
                                             "config": {
                                                 "attributeFields": [
-                                                    "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
+                                                    "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
                                                 ],
                                                 "className": "",
                                                 "showLabel": false,
@@ -2553,7 +2553,7 @@
                                             "type": "plugin.Attributes.WizardTextAttribute",
                                             "config": {
                                                 "attributeFields": [
-                                                    "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                    "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
                                                 ],
                                                 "className": "",
                                                 "label": "Identification Code",
@@ -2568,15 +2568,15 @@
                                                 "iconTint": "rgb(100, 149, 237)",
                                                 "autocomplete": true,
                                                 "inputOptions": "{}",
-                                                "onRenderTextFieldScript": "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
-                                                "formatValueScript": "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.3.config.formatValueScript.js"
+                                                "onRenderTextFieldScript": "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
+                                                "formatValueScript": "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.content.modules.3.config.formatValueScript.js"
                                             }
                                         }
                                     ]
                                 },
                                 "footer": {
                                     "modules": [
-                                        "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                        "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
                                     ]
                                 },
                                 "menu": {
