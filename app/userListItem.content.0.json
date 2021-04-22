@@ -2,9 +2,9 @@
     "type": "FieldValue",
     "config": {
         "loadAsync": false,
+        "identifier": "",
         "fieldLabelScript": "return \"\"",
         "fieldValueScript": "return item.getName();",
-        "formatElementScript": "\n\nnew UIPopover(el.appendChild(new Element('span', {\"class\":\"user-info\"})),{\n        content:'<pre>item json<\/pre>',\n        anchor:UIPopover.AnchorAuto()\n    });\n",
-        "identifier": ""
+        "formatElementScript": "\n\nnew UIPopover(el.appendChild(new Element('span', {\"class\":\"user-info\"})),{\n        content:'<pre>item json<\/pre>',\n        anchor:UIPopover.AnchorAuto()\n    });\n"
     }
 }
