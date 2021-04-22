@@ -1129,16 +1129,16 @@
                             "widget.UserWizardBuilder.20.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 118,
-                            "y": 319
+                            "x": 128,
+                            "y": 329
                         },
                         "children": [
                             "widget.UserWizardBuilder.20.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 78,
-                                    "y": 485
+                                    "x": 88,
+                                    "y": 495
                                 }
                             },
                             {
@@ -1148,16 +1148,16 @@
                                     "widget.UserWizardBuilder.20.metadata.children.1.children.2.fields.0.json"
                                 ],
                                 "_diagramState": {
-                                    "x": 788,
-                                    "y": 267
+                                    "x": 798,
+                                    "y": 277
                                 },
                                 "children": [
                                     "widget.UserWizardBuilder.20.metadata.children.1.children.2.children.0.json",
                                     {
                                         "class": "InsertNode",
                                         "_diagramState": {
-                                            "x": 748,
-                                            "y": 433
+                                            "x": 758,
+                                            "y": 443
                                         }
                                     }
                                 ],
