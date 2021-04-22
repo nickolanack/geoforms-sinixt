@@ -6,7 +6,7 @@ div.appendChild(label);
 
 var toTime=function(t){
     
-    label.innerHTML=t+" day"+(t==1?"":"s")+"s.";
+    label.innerHTML=t+" day"+(t==1?"":"s")+". ";
     
     return Math.floor(((new Date()).getTime()+1000*3600*24*t)/1000);
     
@@ -29,7 +29,7 @@ div.appendChild(new Element('button',{
 div.appendChild(new Element('button',{
     html:"1 week",
     events:{click:function(){
-        textField.setValue(toTime(3))
+        textField.setValue(toTime(7))
     }}
 }))
 
