@@ -2319,109 +2319,21 @@
         "name": "Generic Wizard",
         "instance": "WizardBuilder",
         "parameters": {
-            "widgetTitle": "MapItemTemplateTab0",
-            "target": "forTheMap",
-            "templateName": "MapItemTemplateTab0",
-            "requireTarget": true,
-            "resolveItemScript": "return item;",
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
-            "onUpdateScript": "",
-            "onSaveScript": "",
-            "onLoadScript": "",
-            "metadata": {
-                "class": "DecisionNode",
-                "_diagramState": {
-                    "x": -18,
-                    "y": 171
-                },
-                "children": [
-                    "MapItemTemplateTab0.metadata.children.0.json",
-                    {
-                        "title": "New Empty Step",
-                        "class": "AttributesTableNode",
-                        "fields": [
-                            "MapItemTemplateTab0.metadata.children.1.fields.0.json"
-                        ],
-                        "_diagramState": {
-                            "x": 128,
-                            "y": 260
-                        },
-                        "children": [
-                            "MapItemTemplateTab0.metadata.children.1.children.0.json"
-                        ],
-                        "builderMetadata": {
-                            "positions": {
-                                "title": {
-                                    "modules": [
-                                        "MapItemTemplateTab0.metadata.children.1.builderMetadata.positions.title.modules.0.json"
-                                    ]
-                                },
-                                "content": {
-                                    "modules": [
-                                        "MapItemTemplateTab0.metadata.children.1.builderMetadata.positions.content.modules.0.json",
-                                        {
-                                            "type": "WizardDescriptionField",
-                                            "config": {
-                                                "label": "Description",
-                                                "message": "add a description",
-                                                "lines": 3,
-                                                "mandatory": false,
-                                                "showAudios": true,
-                                                "showImages": true,
-                                                "showDocuments": true,
-                                                "showVideos": true,
-                                                "className": "",
-                                                "maxChars": 0,
-                                                "showExpandInput": true,
-                                                "toolbarPosition": "bottom",
-                                                "textFormatScript": "",
-                                                "mediaIconTint": "rgb(100, 149, 237)"
-                                            }
-                                        }
-                                    ]
-                                },
-                                "footer": {
-                                    "modules": [
-                                        "MapItemTemplateTab0.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
-                                    ]
-                                },
-                                "menu": {
-                                    "modules": []
-                                }
-                            },
-                            "positionList": [
-                                "title",
-                                "content",
-                                "footer",
-                                "menu"
-                            ]
-                        }
-                    }
-                ]
-            },
-            "readAccess": "public"
-        }
-    },
-    "widget.52": {
-        "name": "Generic Wizard",
-        "instance": "WizardBuilder",
-        "parameters": {
             "widgetTitle": "MapItemTemplateTab1",
             "target": "forTheMap",
             "templateName": "MapItemTemplateTab1",
             "requireTarget": true,
             "resolveItemScript": "return item;",
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
+            "beforeSubmitScript": "MapItemTemplateTab1.beforeSubmitScript.js",
+            "onCreateScript": "MapItemTemplateTab1.onCreateScript.js",
             "onUpdateScript": "",
-            "onSaveScript": "",
+            "onSaveScript": "MapItemTemplateTab1.onSaveScript.js",
             "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
-                    "x": -18,
-                    "y": 171
+                    "x": 91,
+                    "y": 118
                 },
                 "children": [
                     "MapItemTemplateTab1.metadata.children.0.json",
@@ -2432,11 +2344,18 @@
                             "MapItemTemplateTab1.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 128,
-                            "y": 260
+                            "x": 439,
+                            "y": 425
                         },
                         "children": [
-                            "MapItemTemplateTab1.metadata.children.1.children.0.json"
+                            "MapItemTemplateTab1.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 399,
+                                    "y": 613
+                                }
+                            }
                         ],
                         "builderMetadata": {
                             "positions": {
@@ -2451,20 +2370,64 @@
                                         {
                                             "type": "WizardDescriptionField",
                                             "config": {
-                                                "label": "Description",
-                                                "message": "add a description",
-                                                "lines": 3,
+                                                "label": "Place description",
+                                                "message": "add description",
+                                                "lines": 10,
                                                 "mandatory": false,
                                                 "showAudios": true,
                                                 "showImages": true,
                                                 "showDocuments": true,
                                                 "showVideos": true,
-                                                "className": "",
+                                                "className": "--no-video",
                                                 "maxChars": 0,
                                                 "showExpandInput": true,
                                                 "toolbarPosition": "bottom",
                                                 "textFormatScript": "",
-                                                "mediaIconTint": "rgb(100, 149, 237)"
+                                                "mediaIconTint": "rgb(100, 149, 237)",
+                                                "onRenderModuleFn": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTagCloud",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "showLabel": false,
+                                                "showAddWord": false,
+                                                "label": "Layer Keyword",
+                                                "addWordPlaceholder": "add a keyword",
+                                                "fontColor": "rgb(0, 0, 0)",
+                                                "hoverColor": "rgb(143, 188, 143)",
+                                                "selectedColor": "rgb(143, 188, 143)",
+                                                "shuffleTags": false,
+                                                "tags": "[\n    \"cultural\",\n    \"under water\",\n    \"contentious claim\",\n    \"sinixt member killed\"\n]",
+                                                "getItemTagsScript": "return defaultTags;",
+                                                "formatModule": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Identification Code",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "add more values",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "autocomplete": true,
+                                                "inputOptions": "{}",
+                                                "onRenderTextFieldScript": "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
+                                                "formatValueScript": "MapItemTemplateTab1.metadata.children.1.builderMetadata.positions.content.modules.3.config.formatValueScript.js"
                                             }
                                         }
                                     ]
@@ -2483,7 +2446,10 @@
                                 "content",
                                 "footer",
                                 "menu"
-                            ]
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
                         }
                     }
                 ]
@@ -2491,75 +2457,126 @@
             "readAccess": "public"
         }
     },
-    "widget.53": {
+    "widget.52": {
         "name": "Generic Wizard",
         "instance": "WizardBuilder",
         "parameters": {
-            "widgetTitle": "MapItemTemplateTab2",
+            "widgetTitle": "",
             "target": "forTheMap",
-            "templateName": "MapItemTemplateTab2",
+            "templateName": "MapItemTemplate",
             "requireTarget": true,
             "resolveItemScript": "return item;",
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
+            "beforeSubmitScript": "widget.WizardBuilder.52.beforeSubmitScript.js",
+            "onCreateScript": "widget.WizardBuilder.52.onCreateScript.js",
             "onUpdateScript": "",
-            "onSaveScript": "",
+            "onSaveScript": "widget.WizardBuilder.52.onSaveScript.js",
             "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
-                    "x": -18,
-                    "y": 171
+                    "x": 91,
+                    "y": 118
                 },
                 "children": [
-                    "MapItemTemplateTab2.metadata.children.0.json",
+                    "widget.WizardBuilder.52.metadata.children.0.json",
                     {
                         "title": "New Empty Step",
                         "class": "AttributesTableNode",
                         "fields": [
-                            "MapItemTemplateTab2.metadata.children.1.fields.0.json"
+                            "widget.WizardBuilder.52.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 128,
-                            "y": 260
+                            "x": 439,
+                            "y": 425
                         },
                         "children": [
-                            "MapItemTemplateTab2.metadata.children.1.children.0.json"
+                            "widget.WizardBuilder.52.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 399,
+                                    "y": 613
+                                }
+                            }
                         ],
                         "builderMetadata": {
                             "positions": {
                                 "title": {
                                     "modules": [
-                                        "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                        "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.title.modules.0.json"
                                     ]
                                 },
                                 "content": {
                                     "modules": [
-                                        "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.0.json",
                                         {
                                             "type": "WizardDescriptionField",
                                             "config": {
-                                                "label": "Description",
-                                                "message": "add a description",
-                                                "lines": 3,
+                                                "label": "Place description",
+                                                "message": "add description",
+                                                "lines": 10,
                                                 "mandatory": false,
                                                 "showAudios": true,
                                                 "showImages": true,
                                                 "showDocuments": true,
                                                 "showVideos": true,
-                                                "className": "",
+                                                "className": "--no-video",
                                                 "maxChars": 0,
                                                 "showExpandInput": true,
                                                 "toolbarPosition": "bottom",
                                                 "textFormatScript": "",
-                                                "mediaIconTint": "rgb(100, 149, 237)"
+                                                "mediaIconTint": "rgb(100, 149, 237)",
+                                                "onRenderModuleFn": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTagCloud",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "showLabel": false,
+                                                "showAddWord": false,
+                                                "label": "Layer Keyword",
+                                                "addWordPlaceholder": "add a keyword",
+                                                "fontColor": "rgb(0, 0, 0)",
+                                                "hoverColor": "rgb(143, 188, 143)",
+                                                "selectedColor": "rgb(143, 188, 143)",
+                                                "shuffleTags": false,
+                                                "tags": "[\n    \"cultural\",\n    \"under water\",\n    \"contentious claim\",\n    \"sinixt member killed\"\n]",
+                                                "getItemTagsScript": "return defaultTags;",
+                                                "formatModule": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Identification Code",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "add more values",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "autocomplete": true,
+                                                "inputOptions": "{}",
+                                                "onRenderTextFieldScript": "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
+                                                "formatValueScript": "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.content.modules.3.config.formatValueScript.js"
                                             }
                                         }
                                     ]
                                 },
                                 "footer": {
                                     "modules": [
-                                        "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                        "widget.WizardBuilder.52.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
                                     ]
                                 },
                                 "menu": {
@@ -2571,7 +2588,152 @@
                                 "content",
                                 "footer",
                                 "menu"
-                            ]
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.53": {
+        "name": "Generic Wizard",
+        "instance": "WizardBuilder",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "forTheMap",
+            "templateName": "MapItemTemplate",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "widget.WizardBuilder.53.beforeSubmitScript.js",
+            "onCreateScript": "widget.WizardBuilder.53.onCreateScript.js",
+            "onUpdateScript": "",
+            "onSaveScript": "widget.WizardBuilder.53.onSaveScript.js",
+            "onLoadScript": "",
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": 91,
+                    "y": 118
+                },
+                "children": [
+                    "widget.WizardBuilder.53.metadata.children.0.json",
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "widget.WizardBuilder.53.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 439,
+                            "y": 425
+                        },
+                        "children": [
+                            "widget.WizardBuilder.53.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 399,
+                                    "y": 613
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        "widget.WizardBuilder.53.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        "widget.WizardBuilder.53.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        {
+                                            "type": "WizardDescriptionField",
+                                            "config": {
+                                                "label": "Place description",
+                                                "message": "add description",
+                                                "lines": 10,
+                                                "mandatory": false,
+                                                "showAudios": true,
+                                                "showImages": true,
+                                                "showDocuments": true,
+                                                "showVideos": true,
+                                                "className": "--no-video",
+                                                "maxChars": 0,
+                                                "showExpandInput": true,
+                                                "toolbarPosition": "bottom",
+                                                "textFormatScript": "",
+                                                "mediaIconTint": "rgb(100, 149, 237)",
+                                                "onRenderModuleFn": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTagCloud",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.53.metadata.children.1.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "showLabel": false,
+                                                "showAddWord": false,
+                                                "label": "Layer Keyword",
+                                                "addWordPlaceholder": "add a keyword",
+                                                "fontColor": "rgb(0, 0, 0)",
+                                                "hoverColor": "rgb(143, 188, 143)",
+                                                "selectedColor": "rgb(143, 188, 143)",
+                                                "shuffleTags": false,
+                                                "tags": "[\n    \"cultural\",\n    \"under water\",\n    \"contentious claim\",\n    \"sinixt member killed\"\n]",
+                                                "getItemTagsScript": "return defaultTags;",
+                                                "formatModule": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.53.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Identification Code",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "add more values",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "autocomplete": true,
+                                                "inputOptions": "{}",
+                                                "onRenderTextFieldScript": "widget.WizardBuilder.53.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
+                                                "formatValueScript": "widget.WizardBuilder.53.metadata.children.1.builderMetadata.positions.content.modules.3.config.formatValueScript.js"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        "widget.WizardBuilder.53.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
                         }
                     }
                 ]

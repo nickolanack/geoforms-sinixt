@@ -1,9 +1,9 @@
 {
     "type": "WizardTitleField",
     "config": {
-        "label": "Title",
-        "message": "add a title",
-        "className": "",
+        "label": "Place name",
+        "message": "add a name",
+        "className": "css class name",
         "maxChars": 0,
         "textFormatScript": ""
     }
