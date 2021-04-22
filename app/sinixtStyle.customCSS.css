@@ -65,11 +65,13 @@ span.video.noIcon:after {
 
 .header span.ImageModule.image {
     display: inline-block;
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     background-size: contain;
     float: left;
     margin-right: 20px;
+    margin-top: -13px;
+    background-repeat: no-repeat;
 }
 
 
