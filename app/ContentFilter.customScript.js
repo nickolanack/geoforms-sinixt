@@ -1,7 +1,7 @@
 var ContentFilter=(function(){
     
     
-    var ContentFilter=new Class({
+    var ContentFilterBase=new Class({
         
         
 
@@ -9,6 +9,8 @@ var ContentFilter=(function(){
 
         
     });
+
+    var ContentFilter=new ContentFilterBase();
     
 
     ContentFilter.ParseNameSection=function(text){
@@ -48,6 +50,6 @@ var ContentFilter=(function(){
 
 
 
-    return new ContentFilter();
+    return ContentFilter;
     
-})()
+})();
