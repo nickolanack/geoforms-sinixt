@@ -1845,16 +1845,16 @@
                             "userAccessForm.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 388,
-                            "y": 447
+                            "x": 398,
+                            "y": 457
                         },
                         "children": [
                             "userAccessForm.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 348,
-                                    "y": 648
+                                    "x": 358,
+                                    "y": 658
                                 }
                             }
                         ],
@@ -1916,7 +1916,7 @@
                                                 "multiEntry": false,
                                                 "muliTemplate": "lines",
                                                 "multiMessage": "add more values",
-                                                "formatter": "integer",
+                                                "formatter": "none",
                                                 "iconTint": "rgb(100, 149, 237)",
                                                 "autocomplete": true,
                                                 "inputOptions": "{}",
@@ -1939,7 +1939,7 @@
                                                 "multiEntry": false,
                                                 "muliTemplate": "lines",
                                                 "multiMessage": "add more values",
-                                                "formatter": "integer",
+                                                "formatter": "none",
                                                 "iconTint": "rgb(100, 149, 237)",
                                                 "autocomplete": true,
                                                 "inputOptions": "{}",
