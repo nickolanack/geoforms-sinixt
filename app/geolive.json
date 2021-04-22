@@ -2672,7 +2672,12 @@
         "name": "Content",
         "instance": "CustomContent",
         "parameters": {
-            "target": "none"
+            "target": "forTheMap",
+            "customScript": "",
+            "widgetTitle": "custom",
+            "language": "html\/text",
+            "returnsValue": false,
+            "readAccess": "public"
         }
     }
 }
