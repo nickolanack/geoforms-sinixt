@@ -1,8 +1,10 @@
 {
-    "type": "WizardScriptElement",
+    "type": "InlineHtml",
     "config": {
-        "name": "My Custom Script",
-        "script": "AppClient.logout();",
-        "description": "Info about my custom script"
+        "className": "",
+        "text": "<h2>Logging out...<\/h2>",
+        "template": "",
+        "templateVariablesScript": "",
+        "formatTextScript": ""
     }
 }

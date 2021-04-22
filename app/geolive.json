@@ -1056,16 +1056,16 @@
                             "widget.UserWizardBuilder.19.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 113,
-                            "y": 144
+                            "x": 123,
+                            "y": 154
                         },
                         "children": [
                             "widget.UserWizardBuilder.19.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 73,
-                                    "y": 310
+                                    "x": 83,
+                                    "y": 320
                                 }
                             }
                         ],
@@ -1076,7 +1076,15 @@
                                 },
                                 "content": {
                                     "modules": [
-                                        "widget.UserWizardBuilder.19.metadata.children.1.builderMetadata.positions.content.modules.0.json"
+                                        "widget.UserWizardBuilder.19.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        {
+                                            "type": "WizardScriptElement",
+                                            "config": {
+                                                "name": "My Custom Script",
+                                                "script": "AppClient.logout();",
+                                                "description": "Info about my custom script"
+                                            }
+                                        }
                                     ]
                                 },
                                 "footer": {
