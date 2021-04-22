@@ -2588,16 +2588,16 @@
                             "MapItemTemplateTab2.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 439,
-                            "y": 425
+                            "x": 449,
+                            "y": 435
                         },
                         "children": [
                             "MapItemTemplateTab2.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 399,
-                                    "y": 613
+                                    "x": 409,
+                                    "y": 623
                                 }
                             }
                         ],
@@ -2612,50 +2612,10 @@
                                     "modules": [
                                         "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.content.modules.0.json",
                                         {
-                                            "type": "WizardDescriptionField",
-                                            "config": {
-                                                "label": "Place description",
-                                                "message": "add description",
-                                                "lines": 10,
-                                                "mandatory": false,
-                                                "showAudios": true,
-                                                "showImages": true,
-                                                "showDocuments": true,
-                                                "showVideos": true,
-                                                "className": "--no-video",
-                                                "maxChars": 0,
-                                                "showExpandInput": true,
-                                                "toolbarPosition": "bottom",
-                                                "textFormatScript": "",
-                                                "mediaIconTint": "rgb(100, 149, 237)",
-                                                "onRenderModuleFn": ""
-                                            }
-                                        },
-                                        {
-                                            "type": "plugin.Attributes.WizardTagCloud",
-                                            "config": {
-                                                "attributeFields": [
-                                                    "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
-                                                ],
-                                                "className": "",
-                                                "showLabel": false,
-                                                "showAddWord": false,
-                                                "label": "Layer Keyword",
-                                                "addWordPlaceholder": "add a keyword",
-                                                "fontColor": "rgb(0, 0, 0)",
-                                                "hoverColor": "rgb(143, 188, 143)",
-                                                "selectedColor": "rgb(143, 188, 143)",
-                                                "shuffleTags": false,
-                                                "tags": "[\n    \"cultural\",\n    \"under water\",\n    \"contentious claim\",\n    \"sinixt member killed\"\n]",
-                                                "getItemTagsScript": "return defaultTags;",
-                                                "formatModule": ""
-                                            }
-                                        },
-                                        {
                                             "type": "plugin.Attributes.WizardTextAttribute",
                                             "config": {
                                                 "attributeFields": [
-                                                    "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                    "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.content.modules.1.config.attributeFields.0.json"
                                                 ],
                                                 "className": "",
                                                 "label": "Identification Code",
@@ -2670,8 +2630,8 @@
                                                 "iconTint": "rgb(100, 149, 237)",
                                                 "autocomplete": true,
                                                 "inputOptions": "{}",
-                                                "onRenderTextFieldScript": "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
-                                                "formatValueScript": "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.content.modules.3.config.formatValueScript.js"
+                                                "onRenderTextFieldScript": "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.content.modules.1.config.onRenderTextFieldScript.js",
+                                                "formatValueScript": "MapItemTemplateTab2.metadata.children.1.builderMetadata.positions.content.modules.1.config.formatValueScript.js"
                                             }
                                         }
                                     ]

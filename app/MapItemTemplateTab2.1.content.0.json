@@ -1,10 +1,20 @@
 {
-    "type": "WizardTitleField",
+    "type": "WizardDescriptionField",
     "config": {
-        "label": "Place name",
-        "message": "add a name",
-        "className": "css class name",
+        "label": "Notes description",
+        "message": "add description",
+        "lines": 10,
+        "mandatory": false,
+        "showAudios": true,
+        "showImages": true,
+        "showDocuments": true,
+        "showVideos": true,
+        "className": "--no-video",
         "maxChars": 0,
-        "textFormatScript": ""
+        "showExpandInput": true,
+        "toolbarPosition": "bottom",
+        "textFormatScript": "",
+        "mediaIconTint": "rgb(100, 149, 237)",
+        "onRenderModuleFn": ""
     }
 }
