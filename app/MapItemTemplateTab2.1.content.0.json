@@ -13,7 +13,7 @@
         "maxChars": 0,
         "showExpandInput": true,
         "toolbarPosition": "bottom",
-        "textFormatScript": "var initialText=false\n\nthis.addInputFilter(function(text){\n    console.error('input filter')\n    \n    if(initialText===false){\n        initialText=text;\n    }\n    \n    return ContentFilter.ParseNotesSection(text);\n    \n});\nthis.addOutputFilter(function(text){\n \n  \n    return initialText;\n    \n});",
+        "textFormatScript": "ContentFilter.AddTextFieldNotesFilter(this);",
         "mediaIconTint": "rgb(100, 149, 237)",
         "onRenderModuleFn": ""
     }
