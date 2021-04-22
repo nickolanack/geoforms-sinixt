@@ -2660,5 +2660,12 @@
             },
             "readAccess": "public"
         }
+    },
+    "widget.54": {
+        "name": "Javascript",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "target": "none"
+        }
     }
 }
