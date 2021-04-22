@@ -9,7 +9,7 @@
         "showImages": true,
         "showDocuments": true,
         "showVideos": true,
-        "className": "--no-video",
+        "className": "uploads-hidden",
         "maxChars": 0,
         "showExpandInput": true,
         "toolbarPosition": "bottom",
