@@ -2666,8 +2666,8 @@
         "instance": "CustomContent",
         "parameters": {
             "target": "forTheMap",
-            "customScript": "custom.customScript.js",
-            "widgetTitle": "custom",
+            "customScript": "ContentFilter.customScript.js",
+            "widgetTitle": "ContentFilter",
             "language": "javascript",
             "returnsValue": false,
             "readAccess": "public"
