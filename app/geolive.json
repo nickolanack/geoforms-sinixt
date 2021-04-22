@@ -2666,7 +2666,7 @@
         "instance": "CustomContent",
         "parameters": {
             "target": "forTheMap",
-            "customScript": "Hello world",
+            "customScript": "custom.customScript.js",
             "widgetTitle": "custom",
             "language": "javascript",
             "returnsValue": false,
