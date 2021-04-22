@@ -1606,6 +1606,7 @@
                                 "config": {
                                     "listClassName": "",
                                     "className": "",
+                                    "identifier": "",
                                     "viewType": "view",
                                     "namedView": "userListItem",
                                     "shouldRender": true,
@@ -1646,6 +1647,7 @@
                                 "config": {
                                     "listClassName": "",
                                     "className": "",
+                                    "identifier": "",
                                     "viewType": "view",
                                     "namedView": "documentListItem",
                                     "shouldRender": true,

@@ -3,7 +3,7 @@
 
 	})).addEvent('success',function(response){
 	    callback(response.results.map(function(u){
-	        return new MockDataTypeItem(u);
+	        return new MockDataTypeItem(Object.append(u, {type:"user"}));
 	    }));
 	}).execute(); 
 		
