@@ -71,7 +71,9 @@
         "name": "Users",
         "instance": "Users",
         "parameters": {
-            "customUserGroups": [],
+            "customUserGroups": [
+                ""
+            ],
             "customUserScript": "",
             "customGroupMemberOfGroupScript": "",
             "defaultImage": [],
@@ -79,8 +81,8 @@
             "validateEmail": true,
             "magicLinkUrl": "",
             "useRecaptcha": false,
-            "recaptchaKey": false,
-            "recaptchaSecret": false
+            "recaptchaKey": "",
+            "recaptchaSecret": ""
         }
     },
     "plugin.7": {
