@@ -4,7 +4,7 @@ if(item.getRoles().indexOf('special')>=0){
 }
 
 
-return (new ModalFormButtonModule(application, AppClient,{
+return (new ModalFormButtonModule(application, item,{
         label:"Set Perimission",
         formName:"userAccessForm",
         formOptions:{
