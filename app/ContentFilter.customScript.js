@@ -14,6 +14,16 @@ var ContentFilter = (function() {
 		return text.split("\n\n").shift().split('Layer Keywords:').shift();
 	}
 
+	ContentFilter.ReplaceNameSection=function(text, replace){
+
+		var chunks = text.split("\n\n");
+		var section = chunks[0].split('Layer Keywords:')
+		section[0] = replace;
+		chunks[0] = section.join('Layer Keywords:');
+		return chunks.join("\n\n");
+
+	}
+
 	ContentFilter.ParseNameSectionHtml = function(text) {
 		return ContentFilter.ParseNameSection(text).split("\n").join("<br/>");
 	}
@@ -29,6 +39,14 @@ var ContentFilter = (function() {
 		return text.split('Personal Notes:').shift();
 	}
 
+	ContentFilter.ReplaceSourceSection=function(text, replace){
+
+		
+
+	}
+
+
+
 	ContentFilter.ParseSourceSectionHtml = function(text) {
 		return ContentFilter.ParseSourceSection(text).split("\n").join("<br/>");
 	}
@@ -41,9 +59,17 @@ var ContentFilter = (function() {
 		return text.split('Personal Notes:').pop();
 	}
 
+	ContentFilter.ReplaceNotesSection=function(text, replace){
+
+		
+
+	}
+
 	ContentFilter.ParseNotesSectionHtml = function(text) {
 		return ContentFilter.ParseNotesSection(text).split("\n").join("<br/>");
 	}
+
+	
 
 
 	ContentFilter.AddTextFieldNameFilter = function(textField) {
@@ -61,12 +87,8 @@ var ContentFilter = (function() {
 			return ContentFilter.ParseNameSection(text);
 		});
 		textField.addOutputFilter(function(text) {
-			console.error('input filter');
-			var chunks = initialText.split("\n\n");
-			var section = chunks.shift().split('Layer Keywords:')
-			section[0] = text;
-			chunks[0] = section.join('Layer Keywords:');
-			var formatted = chunks.join("\n\n");
+			console.error('output filter');
+			console.log(ContentFilter.ReplaceNameSection(initialText, text));
 			return initialText;
 
 		});
@@ -89,8 +111,8 @@ var ContentFilter = (function() {
 
 		});
 		textField.addOutputFilter(function(text) {
-
-
+			console.error('output filter');
+			console.log(ContentFilter.ReplaceSourceSection(initialText, text));
 			return initialText;
 
 		});
@@ -113,7 +135,8 @@ var ContentFilter = (function() {
 		});
 		textField.addOutputFilter(function(text) {
 
-
+			console.error('output filter');
+			console.log(ContentFilter.ReplaceNotesSection(initialText, text));
 			return initialText;
 
 		});
