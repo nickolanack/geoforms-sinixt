@@ -3,7 +3,7 @@ var div=new Element('container',{"class":"btn-group-access"});
 
 var toTime=function(t){
     
-    return (new Date()).toTime()+1000*3600*24*t;
+    return Math.floor(((new Date()).getTime()+1000*3600*24*t)/1000);
     
 }
 
