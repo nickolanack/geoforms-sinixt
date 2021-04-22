@@ -17,6 +17,20 @@ $list=array_map(function($u){
 
 usort($list, function($a, $b){
     
+    $arole=in_array('special', $a['roles']);
+    $brole=in_array('special', $b['roles']);
+    
+    if(!($arole&&$brole)){
+        if($arole){
+            return -1;
+        } 
+        
+         if($brole){
+            return 1;
+        }
+        
+    }
+    
     
     
     return strcmp($a['name'], $b['name']);
