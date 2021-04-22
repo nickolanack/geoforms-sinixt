@@ -1,1 +1,0 @@
-return application.getLayerManager().getLayers();

@@ -1845,16 +1845,16 @@
                             "userAccessForm.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 358,
-                            "y": 417
+                            "x": 368,
+                            "y": 427
                         },
                         "children": [
                             "userAccessForm.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 318,
-                                    "y": 618
+                                    "x": 328,
+                                    "y": 628
                                 }
                             }
                         ],
@@ -1879,12 +1879,12 @@
                                             }
                                         },
                                         {
-                                            "type": "UIListView",
+                                            "type": "UIView",
                                             "config": {
-                                                "listClassName": "",
-                                                "className": "selectable-layer",
+                                                "className": "",
+                                                "identifier": "",
                                                 "viewType": "view",
-                                                "namedView": "selectableLayer",
+                                                "namedView": "selectableLayersList",
                                                 "shouldRender": true,
                                                 "namedViewScript": "return namedView",
                                                 "showInlineEdit": false,
@@ -1898,14 +1898,7 @@
                                                 "filterModulesScript": "return list",
                                                 "itemButtonsScript": "return [];",
                                                 "insertAtTop": false,
-                                                "targetName": "",
-                                                "getItemListScript": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.2.config.getItemListScript.js",
-                                                "formatItemListScript": "return list;",
-                                                "formatListItemModuleScript": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.2.config.formatListItemModuleScript.js",
-                                                "emptyNamedView": "emptyListView",
-                                                "filterItemsScript": "return true;",
-                                                "sortItemsScript": "",
-                                                "maxItems": "-1"
+                                                "targetName": ""
                                             }
                                         },
                                         {
