@@ -21,6 +21,6 @@
         "embedPortrait": true,
         "preferLocalContent": true,
         "portraitClip": true,
-        "formatTextScript": "var text= text.split(\"\\n\\n\").slice(1).join('\\n\\n');\n\nif(text.indexOf('Layer Keywords:')>=0){\n    text.split('Layer Keywords:').pop().split('\\n\\n').slice(1).join('\\n\\n');\n}\n\nreturn text.split('Personal Notes:').shift().split(\"\\n\").join(\"<br\/>\");"
+        "formatTextScript": "return ContentFilter.ParseSourceSectionHtml(text);"
     }
 }
