@@ -226,7 +226,7 @@ span.video.noIcon:after {
 }
 
 
-button.form-btn.primary-btn, button.add-document, .btn-group-access button {
+button.form-btn.primary-btn, button.add-document, .btn-group-access button, button.other-btn {
     background-color: darkcyan;
     border: none;
     box-shadow: 0 0 3px rgb(0 0 0 / 20%);
@@ -237,7 +237,7 @@ button.form-btn.primary-btn, button.add-document, .btn-group-access button {
     border-radius: 3px;
 }
 
-button.add-document{
+button.add-document, button.other-btn{
     padding: 5px 10px 7px;
     font-size:15px;
     color:black;
