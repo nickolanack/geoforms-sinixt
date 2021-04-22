@@ -10,7 +10,7 @@ this.addInputFilter(function(text){
         initialText=text;
     }
     
-    return text.split("\n\n").shift().split('Layer Keywords:').shift();
+    return ContentFilter.ParseNameSection(text);
 });
 this.addOutputFilter(function(text){
     console.error('input filter');
