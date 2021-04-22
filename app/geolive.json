@@ -2681,7 +2681,7 @@
         "instance": "DetailView",
         "parameters": {
             "widgetTitle": "selectableLayersList",
-            "target": "selectableLayersList",
+            "target": "forTheMap",
             "templateName": "selectableLayersList",
             "requireTarget": true,
             "resolveItemScript": "return item",
