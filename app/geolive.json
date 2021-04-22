@@ -1401,7 +1401,7 @@
         "parameters": {
             "widgetTitle": "layerContent",
             "target": "forTheMap",
-            "customScript": "",
+            "customScript": "console.log(\"hello\");",
             "language": "javascript",
             "returnsValue": false,
             "readAccess": "public"
