@@ -1129,16 +1129,16 @@
                             "widget.UserWizardBuilder.20.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 98,
-                            "y": 299
+                            "x": 108,
+                            "y": 309
                         },
                         "children": [
                             "widget.UserWizardBuilder.20.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 58,
-                                    "y": 465
+                                    "x": 68,
+                                    "y": 475
                                 }
                             },
                             {
@@ -1148,16 +1148,16 @@
                                     "widget.UserWizardBuilder.20.metadata.children.1.children.2.fields.0.json"
                                 ],
                                 "_diagramState": {
-                                    "x": 768,
-                                    "y": 247
+                                    "x": 778,
+                                    "y": 257
                                 },
                                 "children": [
                                     "widget.UserWizardBuilder.20.metadata.children.1.children.2.children.0.json",
                                     {
                                         "class": "InsertNode",
                                         "_diagramState": {
-                                            "x": 728,
-                                            "y": 413
+                                            "x": 738,
+                                            "y": 423
                                         }
                                     }
                                 ],
@@ -1202,7 +1202,7 @@
                                             "type": "WizardScriptElement",
                                             "config": {
                                                 "name": "My Custom Script",
-                                                "script": "",
+                                                "script": "widget.UserWizardBuilder.20.metadata.children.1.builderMetadata.positions.content.modules.1.config.script.js",
                                                 "description": "Info about my custom script"
                                             }
                                         }
