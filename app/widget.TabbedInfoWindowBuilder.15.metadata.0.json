@@ -36,7 +36,7 @@
                         "embedPortrait": true,
                         "preferLocalContent": true,
                         "portraitClip": true,
-                        "formatTextScript": "ContentFilter.ParseNameSectionHtml(text)"
+                        "formatTextScript": "return ContentFilter.ParseNameSectionHtml(text)"
                     }
                 }
             ]
