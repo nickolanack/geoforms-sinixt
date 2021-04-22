@@ -2344,16 +2344,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 439,
-                            "y": 425
+                            "x": 449,
+                            "y": 435
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 399,
-                                    "y": 613
+                                    "x": 409,
+                                    "y": 623
                                 }
                             }
                         ],
@@ -2382,7 +2382,7 @@
                                                 "maxChars": 0,
                                                 "showExpandInput": true,
                                                 "toolbarPosition": "bottom",
-                                                "textFormatScript": "",
+                                                "textFormatScript": "MapItemTemplateTab0.metadata.children.1.builderMetadata.positions.content.modules.1.config.textFormatScript.js",
                                                 "mediaIconTint": "rgb(100, 149, 237)",
                                                 "onRenderModuleFn": ""
                                             }
