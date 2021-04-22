@@ -1,0 +1,282 @@
+@import url("/webresources/font-awesome-4.7.0/css/font-awesome.min.css");
+
+
+
+span.video.noIcon:after {
+    background-color: #086c8c;
+}
+
+.infowindow_tab {
+    position: relative;
+    top: 0;
+    display: block;
+    height: 30px;
+}
+
+.iw-tab>{
+     min-width:400px;
+}
+
+.iw-tab>*, .iw-tab button {
+    display: inline-block;
+   
+}
+
+.iw-tab .tab, .iw-tab button {
+   background-color:#aebace;
+   margin: 2px;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #142442;
+    text-shadow: 0 0 4px rgb(255 255 255 / 50%);
+    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
+
+}
+
+.iw-tab .tab.active{
+   background-color:#698dca;
+   
+}
+
+
+.iw-tab>div{
+    float:right;
+    margin-right:20px
+}
+
+.iw-title span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2a4578;
+    padding: 10px 0;
+    display: inline-block;
+}
+.header{
+    display: block;
+    height: 120px;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+
+.header span.ImageModule.image {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-size: contain;
+    float: left;
+    margin-right: 20px;
+}
+
+
+.left-top.ltr.UIMapControl {
+    margin-left: 10px;
+}
+
+.left-top.ltr.UIMapControl:first-child {
+    margin-top: 70px;
+}
+
+.right-top.rtl.UIMapControl {
+    margin-top: 70px;
+    margin-right: 0;
+}
+
+
+.right-center.rtl {
+    margin-right: 12px;
+    transition: margin-right .3s ease-in-out;
+}
+.sidepanel-expanded-right .right-center.rtl {
+    margin-right: 400px;
+    
+}
+
+.SideBarWidget.right>div.toggle-button {
+    background-image: none;
+}
+
+<?php $icons=GetWidget('icons');?>
+
+
+.SideBarWidget.right.collapsed > .toggle-button{
+    
+    background-image:url("<?php echo UrlFrom($icons->getParameter('userTabIcon')[0]);?>?thumb=x>64y>64&tint=rgb(255,255,255)");
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.sidepanel-expanded-right .toggle-button:before {
+    content: "\f00d";
+    font-family: 'FontAwesome';
+    text-align: center;
+    width: 38px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 38px;
+    line-height: 40px;
+    color: #f0f0f0;
+    font-size: 25px;
+    /* transition:font-size 0.1s ease-in-out; */
+
+ }
+ .sidepanel-expanded-right .toggle-button:hover:before{
+     font-size:28px;
+
+ }
+
+.SideBarWidget.right.active>div.toggle-button {
+    background-image:none
+    
+ }
+
+.sidebar-view h2 {
+    margin-top: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar-view .ui-list-view .ui-view {
+    display: block;
+    margin: 9px;
+    margin-left: 20px;
+    background-color: white;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+.sidebar-view .field-value-module {
+    display: inline-block;
+}
+
+.sidebar-view button {
+    float: right;
+}
+
+
+
+.show-documents{
+    button.form-btn.primary-btn {
+        background: darkcyan;
+        border: none;
+        color: white;
+        padding: 3px 10px;
+        font-size: 12px;
+        box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+        color: white;
+        border-radius: 3px;
+        font-weight: 100;
+        text-shadow: 0 0 5px rgb(0 0 0 / 50%);
+    }
+    
+    .upload-btns span.document:after {
+        white-space: nowrap;
+        display: inline-block;
+        margin: 0;
+        margin-left: 10px;
+    }
+    
+    span.document.noIcon:after {
+        background-color: #086c8c;
+    }
+    .upload-btns span.document:after {
+        content: "Add document";
+    }
+    
+    .upload-btns span.document:after{
+        background-color: #549ae6;
+        border: none;
+        box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+        margin: 5px;
+        padding: 10px 25px;
+        color: white;
+        font-weight: 100;
+        text-shadow: 0 0 5px rgb(0 0 0 / 50%);
+        font-size: 22px;
+        margin-top: 25px;
+        border-radius: 3px;
+    }
+}
+.focus-documents{
+
+    .upload-btns span.image:after, .upload-btns span.video:after{
+        padding:5px 10px;
+        font-size:15px
+    
+    }
+
+}
+
+.hide-input .text-input.with-1-line {
+    visibility: hidden;
+    height: 0;
+}
+
+
+button.form-btn.primary-btn, button.add-document, .btn-group-access button {
+    background-color: darkcyan;
+    border: none;
+    box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+    padding: 3px 7px;
+    color: white;
+    font-weight: 100;
+    text-shadow: 0 0 5px rgb(0 0 0 / 50%);
+    border-radius: 3px;
+}
+
+button.add-document{
+    padding: 5px 10px 7px;
+    font-size:15px;
+    color:black;
+    margin:20px;
+    text-shadow: none;
+}
+
+.btn-group-access button {
+    margin-right: 5px;
+}
+
+
+.logos {
+    height: 100px;
+ 
+}
+
+.logos .logo-1, .logos .logo-2 {
+    background-image:url("https://sinixt.geoforms.ca/uploads-sinixt.geoforms.ca/user_files_1/Uploads/0AN_[G]_[ImAgE]_kBf_SzF.png?thumb=%3E200x%3E150");
+    width:250px;
+    height:100px;
+    display:inline-block;
+    background-size:contain;
+    background-repeat:no-repeat;
+    margin-left:50px;
+    float:right;
+    
+
+}
+.logos .logo-2 {
+    transform:scale(1.5)   
+}
+.logos .logo-2 {
+    background-image:url("https://sinixt.geoforms.ca/uploads-sinixt.geoforms.ca/user_files_1/Uploads/[ImAgE]_2iP_9Sp_DV8_[G].png?thumb=%3E200x%3E150");
+}
+
+.ui-view.selectable-layer.selected {
+    background-color: rgb(143, 188, 143);
+}
+
+
+

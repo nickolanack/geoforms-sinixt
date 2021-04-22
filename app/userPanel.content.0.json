@@ -1,0 +1,10 @@
+{
+    "type": "InlineHtml",
+    "config": {
+        "className": "",
+        "text": "<h2>User acces<\/h2>",
+        "template": "",
+        "templateVariablesScript": "",
+        "formatTextScript": ""
+    }
+}

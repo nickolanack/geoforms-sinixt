@@ -1,0 +1,10 @@
+{
+    "type": "WizardTitleField",
+    "config": {
+        "label": "Place name",
+        "message": "add a name",
+        "className": "css class name",
+        "maxChars": 0,
+        "textFormatScript": ""
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "plugin.Users.Login",
+    "config": {
+        "className": "",
+        "showCancel": true,
+        "labelForUsername": "Username",
+        "labelForPassword": "Password",
+        "labelForCancel": "cancel",
+        "labelForSubmit": "Login",
+        "onLoginFailedScript": "",
+        "reloadOnSuccess": true,
+        "reloadUrl": "",
+        "showForgotPassword": false,
+        "forgotPasswordCustomScript": "defaultBehavior();"
+    }
+}

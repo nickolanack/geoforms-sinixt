@@ -1,0 +1,9 @@
+{
+    "type": "images",
+    "name": "userTabIcon",
+    "default": [],
+    "label": "userTabIcon",
+    "maxHeight": 64,
+    "maxWidth": 64,
+    "limit": 1
+}

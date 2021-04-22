@@ -1,0 +1,8 @@
+{
+    "type": "WizardScriptElement",
+    "config": {
+        "name": "My Custom Script",
+        "script": "return \"<h2>Access permissions: \"+(item.getName?item.getName():(item.getTitle?item.getTitle():\"--\"))+\"<\/h2>\";",
+        "description": "Info about my custom script"
+    }
+}

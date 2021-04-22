@@ -1,0 +1,2246 @@
+{
+    "plugin.1": {
+        "name": "Monolog Plugin",
+        "instance": "Monolog",
+        "parameters": {
+            "enabled": true,
+            "logPath": "{front}\/log",
+            "logToSentry": false
+        }
+    },
+    "plugin.2": {
+        "name": "Upgrade",
+        "instance": "Upgrade",
+        "parameters": {
+            "releaseServer": "https:\/\/release.geolive.ca",
+            "releasePackage": "master",
+            "composerPath": "",
+            "bowerPath": "",
+            "autoUpdate": false
+        }
+    },
+    "plugin.3": {
+        "name": "Sentry IO Error reporting",
+        "instance": "SentryIO",
+        "parameters": {
+            "clientSecretUrl": "",
+            "clientPublicUrl": "",
+            "enabled": true,
+            "enabledFrontEnd": false
+        }
+    },
+    "plugin.4": {
+        "name": "Events",
+        "instance": "Events",
+        "parameters": {
+            "logPath": "{front}\/log"
+        }
+    },
+    "plugin.5": {
+        "name": "User Interface",
+        "instance": "UserInterface",
+        "parameters": {
+            "defaultRoute": {
+                "view": "plugin",
+                "plugin": "UserInterface",
+                "pluginView": "widget",
+                "widget": "dashboard"
+            },
+            "routes": [
+                "plugin.UserInterface.5.routes.0.json",
+                {
+                    "name": "dashboard",
+                    "view": "plugin",
+                    "plugin": "UserInterface",
+                    "pluginView": "widget",
+                    "widget": "dashboard"
+                },
+                {
+                    "name": "export-Ma3Ek4Tl7Cs3Sd6Sf8Gj3B",
+                    "format": "ajax",
+                    "task": "export_csv",
+                    "json": {
+                        "widget": 24,
+                        "mapId": 1
+                    }
+                }
+            ]
+        }
+    },
+    "plugin.6": {
+        "name": "Users",
+        "instance": "Users",
+        "parameters": {
+            "customUserGroups": [],
+            "customUserScript": "",
+            "customGroupMemberOfGroupScript": "",
+            "defaultImage": [],
+            "userProfileImageScript": "return $defaultImage;",
+            "validateEmail": true,
+            "magicLinkUrl": "",
+            "useRecaptcha": false,
+            "recaptchaKey": false,
+            "recaptchaSecret": false
+        }
+    },
+    "plugin.7": {
+        "name": "System Parameters",
+        "instance": "SystemParameters",
+        "parameters": {
+            "JSFileObfuscationEnabled": false,
+            "JSInlineObfuscationEnabled": false,
+            "CSSFileObfuscationEnabled": false,
+            "CSSInlineObfuscationEnabled": false,
+            "PHPDebugEnabled": true,
+            "JSDebugEnabled": true,
+            "CachingEnabled": false,
+            "ExternalizeWidgetScripts": true,
+            "PrettyPrintJson": true,
+            "showFrontEndEditButtons": false,
+            "JSCacheObfuscationEnabled": false,
+            "phase": "production",
+            "ForceHTTPS": false,
+            "allowProxiesFrom": [
+                "*",
+                ""
+            ],
+            "pluginPaths": [
+                "\/srv\/www\/vhosts\/production\/hazard.php-core-app\/php-core-app\/..\/php-core-map\/Plugins",
+                ""
+            ],
+            "widgetPaths": [
+                "\/srv\/www\/vhosts\/production\/hazard.php-core-app\/php-core-app\/..\/php-core-map\/Widgets",
+                ""
+            ],
+            "modulePaths": [
+                "\/srv\/www\/vhosts\/production\/hazard.php-core-app\/php-core-app\/..\/php-core-map\/Modules",
+                ""
+            ],
+            "sandboxDomains": [
+                "*.z.geolive.ca",
+                "*.s22.ok.ubc.ca",
+                "localhost",
+                ""
+            ]
+        }
+    },
+    "plugin.8": {
+        "name": "Data Types",
+        "instance": "Data",
+        "parameters": {}
+    },
+    "plugin.9": {
+        "name": "Filesystem",
+        "instance": "Filesystem",
+        "parameters": {
+            "enableFileMetadataCache": true,
+            "showDropboxImagePicker": false,
+            "dropbox-app-key": "",
+            "uploadViewInlineCss": "",
+            "uploadViewPageScript": "",
+            "enableFileAttributes": false,
+            "fileAttributesTableName": "filesystemAttributes",
+            "useS3Storage": false,
+            "bucket": "",
+            "folder": "hazard.geolive.ca",
+            "region": "us-west-2",
+            "version": "latest",
+            "key": "",
+            "secret": "",
+            "useCloudFront": false,
+            "cloudFrontDomain": "",
+            "renderSpatialThumbs": true,
+            "mime-image": [],
+            "mime-audio": [],
+            "mime-video": [],
+            "mime-document": [],
+            "mime-spatial": [],
+            "mime-document-pdf": [],
+            "mime-document-doc": []
+        }
+    },
+    "plugin.10": {
+        "name": "Deploy",
+        "instance": "Deploy",
+        "parameters": "_Deploy.json"
+    },
+    "plugin.11": {
+        "name": "Email",
+        "instance": "Email",
+        "parameters": {
+            "fromEmail": "",
+            "fromEmailName": "",
+            "useSmtp": false,
+            "smtpHost": "",
+            "username": "",
+            "password": "",
+            "port": "587",
+            "useMailgun": false,
+            "domain": "",
+            "apiKey": "",
+            "validateSenderDomain": false,
+            "useGlobalMailTemplate": false,
+            "globalTemplate": "DefaultMailerTemplate",
+            "recieveMail": false,
+            "recieveMailSecretToken": "XXXX-XXXX"
+        }
+    },
+    "plugin.12": {
+        "name": "External Content",
+        "instance": "ExternalContent",
+        "parameters": {
+            "youtube-api-key": "",
+            "thumbnailUrls": true
+        }
+    },
+    "plugin.13": {
+        "name": "Language",
+        "instance": "Language",
+        "parameters": {
+            "localizations": "plugin.Language.13.localizations.json",
+            "googleTranslateApiKey": ""
+        }
+    },
+    "plugin.14": {
+        "name": "Links",
+        "instance": "Links",
+        "parameters": {}
+    },
+    "plugin.15": {
+        "name": "Message Subscription Server",
+        "instance": "MessageSystem",
+        "parameters": "_MessageSystem.json"
+    },
+    "plugin.16": {
+        "name": "Search Plugin",
+        "instance": "Search",
+        "parameters": {}
+    },
+    "plugin.17": {
+        "name": "Google Maps",
+        "instance": "GoogleMaps",
+        "parameters": {}
+    },
+    "plugin.18": {
+        "name": "Maps",
+        "instance": "Maps",
+        "parameters": {
+            "enableLayerSyncronization": true,
+            "onlyShowMarkersInIconset": false,
+            "googleMapsServerApiKey": "XXXX-XXXX",
+            "googleMapsVersion": "",
+            "tileCachePath": "{site}\/..\/map-tiles",
+            "layerDisplayFilterScript": "plugin.Maps.18.layerDisplayFilterScript.js",
+            "layerDisplayFormatScript": "plugin.Maps.18.layerDisplayFormatScript.js",
+            "layerDisplayChildLayersScript": "plugin.Maps.18.layerDisplayChildLayersScript.js",
+            "formatMapitemScript": "plugin.Maps.18.formatMapitemScript.js",
+            "featureUrlScript": ""
+        }
+    },
+    "plugin.19": {
+        "name": "Attributes",
+        "instance": "Attributes",
+        "parameters": {},
+        "attributes": "plugin.Attributes.19.attributes.json"
+    },
+    "widget.1": {
+        "name": "Template",
+        "instance": "Template",
+        "parameters": {
+            "contentTemplate": "Error",
+            "widgetTitle": "site.error.html",
+            "target": "site.error.html"
+        }
+    },
+    "widget.2": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "dashboard",
+            "target": "dashboard",
+            "templateName": "dashboard",
+            "requireTarget": false,
+            "resolveItemScript": "return item",
+            "onRenderApplictionScript": "",
+            "formatModulesScript": "",
+            "notifyViewer": false,
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": []
+                    },
+                    "content": {
+                        "modules": [
+                            "dashboard.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "UIView",
+                                "config": {
+                                    "className": "",
+                                    "viewType": "view",
+                                    "namedView": "googlemap",
+                                    "shouldRender": true,
+                                    "namedViewScript": "return namedView",
+                                    "showInlineEdit": false,
+                                    "namedFormView": "defaultView",
+                                    "formOptions": "\"{}\"",
+                                    "showDeleteButton": false,
+                                    "deleteItemScript": "defaultBehaviorFn()",
+                                    "initModuleScript": "",
+                                    "formatModuleScript": "",
+                                    "resolveItemScript": "return item",
+                                    "filterModulesScript": "return list",
+                                    "itemButtonsScript": "return [];",
+                                    "insertAtTop": false,
+                                    "targetName": ""
+                                }
+                            },
+                            {
+                                "type": "UIView",
+                                "config": {
+                                    "className": "",
+                                    "viewType": "view",
+                                    "namedView": "footer",
+                                    "shouldRender": true,
+                                    "namedViewScript": "return namedView",
+                                    "showInlineEdit": false,
+                                    "namedFormView": "defaultView",
+                                    "formOptions": "\"{}\"",
+                                    "showDeleteButton": false,
+                                    "deleteItemScript": "defaultBehaviorFn()",
+                                    "initModuleScript": "",
+                                    "formatModuleScript": "",
+                                    "resolveItemScript": "return item",
+                                    "filterModulesScript": "return list",
+                                    "itemButtonsScript": "return [];",
+                                    "insertAtTop": false,
+                                    "targetName": ""
+                                }
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.3": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "install",
+            "target": "install",
+            "templateName": "install",
+            "requireTarget": false,
+            "resolveItemScript": "return item",
+            "onRenderApplictionScript": "",
+            "formatModulesScript": "",
+            "notifyViewer": false,
+            "metadata": {
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "positions": {
+                    "title": {
+                        "modules": [
+                            "install.metadata.positions.title.modules.0.json"
+                        ]
+                    },
+                    "content": {
+                        "modules": [
+                            "install.metadata.positions.content.modules.0.json"
+                        ]
+                    },
+                    "footer": {
+                        "modules": [
+                            "install.metadata.positions.footer.modules.0.json"
+                        ]
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                }
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.4": {
+        "name": "Google Map",
+        "instance": "GoogleMap",
+        "parameters": {
+            "widgetTitle": "",
+            "loadMapId": "googlemap",
+            "target": "googlemap",
+            "templateName": "googlemap",
+            "loadWidgetsWithTarget": "forTheMap",
+            "mapOptions": {
+                "type": "terrain"
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.5": {
+        "name": "Flexible Height Widget",
+        "instance": "FlexibleHeight",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "forTheMap",
+            "offset": "0",
+            "maxHeight": "5000",
+            "minHeight": "400",
+            "offsetScript": "",
+            "customScript": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.6": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "heading",
+            "target": "heading",
+            "templateName": "heading",
+            "requireTarget": true,
+            "resolveItemScript": "return item",
+            "onRenderApplictionScript": "",
+            "formatModulesScript": "",
+            "notifyViewer": false,
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": []
+                    },
+                    "content": {
+                        "modules": [
+                            "heading.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "WizardScriptElement",
+                                "config": {
+                                    "name": "My Custom Script",
+                                    "script": "heading.metadata.positions.content.modules.1.config.script.js",
+                                    "description": "Info about my custom script"
+                                }
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.7": {
+        "name": "Draggable Marker Tile",
+        "instance": "MarkerTile",
+        "parameters": {
+            "target": "forTheMap",
+            "customScript": "",
+            "controlColor": "rgb(48,84,107)",
+            "markerIconset": [
+                "uploads-sinixt.geoforms.ca\/user_files_1\/Uploads\/j8C_[ImAgE]_1Sa_[G]_Qac.png"
+            ],
+            "markerSize": 47,
+            "hoverTip": "",
+            "className": "",
+            "wizardName": "MapItemTemplate",
+            "guestLoginDrag": true,
+            "onDragEndScript": "defaultBehaviorFn();",
+            "formatTipScript": "",
+            "widgetTitle": "",
+            "readAccess": "registered",
+            "position": "RIGHT_CENTER",
+            "profileIcon": null
+        }
+    },
+    "widget.9": {
+        "name": "Generic Wizard",
+        "instance": "WizardBuilder",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "forTheMap",
+            "templateName": "MapItemTemplate",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "widget.WizardBuilder.9.beforeSubmitScript.js",
+            "onCreateScript": "widget.WizardBuilder.9.onCreateScript.js",
+            "onUpdateScript": "",
+            "onSaveScript": "widget.WizardBuilder.9.onSaveScript.js",
+            "onLoadScript": "",
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": 91,
+                    "y": 118
+                },
+                "children": [
+                    "widget.WizardBuilder.9.metadata.children.0.json",
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "widget.WizardBuilder.9.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 439,
+                            "y": 425
+                        },
+                        "children": [
+                            "widget.WizardBuilder.9.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 399,
+                                    "y": 613
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        "widget.WizardBuilder.9.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        "widget.WizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        {
+                                            "type": "WizardDescriptionField",
+                                            "config": {
+                                                "label": "Place description",
+                                                "message": "add description",
+                                                "lines": 10,
+                                                "mandatory": false,
+                                                "showAudios": true,
+                                                "showImages": true,
+                                                "showDocuments": true,
+                                                "showVideos": true,
+                                                "className": "--no-video",
+                                                "maxChars": 0,
+                                                "showExpandInput": true,
+                                                "toolbarPosition": "bottom",
+                                                "textFormatScript": "",
+                                                "mediaIconTint": "rgb(100, 149, 237)",
+                                                "onRenderModuleFn": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTagCloud",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "showLabel": false,
+                                                "showAddWord": false,
+                                                "label": "Layer Keyword",
+                                                "addWordPlaceholder": "add a keyword",
+                                                "fontColor": "rgb(0, 0, 0)",
+                                                "hoverColor": "rgb(143, 188, 143)",
+                                                "selectedColor": "rgb(143, 188, 143)",
+                                                "shuffleTags": false,
+                                                "tags": "[\n    \"cultural\",\n    \"under water\",\n    \"contentious claim\",\n    \"sinixt member killed\"\n]",
+                                                "getItemTagsScript": "return defaultTags;",
+                                                "formatModule": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Identification Code",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "add more values",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "autocomplete": true,
+                                                "inputOptions": "{}",
+                                                "onRenderTextFieldScript": "widget.WizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
+                                                "formatValueScript": "widget.WizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.3.config.formatValueScript.js"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        "widget.WizardBuilder.9.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.10": {
+        "name": "Attributes Table",
+        "instance": "AttributesTable",
+        "parameters": {
+            "widgetTitle": "",
+            "metadata": {
+                "title": "markerAttributes",
+                "_tableDiagramState": {
+                    "x": 322,
+                    "y": 275
+                },
+                "_diagramState": {
+                    "x": 322,
+                    "y": 275
+                },
+                "appliesTo": [
+                    "marker"
+                ],
+                "_typeDiagramState": {
+                    "x": 100,
+                    "y": 300
+                },
+                "readAccess": "public",
+                "maxEntries": 1,
+                "createAutomatically": 1,
+                "description": "",
+                "fields": [
+                    "widget.AttributesTable.10.metadata.fields.0.json",
+                    {
+                        "was": "",
+                        "title": "tags",
+                        "label": "Tags",
+                        "description": "",
+                        "icon": [],
+                        "color": "rgb(NaN, NaN, NaN)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": true,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        },
+                        "fieldBooleanOptions": {
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
+                        "was": "",
+                        "title": "idCode",
+                        "label": "Coded Title",
+                        "description": "",
+                        "icon": [],
+                        "color": "rgb(NaN, NaN, NaN)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        },
+                        "fieldBooleanOptions": {
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    }
+                ]
+            },
+            "target": "markerAttributes",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
+    "widget.11": {
+        "name": "Template",
+        "instance": "Template",
+        "parameters": {
+            "contentTemplate": "",
+            "widgetTitle": "module..text",
+            "target": "module..text"
+        }
+    },
+    "widget.12": {
+        "name": "Legend",
+        "instance": "Legend",
+        "parameters": {
+            "position": "LEFT_CENTER",
+            "target": "forTheMap",
+            "widgetTitle": "",
+            "readAccess": "public",
+            "startMinimized": false,
+            "showToggle": false,
+            "useIconSet": true,
+            "draggableIcons": false,
+            "guestLoginDrag": true,
+            "iconSize": "47.66251610133104",
+            "showEditLayerButtons": false,
+            "legendParams": [],
+            "shouldShowLayerScript": "return true;",
+            "editableLayerScript": "return true;",
+            "formatLayerScript": "widget.Legend.12.formatLayerScript.js",
+            "formatLayerPopoverScript": "",
+            "formatLegendScript": "",
+            "onDragEndScript": "defaultBehaviorFn();",
+            "editLayerScript": "defaultBehaviorFn();"
+        }
+    },
+    "widget.14": {
+        "name": "Marker Icon Set",
+        "instance": "IconSet",
+        "parameters": {
+            "markerIconset": [
+                "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/[ImAgE]_ClC_[G]_CHd_TBU.png",
+                "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/vge_bmB_[ImAgE]_rAk_[G].png",
+                "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/kAO_8k3_[ImAgE]_[G]_5eu.png",
+                "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/BeM_[ImAgE]_[G]_QNi_ba0.png",
+                "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/tx3_T9H_QyT_[G]_[ImAgE].png",
+                "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/K4k_[G]_[ImAgE]_qqi_eK.png"
+            ],
+            "iconsetMetadata": {
+                "layerMap": {
+                    "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/[ImAgE]_ClC_[G]_CHd_TBU.png": 7,
+                    "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/vge_bmB_[ImAgE]_rAk_[G].png": 3,
+                    "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/kAO_8k3_[ImAgE]_[G]_5eu.png": 6,
+                    "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/BeM_[ImAgE]_[G]_QNi_ba0.png": 1,
+                    "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/tx3_T9H_QyT_[G]_[ImAgE].png": 5,
+                    "uploads-hazard.geolive.ca\/user_files_1\/Uploads\/K4k_[G]_[ImAgE]_qqi_eK.png": 4
+                },
+                "renderSettings": []
+            },
+            "target": "forTheMap",
+            "layerMap": [],
+            "tipMap": [],
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.15": {
+        "name": "Tabbed Info-Window",
+        "instance": "TabbedInfoWindowBuilder",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "forTheMap",
+            "templateName": "default",
+            "requireTarget": true,
+            "resolveItemScript": "return item",
+            "onRenderApplictionScript": "",
+            "formatModulesScript": "widget.TabbedInfoWindowBuilder.15.formatModulesScript.js",
+            "notifyViewer": false,
+            "includeStyle": false,
+            "metadata": [
+                "widget.TabbedInfoWindowBuilder.15.metadata.0.json",
+                {
+                    "positions": {
+                        "title": {
+                            "modules": [
+                                "widget.TabbedInfoWindowBuilder.15.metadata.1.positions.title.modules.0.json"
+                            ]
+                        },
+                        "content": {
+                            "modules": [
+                                "widget.TabbedInfoWindowBuilder.15.metadata.1.positions.content.modules.0.json"
+                            ]
+                        },
+                        "footer": {
+                            "modules": []
+                        },
+                        "menu": {
+                            "modules": []
+                        },
+                        "tab": {
+                            "modules": [
+                                "widget.TabbedInfoWindowBuilder.15.metadata.1.positions.tab.modules.0.json",
+                                {
+                                    "type": "InlineHtml",
+                                    "config": {
+                                        "className": "",
+                                        "text": "Source",
+                                        "template": "",
+                                        "templateVariablesScript": "",
+                                        "formatTextScript": ""
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "positionList": [
+                        "title",
+                        "content",
+                        "footer",
+                        "menu",
+                        "tab"
+                    ],
+                    "_diagramState": []
+                },
+                {
+                    "positions": {
+                        "title": {
+                            "modules": [
+                                "widget.TabbedInfoWindowBuilder.15.metadata.2.positions.title.modules.0.json"
+                            ]
+                        },
+                        "content": {
+                            "modules": [
+                                "widget.TabbedInfoWindowBuilder.15.metadata.2.positions.content.modules.0.json"
+                            ]
+                        },
+                        "footer": {
+                            "modules": []
+                        },
+                        "menu": {
+                            "modules": []
+                        },
+                        "tab": {
+                            "modules": [
+                                "widget.TabbedInfoWindowBuilder.15.metadata.2.positions.tab.modules.0.json",
+                                {
+                                    "type": "InlineHtml",
+                                    "config": {
+                                        "className": "",
+                                        "text": "Notes",
+                                        "template": "",
+                                        "templateVariablesScript": "",
+                                        "formatTextScript": ""
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "positionList": [
+                        "title",
+                        "content",
+                        "footer",
+                        "menu",
+                        "tab"
+                    ],
+                    "_diagramState": []
+                },
+                {
+                    "positions": {
+                        "title": {
+                            "modules": [
+                                "widget.TabbedInfoWindowBuilder.15.metadata.3.positions.title.modules.0.json"
+                            ]
+                        },
+                        "content": {
+                            "modules": [
+                                "widget.TabbedInfoWindowBuilder.15.metadata.3.positions.content.modules.0.json"
+                            ]
+                        },
+                        "footer": {
+                            "modules": []
+                        },
+                        "menu": {
+                            "modules": []
+                        },
+                        "tab": {
+                            "modules": [
+                                "widget.TabbedInfoWindowBuilder.15.metadata.3.positions.tab.modules.0.json",
+                                {
+                                    "type": "InlineHtml",
+                                    "config": {
+                                        "className": "",
+                                        "text": "Debug",
+                                        "template": "",
+                                        "templateVariablesScript": "",
+                                        "formatTextScript": ""
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "positionList": [
+                        "title",
+                        "content",
+                        "footer",
+                        "menu",
+                        "tab"
+                    ],
+                    "_diagramState": []
+                }
+            ],
+            "hideSingleTab": true,
+            "readAccess": "public"
+        }
+    },
+    "widget.16": {
+        "name": "Attr Search Bar",
+        "instance": "AttributesSearch",
+        "parameters": {
+            "position": "TOP_CENTER",
+            "target": "forTheMap",
+            "barWidth": 500,
+            "locationSearch": true,
+            "showFilterBuilder": true,
+            "hoverTheme": false,
+            "themeLabel": "Theme",
+            "showCloud": true,
+            "cloudTable": "",
+            "cloudField": "",
+            "mapitemSearchLabel": "Placemarks",
+            "locationSearchLabel": "Locations",
+            "showDemoTags": false,
+            "demoTagsMinimum": 10,
+            "cloudResults": 30,
+            "searchColor": "#3a6ccf",
+            "searchTintColor": "rgb(0,0,0)",
+            "clearColor": "#3a6ccf",
+            "clearTintColor": "rgb(0,0,0)",
+            "placeholderText": "Search Location, Items, Attributes...",
+            "searchUsers": false,
+            "alwaysShowClear": true,
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.17": {
+        "name": "Tile Buttons",
+        "instance": "TileButtons",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "forTheMap",
+            "position": "RIGHT_CENTER",
+            "fullscreen": true,
+            "home": true,
+            "iconset": false,
+            "login": true,
+            "logout": true,
+            "controlColor": "rgb(84, 154, 230)",
+            "subControlColor": "rgb(100, 149, 237)",
+            "tileIcon": [],
+            "displayMapSave": true,
+            "tileSize": "50",
+            "markerSize": "32",
+            "markerIconset": [],
+            "iconsetMetadata": [],
+            "groupIcon": [],
+            "showToolTips": false,
+            "useTipIconsetLayerTitle": false,
+            "showLogoutProfile": false,
+            "formatTipScript": "",
+            "guestLoginDrag": true,
+            "onDragEndScript": "defaultBehaviorFn();",
+            "onDisplayTileScript": "",
+            "onProfileClickScript": "",
+            "layerMap": [],
+            "tipMap": [],
+            "readAccess": "public"
+        }
+    },
+    "widget.18": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "cacheable": true,
+            "link": true,
+            "sass": true,
+            "widgetTitle": "Map Style",
+            "target": "forTheMap",
+            "customCSS": "Map Style.customCSS.css",
+            "readAccess": "public"
+        }
+    },
+    "widget.19": {
+        "name": "Form View",
+        "instance": "UserWizardBuilder",
+        "parameters": {
+            "target": "forTheMap",
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": -18,
+                    "y": 171
+                },
+                "children": [
+                    "widget.UserWizardBuilder.19.metadata.children.0.json",
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "widget.UserWizardBuilder.19.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 113,
+                            "y": 144
+                        },
+                        "children": [
+                            "widget.UserWizardBuilder.19.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 73,
+                                    "y": 310
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": []
+                                },
+                                "content": {
+                                    "modules": [
+                                        "widget.UserWizardBuilder.19.metadata.children.1.builderMetadata.positions.content.modules.0.json"
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": []
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "widgetTitle": "",
+            "templateName": "LogoutWizardForm",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.20": {
+        "name": "Form View",
+        "instance": "UserWizardBuilder",
+        "parameters": {
+            "target": "forTheMap",
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": -18,
+                    "y": 171
+                },
+                "children": [
+                    "widget.UserWizardBuilder.20.metadata.children.0.json",
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "widget.UserWizardBuilder.20.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 98,
+                            "y": 299
+                        },
+                        "children": [
+                            "widget.UserWizardBuilder.20.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 58,
+                                    "y": 465
+                                }
+                            },
+                            {
+                                "title": "New Empty Step",
+                                "class": "AttributesTableNode",
+                                "fields": [
+                                    "widget.UserWizardBuilder.20.metadata.children.1.children.2.fields.0.json"
+                                ],
+                                "_diagramState": {
+                                    "x": 768,
+                                    "y": 247
+                                },
+                                "children": [
+                                    "widget.UserWizardBuilder.20.metadata.children.1.children.2.children.0.json",
+                                    {
+                                        "class": "InsertNode",
+                                        "_diagramState": {
+                                            "x": 728,
+                                            "y": 413
+                                        }
+                                    }
+                                ],
+                                "builderMetadata": {
+                                    "positions": {
+                                        "title": {
+                                            "modules": []
+                                        },
+                                        "content": {
+                                            "modules": [
+                                                "widget.UserWizardBuilder.20.metadata.children.1.children.2.builderMetadata.positions.content.modules.0.json"
+                                            ]
+                                        },
+                                        "footer": {
+                                            "modules": []
+                                        },
+                                        "menu": {
+                                            "modules": []
+                                        }
+                                    },
+                                    "positionList": [
+                                        "title",
+                                        "content",
+                                        "footer",
+                                        "menu"
+                                    ],
+                                    "_diagramState": {
+                                        "minimized": false
+                                    }
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": []
+                                },
+                                "content": {
+                                    "modules": [
+                                        "widget.UserWizardBuilder.20.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        {
+                                            "type": "WizardScriptElement",
+                                            "config": {
+                                                "name": "My Custom Script",
+                                                "script": "",
+                                                "description": "Info about my custom script"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": []
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "widgetTitle": "",
+            "templateName": "LoginWizardForm",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.22": {
+        "name": "Javascript",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "target": "forTheMap",
+            "customScript": "Set up map views.customScript.js",
+            "widgetTitle": "Set up map views",
+            "readAccess": "public"
+        }
+    },
+    "widget.23": {
+        "name": "Javascript",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "target": "forTheMap",
+            "customScript": "widget.CustomBehaviorScript.23.customScript.js",
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.24": {
+        "name": "Attr CSV Export",
+        "instance": "ExportData",
+        "parameters": {
+            "widgetTitle": "",
+            "readAccess": "special",
+            "target": "forTheMap",
+            "position": "LEFT_TOP",
+            "downloadImage": [],
+            "controlColor": "rgb(0,0,0)",
+            "tileHoverTip": "Export csv data",
+            "skipConsitencyCheck": false,
+            "exportEncoding": "UTF-8",
+            "filename": "SinixtMapExport-DATE[Y-m-d-(H.i.s)]",
+            "exportMetadata": {
+                "fields": "DEFAULT"
+            },
+            "showImportEncoding": false,
+            "importEncoding": "UTF-8",
+            "showImport": false,
+            "filterFieldsScript": "return true;",
+            "filterRowScript": "return true;",
+            "formatFieldsScript": "return $fields;",
+            "formatRowScript": "return $record;",
+            "formatMapTile": ""
+        }
+    },
+    "widget.25": {
+        "name": "Form View",
+        "instance": "UserWizardBuilder",
+        "parameters": {
+            "target": "forTheMap",
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": -18,
+                    "y": 171
+                },
+                "children": [
+                    "widget.UserWizardBuilder.25.metadata.children.0.json",
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "widget.UserWizardBuilder.25.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 168,
+                            "y": 300
+                        },
+                        "children": [
+                            "widget.UserWizardBuilder.25.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 128,
+                                    "y": 466
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        "widget.UserWizardBuilder.25.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        "widget.UserWizardBuilder.25.metadata.children.1.builderMetadata.positions.content.modules.0.json"
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        "widget.UserWizardBuilder.25.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "widgetTitle": "",
+            "templateName": "thankYou",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.26": {
+        "name": "Javascript",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "target": "forTheMap",
+            "customScript": "widget.CustomBehaviorScript.26.customScript.js",
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.27": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "cacheable": true,
+            "link": true,
+            "sass": true,
+            "widgetTitle": "sinixtStyle",
+            "target": "forTheMap",
+            "customCSS": "sinixtStyle.customCSS.css",
+            "readAccess": "public"
+        }
+    },
+    "widget.28": {
+        "name": "Function",
+        "instance": "UserFunction",
+        "parameters": {
+            "widgetTitle": "layerContent",
+            "target": "layerContent",
+            "customScript": "",
+            "language": "php",
+            "returnsValue": true,
+            "readAccess": "public"
+        }
+    },
+    "widget.29": {
+        "name": "Javascript",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "target": "forTheMap",
+            "customScript": "cluster style.customScript.js",
+            "widgetTitle": "cluster style",
+            "readAccess": "public"
+        }
+    },
+    "widget.30": {
+        "name": "User Group",
+        "instance": "UserGroup",
+        "parameters": {
+            "userGroupName": "specialView",
+            "isMemberOfGroupScript": "widget.UserGroup.30.isMemberOfGroupScript.js",
+            "getGroupMembersScript": "return array('special');",
+            "groupMembersOfScript": "",
+            "target": "usergroup.specialView",
+            "widgetTitle": "",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
+    "widget.31": {
+        "name": "User Group",
+        "instance": "UserGroup",
+        "parameters": {
+            "userGroupName": "specialEdit",
+            "isMemberOfGroupScript": "widget.UserGroup.31.isMemberOfGroupScript.js",
+            "getGroupMembersScript": "return array('special');",
+            "groupMembersOfScript": "",
+            "target": "usergroup.specialEdit",
+            "widgetTitle": "",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
+    "widget.32": {
+        "name": "Attributes Table",
+        "instance": "AttributesTable",
+        "parameters": {
+            "widgetTitle": "",
+            "metadata": {
+                "title": "userTimedAccess",
+                "_tableDiagramState": {
+                    "x": 307,
+                    "y": 230
+                },
+                "_diagramState": {
+                    "x": 307,
+                    "y": 230
+                },
+                "appliesTo": [
+                    "user"
+                ],
+                "_typeDiagramState": {
+                    "x": 11,
+                    "y": 393
+                },
+                "readAccess": "public",
+                "maxEntries": 1,
+                "createAutomatically": 1,
+                "description": "",
+                "fields": [
+                    "widget.AttributesTable.32.metadata.fields.0.json",
+                    {
+                        "was": "",
+                        "title": "viewAccessEnd",
+                        "label": "viewAccessEnd",
+                        "description": "",
+                        "icon": [],
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        },
+                        "fieldBooleanOptions": {
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    }
+                ]
+            },
+            "target": "userTimedAccess",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
+    "widget.33": {
+        "name": "Side Panel",
+        "instance": "SidePanel",
+        "parameters": {
+            "widgetTitle": "Right Side Panel",
+            "target": "forTheMap",
+            "position": "RIGHT_TOP",
+            "customScript": "",
+            "namedView": "userPanel",
+            "readAccess": "public"
+        }
+    },
+    "widget.34": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "userPanel",
+            "target": "userPanel",
+            "templateName": "userPanel",
+            "requireTarget": true,
+            "resolveItemScript": "return item",
+            "onRenderApplictionScript": "",
+            "formatModulesScript": "",
+            "notifyViewer": false,
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": []
+                    },
+                    "content": {
+                        "modules": [
+                            "userPanel.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "UIListView",
+                                "config": {
+                                    "listClassName": "",
+                                    "className": "",
+                                    "viewType": "view",
+                                    "namedView": "userListItem",
+                                    "shouldRender": true,
+                                    "namedViewScript": "return namedView",
+                                    "showInlineEdit": false,
+                                    "namedFormView": "defaultView",
+                                    "formOptions": "{}",
+                                    "showDeleteButton": false,
+                                    "deleteItemScript": "defaultBehaviorFn()",
+                                    "initModuleScript": "",
+                                    "formatModuleScript": "",
+                                    "resolveItemScript": "return item",
+                                    "filterModulesScript": "return list",
+                                    "itemButtonsScript": "return [];",
+                                    "insertAtTop": false,
+                                    "targetName": "",
+                                    "getItemListScript": "userPanel.metadata.positions.content.modules.1.config.getItemListScript.js",
+                                    "formatItemListScript": "return list;",
+                                    "formatListItemModuleScript": "return item;",
+                                    "emptyNamedView": "emptyListView",
+                                    "filterItemsScript": "return true;",
+                                    "sortItemsScript": "",
+                                    "maxItems": "-1"
+                                }
+                            },
+                            {
+                                "type": "InlineHtml",
+                                "config": {
+                                    "className": "",
+                                    "text": "<h2>Documents<\/h2>",
+                                    "template": "",
+                                    "templateVariablesScript": "",
+                                    "formatTextScript": ""
+                                }
+                            },
+                            {
+                                "type": "UIListView",
+                                "config": {
+                                    "listClassName": "",
+                                    "className": "",
+                                    "viewType": "view",
+                                    "namedView": "documentListItem",
+                                    "shouldRender": true,
+                                    "namedViewScript": "return namedView",
+                                    "showInlineEdit": false,
+                                    "namedFormView": "defaultView",
+                                    "formOptions": "\"{}\"",
+                                    "showDeleteButton": false,
+                                    "deleteItemScript": "defaultBehaviorFn()",
+                                    "initModuleScript": "",
+                                    "formatModuleScript": "",
+                                    "resolveItemScript": "return item",
+                                    "filterModulesScript": "return list",
+                                    "itemButtonsScript": "return [];",
+                                    "insertAtTop": false,
+                                    "targetName": "",
+                                    "getItemListScript": "userPanel.metadata.positions.content.modules.3.config.getItemListScript.js",
+                                    "formatItemListScript": "return list;",
+                                    "formatListItemModuleScript": "return item;",
+                                    "emptyNamedView": "emptyListView",
+                                    "filterItemsScript": "return true;",
+                                    "sortItemsScript": "",
+                                    "maxItems": "-1"
+                                }
+                            },
+                            {
+                                "type": "WizardScriptElement",
+                                "config": {
+                                    "name": "My Custom Script",
+                                    "script": "userPanel.metadata.positions.content.modules.4.config.script.js",
+                                    "description": "Info about my custom script"
+                                }
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.35": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {
+            "widgetTitle": "userList",
+            "target": "userList",
+            "customScript": "userList.customScript.js",
+            "readAccess": "public"
+        }
+    },
+    "widget.36": {
+        "name": "Configuration",
+        "instance": "Configuration",
+        "parameters": {
+            "target": "icons",
+            "contentTemplate": "",
+            "comments": "",
+            "formatParametersScript": "return $parameters;",
+            "formatOutputScript": "return $parameters;",
+            "saveParametersAsData": false,
+            "parameters": [
+                "icons.parameters.0.json",
+                {
+                    "type": "images",
+                    "name": "userEditIcon",
+                    "default": [],
+                    "label": "userEditIcon",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                {
+                    "type": "images",
+                    "name": "userAdminIcon",
+                    "default": [],
+                    "label": "userAdminIcon",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                {
+                    "type": "images",
+                    "name": "userPublicIcon",
+                    "default": [],
+                    "label": "userPublicIcon",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                {
+                    "type": "images",
+                    "name": "userViewIcon",
+                    "default": [],
+                    "label": "userViewIcon",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                }
+            ],
+            "userTabIcon": [
+                "uploads-sinixt.geoforms.ca\/user_files_1\/Uploads\/h3U_[ImAgE]_[G]_DTl_oXe.png"
+            ],
+            "widgetTitle": "icons",
+            "readAccess": "public",
+            "userEditIcon": [
+                "uploads-sinixt.geoforms.ca\/user_files_1\/Uploads\/XF5_[ImAgE]_[G]_Tdv_fNF.png"
+            ],
+            "userAdminIcon": [
+                "uploads-sinixt.geoforms.ca\/user_files_1\/Uploads\/[ImAgE]_CdY_[G]_2J1_Tp8.png"
+            ],
+            "userPublicIcon": [
+                "uploads-sinixt.geoforms.ca\/user_files_1\/Uploads\/GsD_[G]_[ImAgE]_EAF_nzV.png"
+            ],
+            "userViewIcon": [
+                "uploads-sinixt.geoforms.ca\/user_files_1\/Uploads\/T5E_Lq_[G]_[ImAgE]_8bS.png"
+            ]
+        }
+    },
+    "widget.37": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "userListItem",
+            "target": "userListItem",
+            "templateName": "userListItem",
+            "requireTarget": true,
+            "resolveItemScript": "return item",
+            "onRenderApplictionScript": "",
+            "formatModulesScript": "",
+            "notifyViewer": false,
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": []
+                    },
+                    "content": {
+                        "modules": [
+                            "userListItem.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "WizardScriptElement",
+                                "config": {
+                                    "name": "My Custom Script",
+                                    "script": "userListItem.metadata.positions.content.modules.1.config.script.js",
+                                    "description": "Info about my custom script"
+                                }
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.38": {
+        "name": "Form View",
+        "instance": "UserWizardBuilder",
+        "parameters": {
+            "target": "forTheMap",
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": 62,
+                    "y": 328
+                },
+                "children": [
+                    "userAccessForm.metadata.children.0.json",
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "userAccessForm.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 358,
+                            "y": 417
+                        },
+                        "children": [
+                            "userAccessForm.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 318,
+                                    "y": 618
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        "userAccessForm.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        {
+                                            "type": "InlineHtml",
+                                            "config": {
+                                                "className": "",
+                                                "text": "<span class=\"uitext-container\"><label>Select Layers<\/label><\/span>",
+                                                "template": "",
+                                                "templateVariablesScript": "",
+                                                "formatTextScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "UIListView",
+                                            "config": {
+                                                "listClassName": "",
+                                                "className": "selectable-layer",
+                                                "viewType": "view",
+                                                "namedView": "selectableLayer",
+                                                "shouldRender": true,
+                                                "namedViewScript": "return namedView",
+                                                "showInlineEdit": false,
+                                                "namedFormView": "defaultView",
+                                                "formOptions": "\"{}\"",
+                                                "showDeleteButton": false,
+                                                "deleteItemScript": "defaultBehaviorFn()",
+                                                "initModuleScript": "",
+                                                "formatModuleScript": "",
+                                                "resolveItemScript": "return item",
+                                                "filterModulesScript": "return list",
+                                                "itemButtonsScript": "return [];",
+                                                "insertAtTop": false,
+                                                "targetName": "",
+                                                "getItemListScript": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.2.config.getItemListScript.js",
+                                                "formatItemListScript": "return list;",
+                                                "formatListItemModuleScript": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.2.config.formatListItemModuleScript.js",
+                                                "emptyNamedView": "emptyListView",
+                                                "filterItemsScript": "return true;",
+                                                "sortItemsScript": "",
+                                                "maxItems": "-1"
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                ],
+                                                "className": "hide-input",
+                                                "label": "Enable editing for:",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "add more values",
+                                                "formatter": "date",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "autocomplete": true,
+                                                "inputOptions": "{}",
+                                                "onRenderTextFieldScript": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.4.config.attributeFields.0.json"
+                                                ],
+                                                "className": "hide-input",
+                                                "label": "Enable view access for:",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "add more values",
+                                                "formatter": "date",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "autocomplete": true,
+                                                "inputOptions": "{}",
+                                                "onRenderTextFieldScript": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.4.config.onRenderTextFieldScript.js",
+                                                "formatValueScript": ""
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        "userAccessForm.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "widgetTitle": "userAccessForm",
+            "templateName": "userAccessForm",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.39": {
+        "name": "Uncluster Button",
+        "instance": "LayerClusterToggleTile",
+        "parameters": {
+            "target": "forTheMap",
+            "controlColor": "rgb(100, 149, 237)",
+            "tileIcon": [],
+            "unclusterTip": "Toggle Placemark Clustering",
+            "clusterTip": "",
+            "widgetTitle": "",
+            "readAccess": "public",
+            "position": "RIGHT_CENTER"
+        }
+    },
+    "widget.41": {
+        "name": "Attribute Cloud",
+        "instance": "AttributesCloud",
+        "parameters": {
+            "target": "forTheMap",
+            "tabLabel": "Layer Keywords",
+            "className": "",
+            "showDemoTags": false,
+            "demoTagsMinimum": 10,
+            "cloudResults": 30,
+            "tabColor": "#DD4814",
+            "fontColor": "black",
+            "showItemCount": true,
+            "scaleItemsWithCount": true,
+            "scaleItemsMax": 25,
+            "scaleItemsMin": 12,
+            "hideEmptyPredefinedValues": true,
+            "showValuesOutsidePredefined": true,
+            "attributeSelection": [
+                "widget.AttributesCloud.41.attributeSelection.0.json"
+            ],
+            "cloudMetadata": [],
+            "formatCloudScript": "",
+            "formatTagScript": "",
+            "formatTabButtonScript": "",
+            "onSelectionChangedScript": "defaultBehaviorFn();",
+            "sendNotifications": false,
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.42": {
+        "name": "Function",
+        "instance": "UserFunction",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "extract",
+            "customScript": "echo \"hello\";",
+            "language": "php",
+            "returnsValue": false,
+            "readAccess": "public"
+        }
+    },
+    "widget.43": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "documentListItem",
+            "target": "documentListItem",
+            "templateName": "documentListItem",
+            "requireTarget": true,
+            "resolveItemScript": "return item",
+            "onRenderApplictionScript": "",
+            "formatModulesScript": "",
+            "notifyViewer": false,
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": [
+                            "documentListItem.metadata.positions.title.modules.0.json"
+                        ]
+                    },
+                    "content": {
+                        "modules": []
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.44": {
+        "name": "Form View",
+        "instance": "UserWizardBuilder",
+        "parameters": {
+            "target": "forTheMap",
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": -18,
+                    "y": 171
+                },
+                "children": [
+                    "documentForm.metadata.children.0.json",
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "documentForm.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 141,
+                            "y": 206
+                        },
+                        "children": [
+                            "documentForm.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 101,
+                                    "y": 372
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        "documentForm.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        "documentForm.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        {
+                                            "type": "WizardDescriptionField",
+                                            "config": {
+                                                "label": "Description",
+                                                "message": "add a description",
+                                                "lines": 3,
+                                                "mandatory": false,
+                                                "showAudios": true,
+                                                "showImages": true,
+                                                "showDocuments": true,
+                                                "showVideos": true,
+                                                "className": "show-documents focus-documents",
+                                                "maxChars": 0,
+                                                "showExpandInput": true,
+                                                "toolbarPosition": "bottom",
+                                                "textFormatScript": "",
+                                                "mediaIconTint": "rgb(100, 149, 237)",
+                                                "onRenderModuleFn": ""
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        "documentForm.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "widgetTitle": "documentForm",
+            "templateName": "documentForm",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.45": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "footer",
+            "target": "footer",
+            "templateName": "footer",
+            "requireTarget": true,
+            "resolveItemScript": "return item",
+            "onRenderApplictionScript": "",
+            "formatModulesScript": "",
+            "notifyViewer": false,
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": []
+                    },
+                    "content": {
+                        "modules": [
+                            "footer.metadata.positions.content.modules.0.json"
+                        ]
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.46": {
+        "name": "Custom Tile Control Script",
+        "instance": "CustomTileControlScript",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "forTheMap",
+            "readAccess": "special",
+            "position": "LEFT_TOP",
+            "customScript": "widget.CustomTileControlScript.46.customScript.js",
+            "hoverTip": "Export kml data",
+            "className": "",
+            "tileIcon": [
+                "uploads-sinixt.geoforms.ca\/user_files_1\/Uploads\/[ImAgE]_uRe_v6Z_05k_[G].png"
+            ],
+            "subTileIcons": []
+        }
+    },
+    "widget.47": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "selectableLayer",
+            "target": "forTheMap",
+            "templateName": "selectableLayer",
+            "requireTarget": true,
+            "resolveItemScript": "return item",
+            "onRenderApplictionScript": "",
+            "formatModulesScript": "",
+            "notifyViewer": false,
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": [
+                            "selectableLayer.metadata.positions.title.modules.0.json"
+                        ]
+                    },
+                    "content": {
+                        "modules": []
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.48": {
+        "name": "Data Type",
+        "instance": "DataType",
+        "parameters": {
+            "dataTypeName": "document",
+            "target": "datatype.document",
+            "widgetTitle": "",
+            "readAccess": "public",
+            "position": ""
+        }
+    }
+}

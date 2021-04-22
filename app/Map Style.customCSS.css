@@ -1,0 +1,1267 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.view-dashboard {
+    font-family: 'Montserrat', sans-serif;
+}
+
+[data-view="heading"] {
+    margin: 0 20px;
+}
+
+.site-title h1 {
+    font-weight: 100;
+    float: left;
+    margin: 0;
+    text-indent: 100px;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+
+
+.analytic-item .layer-hidden {
+    opacity: 0.3;
+}
+
+
+.site-logo h1 span {
+    display: block;
+    font-size: 18px;
+}
+
+
+.uitext-container.col-2 {
+    width: calc( 50% - 11px );
+    display: inline-block;
+}
+
+.menu-links {
+    position: absolute;
+    left: 700px;
+    top: 30px;
+}
+
+.menu-links a {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.menu-links a h2 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0,0,0,0.03);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.menu-links a h2:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+span.is-looking-for-icon, span.not-looking-for-icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-size: 100%;
+}
+span.not-looking-for-icon {
+    filter: grayscale(1);
+}
+
+
+
+
+.tileButtonContainer.active:after {
+    content: "Click to go back to stories map";
+    position: absolute;
+    left: 56px;
+    z-index: 1;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    padding: 10px;
+    top: 0px;
+    text-align: left;
+    width: 104px;
+    opacity: 0;
+    font-weight: 100;
+    font-size: 12px;
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+
+button.back{
+  
+}
+button.forward{
+
+}
+
+.tileOptionContainer.province .tileButton{
+ 
+}
+.tileOptionContainer.province .tileButton {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+.tileOptionContainer.province.disabled .tileButton {
+    background: none;
+}
+
+button.disclaimer.primary-btn{
+    background-color: #549ae6;
+    border: none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    margin: 5px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 100;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-size: 22px;
+    margin-top: 25px;
+    border-radius: 3px;
+    float: right;
+    position: absolute;
+    bottom: 13px;
+    right: 24px;
+}
+
+
+button.form-btn.register.secondary-btn {
+    margin: 5px;
+    height:30px;
+    background-color: crimson;
+    color: white;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.nav button.primary-btn {
+
+
+    height: 30px;
+    margin-top:40px;
+    margin-left: 5px;
+    background-color: #f0b71c;
+    color: black;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 2px;
+    padding: 0 15px;
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+    font-size: 15px;
+   
+}
+
+button.form-btn.register.secondary-btn:hover {
+    background-color: #c71134;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+
+.left-center .tileButtonContainer.active {
+    border: 2px solid limegreen;
+}
+
+.left-center .tileButtonContainer {
+    border: 2px solid #f0b71c;
+    box-sizing: border-box;
+    background-color: #f0b71c;
+}
+
+.left-center .tileButtonContainer>.tileButton {
+    margin-top:7px;
+}
+
+.left-center .tileButtonContainer.active .tileOptionContainer {
+    display: inline-block;
+}
+
+
+.ltr .tileOptionContainer.vert-1 {
+    top: 40px;
+}
+.ltr .tileOptionContainer.vert-2 {
+    top: -40px;
+}
+.ltr .tileOptionContainer.vert-3 {
+    top: 80px;
+}
+
+@media screen and (max-width: 767px), screen and (max-height: 600px) {
+    .ltr .tileOptionContainer.vert-1 {
+        top: 30px;
+    }
+    .ltr .tileOptionContainer.vert-2 {
+        top: -30px;
+    }
+    .ltr .tileOptionContainer.vert-3 {
+        top: 60px;
+    }
+    
+}
+
+
+span.delete-btn, span.edit-btn {
+    opacity:0;
+}
+
+.story-card:hover span.delete-btn, .story-card:hover span.edit-btn {
+    width: 20px;
+    height: 20px;
+    background-size: 90%;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity:1;
+    transition:opacity 1.2s;
+
+}
+
+.story-card:hover span.delete-btn {
+    left: -7px;
+    bottom: -10px;
+}
+
+.story-card:hover span.edit-btn {
+    left: -5px;
+    top: -7px;
+    background-size: 60%;
+}
+
+.edit-btn{
+}
+
+.delete-btn{
+}
+
+.edit-btn:hover{
+}
+
+
+.story-card .icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100%;
+    top: -10px;
+    left: -10px;
+}
+.sidebar-view .ui-view .icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100%;
+    top: 10px;
+    left: unset;
+    font-size: 0;
+    right: 10px;
+}
+
+.sidebar-view {
+    
+    max-height: calc( 100% - 133px );
+    overflow: hidden auto;
+}
+
+.sidebar-view.analytics {
+    max-height: 100%;
+}
+
+.SideBarWidget.left .toggle-button:after, .SideBarWidget.right .toggle-button:after {
+    content: "Click here to reopen this tab";
+    position:absolute;
+    left: 90px;
+    z-index:1;
+    color:white;
+    background:black;
+    border-radius:4px;
+    padding: 10px;
+    top: 10px;
+    pointer-events:none;
+    text-align: left;
+    width: 104px;
+    opacity: 0;
+    font-weight:100;
+    font-size:12px;
+    transition: opacity 1s;
+  
+
+}
+
+
+
+
+.SideBarWidget.right .toggle-button:after {
+    right: 90px;
+    left:unset;
+  
+
+}
+
+.SideBarWidget.left .toggle-button.just-closed:after, .SideBarWidget.right .toggle-button.just-closed:after {
+    opacity: 1; 
+    transition: opacity 1s;
+    pointer-events:all;
+}
+
+
+.story-navigation {
+    text-align: right;
+}
+
+.story-navigation button {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgba(84, 154, 230, 0.1);
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity:0.1;
+}
+.story-navigation button.active {
+    background-color: rgb(84, 154, 230);
+    cursor:pointer;
+    opacity:1;
+}
+
+
+.ui-view.section-top {
+    background-color: rgba(0,0,0,0.1);
+    display: block;
+    padding: 10px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    z-index: 1;
+    height: 100px;
+}
+
+
+.MapOverlayView.bottom-center.UIMapControl {
+    width: 100%;
+    background: white;
+}
+.ui-view.overlay-bar {
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    padding: 1px 10px;
+}
+
+
+.bottom-by {
+    float: right;
+}
+
+span.array-module.ui-list-view.story-list {
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.story-list .story-card{
+    vertical-align: top;
+    white-space: normal;
+}
+
+.ui-view.story-card {
+    display: inline-block;
+    height: 100px;
+    width: 80px;
+    background: white;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+
+.ui-view.summary.story-card {
+    width: auto;
+    box-shadow: none;
+    border-right: 1px solid black;
+    border-radius: 0;
+    padding-right: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 115px;
+}
+
+.ui-view.summary.nav.story-card {
+    border: none;
+}
+
+.summary-card h3, .summary-card h4 {
+    margin: 2px;
+    text-align: left;
+    font-weight:100;
+}
+.summary-card h3{
+    font-weight:400;
+}
+
+.card-img {
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 3px 3px 0 0;
+    background-size: cover;
+}
+
+.story-card h3 {
+    margin: 2px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.story-card p {
+    text-align: left;
+    margin: 2px;
+    position:relative;
+    height: 26px;
+    overflow: hidden;
+}
+
+.story-card p:after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    bottom: 1px;
+    left: 0;
+    background-image: -webkit-linear-gradient(top, transparent, white);
+    border-radius: 0 0 3px 3px;
+}
+
+.story-card .add-card {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-card>.icon:after {
+    content: "+";
+    font-size: 20px;
+}
+.help-card>.icon:after {
+    display:none;
+}
+
+.story-card .add-card:hover, .story-card .add-card.hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+
+.rtl>.shifted {
+    position: relative;
+    right: 400px;
+}
+
+.rtl>* {
+    /*
+    position: relative;
+    right: 30px; */
+}
+
+.left-center.ltr>.shifted {
+        position: relative;
+        left: 400px;
+}
+
+.left-center.ltr>* {
+    /*
+    position: relative;
+    left: 30px; */
+}
+
+
+
+.primary-btn, .inline-btn {
+    cursor: pointer;
+}
+.profile-section  .primary-btn, .sort-card button, 
+.module-wizard .form-btn.register, .contact-btn, .upload-btns span.video:after, .upload-btns span.image:after, .clear.primary-btn{
+    background-color: #549ae6;
+    border: none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    margin: 5px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 100;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-size: 22px;
+    margin-top: 25px;
+    border-radius:3px;
+}
+
+.contact-btn{
+        padding: 10px 15px;
+    font-size: unset;
+    cursor:pointer;
+}
+
+.flow-left {
+    position: absolute;
+    right: calc( 100% + 10px );
+    top: calc( 50% - 50px );
+    z-index: 1;
+    white-space:  nowrap;
+}
+.flow-right {
+    position: absolute;
+    left: calc( 100% + 10px );
+    top: calc( 50% - 50px );
+    z-index: 1;
+    white-space:  nowrap;
+}
+
+
+.module-wizard .form-btn.register {
+    margin-top: 5px;
+    float: right;
+    margin-bottom: 30px;
+}
+
+.sort-card button.current {
+    background-color: #639d16;
+}
+
+.sort-card button {
+    padding: 1px 7px;
+    margin: 3px;
+    font-size: 10px;
+    display: block;
+}
+
+.sort-card button.disabled {
+    background-color: white;
+    color: gray;
+    text-shadow: none;
+}
+
+.profile-section .inline-btn{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #5ea5e9;
+}
+
+.profile-section .primary-btn:hover, .contact-btn:hover,.sort-card button:hover, .module-wizard .form-btn.register:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    background-color: #4987cc;
+}
+.profile-section .inline-btn:hover {
+    text-shadow: 0 0 3px rgba(0,0,0,0.3);
+    border-color: #4987cc;
+}
+
+.profile-section .login {
+    background-color: #639d16;
+}
+.profile-section .login:hover {
+    background-color: #5e8e12;
+}
+.profile-section .logout {}
+.profile-section .register {}
+
+
+.fb-login-button {
+    float:left;
+    width:190px;
+}
+
+.sso-btn.google {
+    margin-bottom:30px;
+}
+
+
+.ui-view.profile-section {
+    float: right;
+}
+ 
+.profile-section span.user-icon {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 100px;
+    margin: 5px 10px;
+    border: 3px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    background-size:cover;
+}
+
+.profile-section .array-module>div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-section span.user-name {
+    position: absolute;
+    top: 0px;
+    right: 240px;
+    line-height: 20px;
+    white-space:nowrap;
+}
+
+.profile-section .inline-btn.profile {
+    position: absolute;
+    top: 20px;
+    right: 240px;
+    white-space:nowrap;
+}
+.profile-section .inline-btn.publishing-options {
+    position: absolute;
+    top: 40px;
+    right: 240px;
+    white-space:nowrap;
+}
+
+.profile-section .inline-btn.your-story {
+    position: absolute;
+    top: 60px;
+    right: 240px;
+    white-space:nowrap;
+}
+
+.journey-card .inline-btn, .edit.inline-btn, .delete.inline-btn {
+    background: transparent;
+    border: none;
+    color: cornflowerblue;
+    font-style: italic;
+}
+.edit.inline-btn, .delete.inline-btn {
+    
+}
+.delete.inline-btn {
+     color: crimson;
+}
+
+
+/*Forms*/
+
+
+textarea[disabled] {
+    background: rgba(0,0,0,0.1);
+    color: #549ae6;
+}
+
+.uitext-container .label, .uitext-container label {
+    font-size:15px;
+    color: gray;
+    padding: 5px 0;
+    font-weight: 100;
+}
+
+
+
+.text-input {
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+.uitext-container {
+    margin-bottom: 15px;
+    display: block;
+}
+
+
+.uitext-container.readonly .label:after {
+    content: " read only";
+    font-size: .6em;
+    float: right;
+    font-style: italic;
+    position: relative;
+    top: 9px;
+}
+
+
+.form-navigation-btns {
+    text-align: right;
+    display: block;
+    margin: 10px 5px;
+    padding: 10px 0;
+    height: 30px;
+}
+
+.form-navigation-btns .btn, .WizardTitle li {
+    float: right;
+    height: 30px;
+    margin-left: 5px;
+    background-color: #549ae6;
+    color: white;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 2px;
+    padding: 0 15px;
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.form-navigation-btns .btn:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    background-color: #4987cc
+}
+
+
+.upload-btns span.image, .upload-btns span.video  {
+    background-size: 100%;
+    display: inline-block;
+    text-align: right;
+}
+
+
+.upload-btns span.image:after, .upload-btns span.video:after {
+   
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.upload-btns span.image:after {
+    content: "Add image";
+
+}
+.upload-btns span.video:after {
+    content: "Add video";
+
+}
+
+.your-profile-image .upload-btns span.image {
+    float: right;
+}
+
+.your-profile-image .upload-btns span.image:after {
+    content: "Select image";
+}
+
+.your-profile-image span.video.noIcon {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+.input-hidden>.text-input {
+    display: none;
+}
+
+.uploads-hidden .media-bar, .uploads-hidden .media-selection, .no-video span.video {
+    display: none;
+}
+
+
+span.image-file.media-item, span.external-file.media-item, span.video-file.media-item {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    min-width: 60px;
+    height: 60px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    text-align: center;
+        margin-right: 5px;
+    vertical-align: top;
+}
+
+
+
+span.remove-btn:after {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    height: 13px;
+    width: 13px;
+    content: "⌫";
+    line-height: 12px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: larger;
+    cursor: pointer;
+    color: crimson;
+}
+
+span.image-file.media-item img {
+    margin-top: 13px;
+}
+
+
+.story-card .active:after, .sidebar-view .ui-view.active:after {
+    content: "";
+    position: absolute;
+    width: calc( 100% + 10px );
+    height: calc( 100% + 10px );
+    background: #66b7ed;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+
+
+.user-name {
+    cursor: pointer;
+    color: #5ea5e9;
+}
+
+span.user-link {
+    cursor: pointer;
+    color: #fb8a05;
+    font-size: 11px;
+}
+
+
+
+
+
+.section-label {
+    margin-top: 10px;
+    padding-top: 3px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+
+.pb-c {
+    background-color: #f0f0f0;
+}
+
+.uitext-container .label, .uitext-container label {
+    color: #5ea5e9;
+}
+
+.checkboxStyle label {
+    display: block;
+}
+.checkboxStyle input{
+    margin: 0 10px;
+}
+label.true-label, label.false-label {
+    color: black;
+}
+
+.text-input {
+ 
+    border: none;
+}
+
+
+.sidebar-view {
+    text-align: left;
+}
+
+
+.uitext-container.w-dy textarea {
+    display: inline-block;
+    width: 30px;
+}
+
+.uitext-container.w-dy, .uitext-container.w-mn, .uitext-container.w-yr {
+    width: 30px;
+    display: inline-block;
+}
+
+.uitext-container.w-dy .label {
+    white-space: nowrap;
+}
+
+.uitext-container.w-yr {
+    width: 60px;
+}
+
+.sidebar-view .uitext-container {
+    margin-bottom: 0;
+}
+
+
+.registration-module.activation>* {
+    display: none;
+}
+
+.registration-module.activation>.progress {
+    display: block;
+    position: absolute;
+    top: 40%;
+}
+
+
+.module-wizard .upload-btns span.image {
+    background-image: url(https://trapline.geolive.ca/php-core-app/users_files/user_files_1/Uploads/oOY_AsU_ccD_[ImAgE]_[G].png?tint=rgb(255,0,0));
+    cursor: pointer;
+    text-indent: 5px;
+}
+
+
+
+
+div.empty-section {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    padding: 75px;
+    box-sizing: border-box;
+}
+
+.empty-section>* {
+    text-align: -webkit-auto;
+}
+
+.help-section.empty-section {
+    padding: 10px;
+    top: 165px;
+    color: rgba(100, 149, 237, 1);
+    border: 1px solid rgba(100, 149, 237, 0.2);
+    width: 250px;
+    border-radius: 2px;
+    cursor:pointer
+}
+
+.help-section.empty-section:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.SideBarWidget>.sidebar-view.item-content, .SideBarWidget>.sidebar-view.graph-analytics{
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.item-content .ui-list-view>.ui-view {
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    padding: 20px;
+    background: white;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+
+.content.title-field {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.content.description-field {
+    margin: 5px 0;
+}
+
+.graph-analytics span.keen-dataviz-metric-value {
+    margin-top: -35px;
+}
+.graph-analytics .ui-list-view>.ui-view>* {
+    display: inline-block;
+    width: 180px;
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+
+.graph-analytics .ui-list-view>.ui-view{
+    display: inline-block;
+    width: 90px;
+    margin: 5px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 3px;;
+}
+.graph-analytics .ui-list-view{
+        text-align: left;
+}
+
+span.tag-el {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+
+.pb-c:hover:after {
+    opacity:1;
+    transition:opacity 0.5s;
+}
+
+.pb-c:after {
+    opacity: 0;
+    transition-delay: 2s;
+    transition: opacity 1s;
+    
+}
+.pb-c {
+    padding-top: 0;
+}
+
+
+
+.fork-this-project>.tileButtonContainer {
+    transform: rotate(-45deg);
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid black;
+    position: relative;
+    left: 72px;
+    top: 33px;
+}
+
+.fork-this-project:after {
+    content: "Map Your Project";
+    position: absolute;
+    left: 130px;
+    top: 50px;
+    color: white;
+    font-size: 14px;
+    z-index: 999;
+    transform: rotate(-45deg);
+    text-align: center;
+    pointer-events: none;
+    
+}
+
+
+
+p.info {
+    color: cornflowerblue;
+    font-style: italic;
+}
+@media only screen and (max-width: 1500px) {
+  .site-logo h1>span {
+    font-size: 0;
+    }
+    .site-logo h1 {
+        line-height: 55px;
+    }
+    
+    .menu-links {
+        left: 380px;
+    }
+   
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+    .menu-links {
+        width: 230px;
+        text-align: left;
+        top: 12px;
+    }
+    
+    .menu-links a {
+        height: 22px;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .site-logo h1>span {
+        font-size:0;
+    }
+    
+    .menu-links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    
+    .site-title h1 {
+        width: 250px;
+        line-height: 30px;
+        padding-left: 100px;
+        text-indent: 0;
+    }
+
+}
+
+@media only screen and (max-width: 690px) {
+
+    
+    .site-logo h1 {
+        font-size:0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+ .site-logo h1{
+     height:60px;
+ }
+
+ .profile-section span.user-icon{
+     height:50px;
+     width:50px
+ }
+ .profile-section .inline-btn{
+     display:none;
+ }
+
+  .profile-section .user-name{
+      display:none;
+  }
+
+  .profile-section .primary-btn{
+      margin-top:7px;
+  }
+
+  .ui-view.section-top{
+      height:60px
+  }
+
+}
+
+
+
+
+
+.default-cluster-labels {
+    font-size: 0;
+}
+
+.default-cluster-labels:after {
+    content: attr(data-number);
+    font-size: 18px;
+    position: relative;
+    left: -5px;
+    top: -8px;
+    text-shadow: 0 0 3px white;
+}
+
+
+span.image.noIcon:after {
+    background-color: darkcyan;
+    margin: 5px 0 0 0;
+}
+
+
+.WizardTitle ul{
+    text-align: right
+}
+
+.WizardTitle li {
+  margin-left:5px;
+  float:none;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  height: unset;
+  background-color:rgba(0,0,0,0.1);
+  color:black;
+}
+
+.WizardTitle li.current {
+  background-color: #549ae6;
+  color:white;
+ }
+
+span.layer-group.LegendArea {
+    width: 210px;
+}
+
+span.layer-group.LegendArea span.label {
+    line-height: 48px;
+}
+
+
+.attribute-item .field-label {
+    color: black;
+}
+
+.tip-title {
+    text-align: left;
+}
+
+.thank-you {
+    font-size: 20px;
+    padding-top: 65px;
+    display: inline-block;
+}
+
+.SideBarWidget.right{
+        transition: width 0.3s ease-in-out;
+}
+.SideBarWidget.right.collapsed {
+    width: 0;
+}
+
+
+.SideBarWidget.right.collapsed>.toggle-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    left: unset;
+    border-radius: 4px 0 0 4px;
+    top: 67px;
+    background-color: cornflowerblue;
+}
+
+.SideBarWidget.right>.toggle-button {
+    background: cornflowerblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 0 5px;
+    background-image: none;
+    transition: width 0.3s, height 0.3s;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.SideBarWidget.right {
+    border-left: 2px solid cornflowerblue;
+}
+
+.SideBarWidget.right.collapsed {
+    width: 0;
+    min-width: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+}
+
+.SideBarWidget.right>.toggle-button:hover{ 
+    background-color: #4672c1;
+
+}
+
+
+.ui-view.selectable-layer {
+    padding: 10px 5px;
+    margin: 5px;
+    display: inline-block;
+    min-width: 60px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+    text-align: center;
+}
+
+
