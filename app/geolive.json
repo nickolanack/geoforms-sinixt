@@ -2667,5 +2667,12 @@
         "parameters": {
             "target": "none"
         }
+    },
+    "widget.55": {
+        "name": "Content",
+        "instance": "CustomContent",
+        "parameters": {
+            "target": "none"
+        }
     }
 }
