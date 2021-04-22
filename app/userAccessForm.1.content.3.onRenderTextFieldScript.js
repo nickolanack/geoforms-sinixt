@@ -15,11 +15,17 @@ div.appendChild(new Element('button',{
 }))
 
 div.appendChild(new Element('button',{
-    html:"2 days"
+    html:"2 days",
+    events:{click:function(){
+        textField.setValue(toTime(2))
+    }}
 }))
 
 div.appendChild(new Element('button',{
-    html:"1 week"
+    html:"1 week",
+    events:{click:function(){
+        textField.setValue(toTime(3))
+    }}
 }))
 
 div.appendChild(new Element('button',{
