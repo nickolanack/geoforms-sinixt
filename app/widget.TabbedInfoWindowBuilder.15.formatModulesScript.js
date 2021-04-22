@@ -4,7 +4,7 @@ if(AppClient.getUserType()!=="admin"){
 }else{
     
     list.tab.push(new Element('button',{html:"Edit", events:{click:function(){
-        
+        console.error('todo: detect tab');
         (new UIModalDialog(application, item, {	"formName":"MapItemTemplate", "formOptions":{"-template":"form"}})).show();
         
     }}}));    
