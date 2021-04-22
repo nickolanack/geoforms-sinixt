@@ -13,7 +13,7 @@
         "maxChars": 0,
         "showExpandInput": true,
         "toolbarPosition": "bottom",
-        "textFormatScript": "var initialText=false\n\nthis.addInputFilter(function(text){\n    console.error('input filter')\n    \n    if(initialText===false){\n        initialText=text;\n    }\n    \n    \n    return text.split('Personal Notes:').pop();\n    \n});\nthis.addOutputFilter(function(text){\n \n  \n    return initialText;\n    \n});",
+        "textFormatScript": "var initialText=false\n\nthis.addInputFilter(function(text){\n    console.error('input filter')\n    \n    if(initialText===false){\n        initialText=text;\n    }\n    \n    if(text.indexOf('Personal Notes:')==-1){\n        return \"\";\n    }\n    \n    return text.split('Personal Notes:').pop();\n    \n});\nthis.addOutputFilter(function(text){\n \n  \n    return initialText;\n    \n});",
         "mediaIconTint": "rgb(100, 149, 237)",
         "onRenderModuleFn": ""
     }
