@@ -2346,16 +2346,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 499,
-                            "y": 485
+                            "x": 509,
+                            "y": 495
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 459,
-                                    "y": 673
+                                    "x": 469,
+                                    "y": 683
                                 }
                             }
                         ],
@@ -2430,6 +2430,29 @@
                                                 "inputOptions": "{}",
                                                 "onRenderTextFieldScript": "MapItemTemplateTab0.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
                                                 "formatValueScript": "MapItemTemplateTab0.metadata.children.1.builderMetadata.positions.content.modules.3.config.formatValueScript.js"
+                                            }
+                                        },
+                                        {
+                                            "type": "UIView",
+                                            "config": {
+                                                "className": "",
+                                                "identifier": "",
+                                                "viewType": "view",
+                                                "namedView": "selectableLayersList",
+                                                "shouldRender": true,
+                                                "namedViewScript": "return namedView",
+                                                "showInlineEdit": false,
+                                                "namedFormView": "defaultView",
+                                                "formOptions": "\"{}\"",
+                                                "showDeleteButton": false,
+                                                "deleteItemScript": "defaultBehaviorFn()",
+                                                "initModuleScript": "",
+                                                "formatModuleScript": "",
+                                                "resolveItemScript": "return item",
+                                                "filterModulesScript": "return list",
+                                                "itemButtonsScript": "return [];",
+                                                "insertAtTop": false,
+                                                "targetName": ""
                                             }
                                         }
                                     ]
