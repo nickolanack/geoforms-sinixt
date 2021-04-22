@@ -7,6 +7,7 @@ div.appendChild(label);
 var toTime=function(t){
     
     label.innerHTML=t+" day"+(t==1?"":"s")+". ";
+    label.addClass('valid');
     
     return Math.floor(((new Date()).getTime()+1000*3600*24*t)/1000);
     
