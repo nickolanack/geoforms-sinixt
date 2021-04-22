@@ -2675,7 +2675,7 @@
             "target": "forTheMap",
             "customScript": "",
             "widgetTitle": "custom",
-            "language": "html\/text",
+            "language": "javascript",
             "returnsValue": false,
             "readAccess": "public"
         }
