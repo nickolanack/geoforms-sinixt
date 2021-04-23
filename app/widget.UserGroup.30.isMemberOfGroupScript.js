@@ -1,11 +1,11 @@
 
-if(GetClient()->isGuest()){
+if(GetClient()->isUserGuest($userid)){
     return false;
 }
 
 GetPlugin('Attributes');
 $attributes=(new \attributes\Record('userTimedAccess'))
-			->getValues(GetClient()->getId(), 'user');
+			->getValues($userid, 'user');
 			
 $date=$attributes['viewAccessEnd'];
 if(empty($date)){
