@@ -1,15 +1,15 @@
 
-if(GetClient()->isGuest()){
+if(GetClient()->isUserGuest($userid)){
     return false;
 }
 
 GetPlugin('Attributes');
 $attributes=(new \attributes\Record('userTimedAccess'))
-			->getValues(GetClient()->getId(), 'user');
+			->getValues($userid, 'user');
 			
 $date=$attributes['editAccessEnd'];
 if(empty($date)){
     return false;
 }
 
-return strtotime($date)>time();
+return intval($date)>time();
