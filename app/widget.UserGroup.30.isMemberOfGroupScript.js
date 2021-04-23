@@ -12,4 +12,4 @@ if(empty($date)){
     return false;
 }
 
-return strtotime($date)>time();
+return intval($date)>time();
