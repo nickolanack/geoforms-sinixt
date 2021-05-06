@@ -18,7 +18,9 @@ var ContentFilter = (function() {
 
 		var chunks = text.split("\n\n");
 		var section = chunks[0].split('Layer Keywords:')
-		section[0] = replace;
+		var parts=section[0].split("<");
+		parts[0]=replace;
+		section[0] = parts.join("<");
 		chunks[0] = section.join('Layer Keywords:');
 		return chunks.join("\n\n");
 
