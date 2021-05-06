@@ -2741,5 +2741,12 @@
             },
             "readAccess": "public"
         }
+    },
+    "widget.57": {
+        "name": "Attribute Cloud",
+        "instance": "AttributesCloud",
+        "parameters": {
+            "target": "none"
+        }
     }
 }
