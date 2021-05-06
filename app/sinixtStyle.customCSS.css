@@ -221,7 +221,7 @@ span.video.noIcon:after {
 }
 
 span.audio.noIcon:after {
-        background-color: #086c8c;
+        background-color: #2695b9;
     }
 .upload-btns span.audio:after {
         content: "Add audio";
