@@ -2752,7 +2752,7 @@
             "showDemoTags": false,
             "demoTagsMinimum": 10,
             "cloudResults": 30,
-            "tabColor": "#DD4814",
+            "tabColor": "rgb(183, 199, 199)",
             "fontColor": "black",
             "showItemCount": true,
             "scaleItemsWithCount": true,
