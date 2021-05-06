@@ -2777,8 +2777,8 @@
         "name": "Attribute Cloud",
         "instance": "AttributesCloud",
         "parameters": {
-            "target": "Sinixt Periods",
-            "tabLabel": "Keywords",
+            "target": "forTheMap",
+            "tabLabel": "Sinixt Periods",
             "className": "",
             "showDemoTags": false,
             "demoTagsMinimum": 10,
@@ -2792,7 +2792,7 @@
             "hideEmptyPredefinedValues": true,
             "showValuesOutsidePredefined": true,
             "attributeSelection": [
-                "forTheMap.attributeSelection.0.json"
+                "widget.AttributesCloud.58.attributeSelection.0.json"
             ],
             "cloudMetadata": [],
             "formatCloudScript": "",
@@ -2800,7 +2800,7 @@
             "formatTabButtonScript": "",
             "onSelectionChangedScript": "defaultBehaviorFn();",
             "sendNotifications": false,
-            "widgetTitle": "forTheMap",
+            "widgetTitle": "",
             "readAccess": "public"
         }
     }
