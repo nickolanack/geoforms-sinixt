@@ -4,7 +4,7 @@ if(item.getRoles().indexOf('special')>=0){
 }
 
 
-return (new ModalFormButtonModule(application, item,{
+var btn= (new ModalFormButtonModule(application, item,{
         label:"Set Perimission",
         formName:"userAccessForm",
         formOptions:{
@@ -13,3 +13,6 @@ return (new ModalFormButtonModule(application, item,{
         //hideText:true,
         "class":"primary-btn"
     }));
+
+
+return btn;
