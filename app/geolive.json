@@ -2760,7 +2760,9 @@
             "scaleItemsMin": 12,
             "hideEmptyPredefinedValues": true,
             "showValuesOutsidePredefined": true,
-            "attributeSelection": [],
+            "attributeSelection": [
+                "widget.AttributesCloud.57.attributeSelection.0.json"
+            ],
             "cloudMetadata": [],
             "formatCloudScript": "",
             "formatTagScript": "",
