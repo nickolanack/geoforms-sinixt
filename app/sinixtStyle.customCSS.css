@@ -215,7 +215,19 @@ span.video.noIcon:after {
         margin-top: 25px;
         border-radius: 3px;
     }
+    
+    
+    
 }
+
+span.audio.noIcon:after {
+        background-color: #086c8c;
+    }
+.upload-btns span.audio:after {
+        content: "Add audio";
+}
+
+
 .focus-documents{
 
     .upload-btns span.image:after, .upload-btns span.video:after{
