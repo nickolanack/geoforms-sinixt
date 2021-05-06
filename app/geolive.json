@@ -2746,7 +2746,7 @@
         "name": "Attribute Cloud",
         "instance": "AttributesCloud",
         "parameters": {
-            "target": "none",
+            "target": "forTheMap",
             "tabLabel": "Sinixt Boundaries",
             "className": "",
             "showDemoTags": false,
