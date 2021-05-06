@@ -90,7 +90,7 @@ var ContentFilter = (function() {
 		});
 		textField.addOutputFilter(function(text) {
 			console.error('output filter');
-			return ContentFilter.ReplaceNameSection(initialText, text));
+			return ContentFilter.ReplaceNameSection(initialText, text);
 			//return initialText;
 
 		});
