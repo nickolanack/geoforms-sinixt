@@ -2349,16 +2349,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 509,
-                            "y": 495
+                            "x": 519,
+                            "y": 505
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 469,
-                                    "y": 683
+                                    "x": 479,
+                                    "y": 706
                                 }
                             }
                         ],
@@ -2407,7 +2407,7 @@
                                                 "hoverColor": "rgb(143, 188, 143)",
                                                 "selectedColor": "rgb(143, 188, 143)",
                                                 "shuffleTags": false,
-                                                "tags": "[\n    \"cultural\",\n    \"under water\",\n    \"contentious claim\",\n    \"sinixt member killed\"\n]",
+                                                "tags": "[\n    \"cultural\",\n    \"under water\",\n    \"contentious claim\",\n    \"sinixt member killed\",\n    \"sites of resistance\"\n]",
                                                 "getItemTagsScript": "return defaultTags;",
                                                 "formatModule": ""
                                             }
