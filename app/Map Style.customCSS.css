@@ -742,7 +742,7 @@ textarea[disabled] {
 }
 
 
-.upload-btns span.image:after, .upload-btns span.video:after {
+.upload-btns span.image:after, .upload-btns span.video:after, .upload-btns span.audio:after  {
    
     white-space: nowrap;
     display: inline-block;
