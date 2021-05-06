@@ -236,10 +236,13 @@ span.audio.noIcon:after {
 
 .focus-documents{
 
-    .upload-btns span.image:after, .upload-btns span.video:after{
+    .upload-btns span.image:after, .upload-btns span.video:after, .upload-btns span.audio:after{
         padding:5px 10px;
         font-size:15px
+    }
     
+    .upload-btns span.video, .upload-btns span.audio{
+        display:none;
     }
 
 }
