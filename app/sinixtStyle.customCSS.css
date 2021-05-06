@@ -306,7 +306,11 @@ button.add-document, button.other-btn{
 }
 
 
-.ui-view.read-specialView:before, .ui-view.read-public:before, .ui-view.read-registered:before {
+.ui-view.read-specialView:before, 
+.ui-view.read-public:before, 
+.ui-view.read-registered:before, 
+.field-value-module.has-write:after,
+.field-value-module.has-read:before {
     content: "\f06e";
     position: absolute;
     top:1px;
@@ -329,6 +333,14 @@ button.add-document, button.other-btn{
     font-size: 16px;
     padding-right: 35px;
 }
+
+
+.field-value-module.has-read:before {right: unset;left: 4px;}
+
+.field-value-module.has-write:after{right: unset;left: 20px;}
+
+
+
 
 
 
