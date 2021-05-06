@@ -2796,7 +2796,7 @@
             "formatTabButtonScript": "",
             "onSelectionChangedScript": "defaultBehaviorFn();",
             "sendNotifications": false,
-            "widgetTitle": "",
+            "widgetTitle": "forTheMap",
             "readAccess": "public"
         }
     }
