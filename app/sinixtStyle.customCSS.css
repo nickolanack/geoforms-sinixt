@@ -324,7 +324,11 @@ button.add-document, button.other-btn{
        content: "\f007";
        color:#969207
 }
-
+.search-bar-tab.has-overlay>span {
+    
+    font-size: 16px;
+    padding-right: 35px;
+}
 
 
 
