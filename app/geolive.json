@@ -2783,7 +2783,7 @@
             "showDemoTags": false,
             "demoTagsMinimum": 10,
             "cloudResults": 30,
-            "tabColor": "#DD4814",
+            "tabColor": "rgb(15, 150, 150)",
             "fontColor": "black",
             "showItemCount": true,
             "scaleItemsWithCount": true,
