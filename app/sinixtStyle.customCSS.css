@@ -306,4 +306,25 @@ button.add-document, button.other-btn{
 }
 
 
+.ui-view.read-specialView:before, .ui-view.read-public:before, .ui-view.read-registered:before {
+    content: "\f06e";
+    position: absolute;
+    top:1px;
+    right:3px;
+    color: #bd3232;
+    font-size: 10px;
+    font-family: 'FontAwesome';
+} 
+.ui-view.read-public:before{
+       content: "\f09c";
+       color:#41c351
+}
+
+.ui-view.read-registered:before{
+       content: "\f007";
+       color:#969207
+}
+
+
+
 
