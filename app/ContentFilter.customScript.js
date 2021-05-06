@@ -90,8 +90,8 @@ var ContentFilter = (function() {
 		});
 		textField.addOutputFilter(function(text) {
 			console.error('output filter');
-			console.log(ContentFilter.ReplaceNameSection(initialText, text));
-			return initialText;
+			return ContentFilter.ReplaceNameSection(initialText, text));
+			//return initialText;
 
 		});
 
