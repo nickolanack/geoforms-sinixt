@@ -2791,7 +2791,9 @@
             "scaleItemsMin": 12,
             "hideEmptyPredefinedValues": true,
             "showValuesOutsidePredefined": true,
-            "attributeSelection": [],
+            "attributeSelection": [
+                "forTheMap.attributeSelection.0.json"
+            ],
             "cloudMetadata": [],
             "formatCloudScript": "",
             "formatTagScript": "",
