@@ -1033,14 +1033,24 @@
             "widgetTitle": "Map Style",
             "target": "forTheMap",
             "customCSS": "Map Style.customCSS.css",
+            "sassParamters": [],
             "readAccess": "public"
         }
     },
     "widget.19": {
-        "name": "Form View",
-        "instance": "UserWizardBuilder",
+        "name": "Generic Wizard",
+        "instance": "WizardBuilder",
         "parameters": {
+            "widgetTitle": "",
             "target": "forTheMap",
+            "templateName": "LogoutWizardForm",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -1048,19 +1058,19 @@
                     "y": 171
                 },
                 "children": [
-                    "widget.UserWizardBuilder.19.metadata.children.0.json",
+                    "widget.WizardBuilder.19.metadata.children.0.json",
                     {
                         "title": "New Empty Step",
                         "class": "AttributesTableNode",
                         "fields": [
-                            "widget.UserWizardBuilder.19.metadata.children.1.fields.0.json"
+                            "widget.WizardBuilder.19.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
                             "x": 123,
                             "y": 154
                         },
                         "children": [
-                            "widget.UserWizardBuilder.19.metadata.children.1.children.0.json",
+                            "widget.WizardBuilder.19.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
@@ -1076,7 +1086,7 @@
                                 },
                                 "content": {
                                     "modules": [
-                                        "widget.UserWizardBuilder.19.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        "widget.WizardBuilder.19.metadata.children.1.builderMetadata.positions.content.modules.0.json",
                                         {
                                             "type": "WizardScriptElement",
                                             "config": {
@@ -1107,8 +1117,16 @@
                     }
                 ]
             },
+            "readAccess": "public"
+        }
+    },
+    "widget.20": {
+        "name": "Generic Wizard",
+        "instance": "WizardBuilder",
+        "parameters": {
             "widgetTitle": "",
-            "templateName": "LogoutWizardForm",
+            "target": "forTheMap",
+            "templateName": "LoginWizardForm",
             "requireTarget": true,
             "resolveItemScript": "return item;",
             "beforeSubmitScript": "",
@@ -1116,14 +1134,6 @@
             "onUpdateScript": "",
             "onSaveScript": "",
             "onLoadScript": "",
-            "readAccess": "public"
-        }
-    },
-    "widget.20": {
-        "name": "Form View",
-        "instance": "UserWizardBuilder",
-        "parameters": {
-            "target": "forTheMap",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -1131,19 +1141,19 @@
                     "y": 171
                 },
                 "children": [
-                    "widget.UserWizardBuilder.20.metadata.children.0.json",
+                    "widget.WizardBuilder.20.metadata.children.0.json",
                     {
                         "title": "New Empty Step",
                         "class": "AttributesTableNode",
                         "fields": [
-                            "widget.UserWizardBuilder.20.metadata.children.1.fields.0.json"
+                            "widget.WizardBuilder.20.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
                             "x": 148,
                             "y": 349
                         },
                         "children": [
-                            "widget.UserWizardBuilder.20.metadata.children.1.children.0.json",
+                            "widget.WizardBuilder.20.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
@@ -1155,14 +1165,14 @@
                                 "title": "New Empty Step",
                                 "class": "AttributesTableNode",
                                 "fields": [
-                                    "widget.UserWizardBuilder.20.metadata.children.1.children.2.fields.0.json"
+                                    "widget.WizardBuilder.20.metadata.children.1.children.2.fields.0.json"
                                 ],
                                 "_diagramState": {
                                     "x": 818,
                                     "y": 297
                                 },
                                 "children": [
-                                    "widget.UserWizardBuilder.20.metadata.children.1.children.2.children.0.json",
+                                    "widget.WizardBuilder.20.metadata.children.1.children.2.children.0.json",
                                     {
                                         "class": "InsertNode",
                                         "_diagramState": {
@@ -1175,12 +1185,12 @@
                                     "positions": {
                                         "title": {
                                             "modules": [
-                                                "widget.UserWizardBuilder.20.metadata.children.1.children.2.builderMetadata.positions.title.modules.0.json"
+                                                "widget.WizardBuilder.20.metadata.children.1.children.2.builderMetadata.positions.title.modules.0.json"
                                             ]
                                         },
                                         "content": {
                                             "modules": [
-                                                "widget.UserWizardBuilder.20.metadata.children.1.children.2.builderMetadata.positions.content.modules.0.json"
+                                                "widget.WizardBuilder.20.metadata.children.1.children.2.builderMetadata.positions.content.modules.0.json"
                                             ]
                                         },
                                         "footer": {
@@ -1206,17 +1216,17 @@
                             "positions": {
                                 "title": {
                                     "modules": [
-                                        "widget.UserWizardBuilder.20.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                        "widget.WizardBuilder.20.metadata.children.1.builderMetadata.positions.title.modules.0.json"
                                     ]
                                 },
                                 "content": {
                                     "modules": [
-                                        "widget.UserWizardBuilder.20.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        "widget.WizardBuilder.20.metadata.children.1.builderMetadata.positions.content.modules.0.json",
                                         {
                                             "type": "WizardScriptElement",
                                             "config": {
                                                 "name": "My Custom Script",
-                                                "script": "widget.UserWizardBuilder.20.metadata.children.1.builderMetadata.positions.content.modules.1.config.script.js",
+                                                "script": "widget.WizardBuilder.20.metadata.children.1.builderMetadata.positions.content.modules.1.config.script.js",
                                                 "description": "Info about my custom script"
                                             }
                                         }
@@ -1242,15 +1252,6 @@
                     }
                 ]
             },
-            "widgetTitle": "",
-            "templateName": "LoginWizardForm",
-            "requireTarget": true,
-            "resolveItemScript": "return item;",
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
-            "onUpdateScript": "",
-            "onSaveScript": "",
-            "onLoadScript": "",
             "readAccess": "public"
         }
     },
@@ -1302,10 +1303,19 @@
         }
     },
     "widget.25": {
-        "name": "Form View",
-        "instance": "UserWizardBuilder",
+        "name": "Generic Wizard",
+        "instance": "WizardBuilder",
         "parameters": {
+            "widgetTitle": "",
             "target": "forTheMap",
+            "templateName": "thankYou",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -1313,19 +1323,19 @@
                     "y": 171
                 },
                 "children": [
-                    "widget.UserWizardBuilder.25.metadata.children.0.json",
+                    "widget.WizardBuilder.25.metadata.children.0.json",
                     {
                         "title": "New Empty Step",
                         "class": "AttributesTableNode",
                         "fields": [
-                            "widget.UserWizardBuilder.25.metadata.children.1.fields.0.json"
+                            "widget.WizardBuilder.25.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
                             "x": 168,
                             "y": 300
                         },
                         "children": [
-                            "widget.UserWizardBuilder.25.metadata.children.1.children.0.json",
+                            "widget.WizardBuilder.25.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
@@ -1338,17 +1348,17 @@
                             "positions": {
                                 "title": {
                                     "modules": [
-                                        "widget.UserWizardBuilder.25.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                        "widget.WizardBuilder.25.metadata.children.1.builderMetadata.positions.title.modules.0.json"
                                     ]
                                 },
                                 "content": {
                                     "modules": [
-                                        "widget.UserWizardBuilder.25.metadata.children.1.builderMetadata.positions.content.modules.0.json"
+                                        "widget.WizardBuilder.25.metadata.children.1.builderMetadata.positions.content.modules.0.json"
                                     ]
                                 },
                                 "footer": {
                                     "modules": [
-                                        "widget.UserWizardBuilder.25.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                        "widget.WizardBuilder.25.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
                                     ]
                                 },
                                 "menu": {
@@ -1368,15 +1378,6 @@
                     }
                 ]
             },
-            "widgetTitle": "",
-            "templateName": "thankYou",
-            "requireTarget": true,
-            "resolveItemScript": "return item;",
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
-            "onUpdateScript": "",
-            "onSaveScript": "",
-            "onLoadScript": "",
             "readAccess": "public"
         }
     },
@@ -1400,6 +1401,7 @@
             "widgetTitle": "sinixtStyle",
             "target": "forTheMap",
             "customCSS": "sinixtStyle.customCSS.css",
+            "sassParamters": [],
             "readAccess": "public"
         }
     },
@@ -1836,10 +1838,19 @@
         }
     },
     "widget.38": {
-        "name": "Form View",
-        "instance": "UserWizardBuilder",
+        "name": "Generic Wizard",
+        "instance": "WizardBuilder",
         "parameters": {
+            "widgetTitle": "userAccessForm",
             "target": "forTheMap",
+            "templateName": "userAccessForm",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -1981,15 +1992,6 @@
                     }
                 ]
             },
-            "widgetTitle": "userAccessForm",
-            "templateName": "userAccessForm",
-            "requireTarget": true,
-            "resolveItemScript": "return item;",
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
-            "onUpdateScript": "",
-            "onSaveScript": "",
-            "onLoadScript": "",
             "readAccess": "public"
         }
     },
@@ -2092,10 +2094,19 @@
         }
     },
     "widget.44": {
-        "name": "Form View",
-        "instance": "UserWizardBuilder",
+        "name": "Generic Wizard",
+        "instance": "WizardBuilder",
         "parameters": {
+            "widgetTitle": "documentForm",
             "target": "forTheMap",
+            "templateName": "documentForm",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -2178,15 +2189,6 @@
                     }
                 ]
             },
-            "widgetTitle": "documentForm",
-            "templateName": "documentForm",
-            "requireTarget": true,
-            "resolveItemScript": "return item;",
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
-            "onUpdateScript": "",
-            "onSaveScript": "",
-            "onLoadScript": "",
             "readAccess": "public"
         }
     },
