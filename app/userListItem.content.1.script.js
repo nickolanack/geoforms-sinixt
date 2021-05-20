@@ -1,8 +1,14 @@
 
+
+
+
 if(item.getRoles().indexOf('special')>=0){
     return null;
 }
 
+if(AppClient.getUserType()!="admin"){
+    return null;
+}
 
 var btn= (new ModalFormButtonModule(application, item,{
         label:"Set Permission",
