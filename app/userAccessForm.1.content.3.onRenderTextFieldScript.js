@@ -39,10 +39,10 @@ div.appendChild(new Element('button',{
     events:{
         click:function(){
             if(textField.getElement().hasClass('show-custom')){
-                textField.getElement().addClass('show-custom');
+                textField.getElement().removeClass('show-custom');
                 return;
             }
-            textField.getElement().removeClass('show-custom')
+            textField.getElement().addClass('show-custom')
         }
     }
 }))
