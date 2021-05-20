@@ -16,6 +16,10 @@ var ContentFilter = (function() {
 
 	ContentFilter.ReplaceNameSection=function(text, replace){
 
+		if(text===false){
+			return replace;
+		}
+
 		var chunks = text.split("\n\n");
 		var section = chunks[0].split('Layer Keywords:')
 		var parts=section[0].split("<");
