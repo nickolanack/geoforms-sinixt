@@ -312,7 +312,9 @@ button.add-document, button.other-btn{
 .ui-view.read-public:before, 
 .ui-view.read-registered:before, 
 .field-value-module.has-write:after,
-.field-value-module.has-read:before, .field-value-module.is-user:before {
+.field-value-module.has-read:before, 
+.field-value-module.is-user:before,
+.field-value-module.is-admin:before{
     content: "\f06e";
     position: absolute;
     top:1px;
