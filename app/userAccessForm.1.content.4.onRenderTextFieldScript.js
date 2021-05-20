@@ -35,14 +35,29 @@ div.appendChild(new Element('button',{
     }}
 }))
 
+
 div.appendChild(new Element('button',{
     html:"Custom",
     events:{
         click:function(){
-            wizard.displayStep(3)
+            if(textField.getElement().hasClass('show-custom')){
+                textField.getElement().addClass('show-custom');
+                return;
+            }
+            textField.getElement().removeClass('show-custom')
         }
     }
 }))
+
+
+div.appendChild(new Element('button',{
+    html:"clear",
+    "class":"clear",
+    events:{click:function(){
+        textField.setValue(0)
+    }}
+}))
+
 
 
 
