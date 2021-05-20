@@ -336,6 +336,17 @@ button.add-document, button.other-btn{
     padding-right: 35px;
 }
 
+.field-value-module.is-admin:before{
+    content: "\f197";
+    color:#6487ac;
+}
+
+.field-value-module.is-user:before{
+    content: "\f2be";
+}
+
+
+
 .field-value-module.has-read:before, .field-value-module.is-user:before {
     color: #008a8a;
     position: relative;
@@ -346,9 +357,7 @@ button.add-document, button.other-btn{
     font-size: 17px;
 }
 
-.field-value-module.is-user:before{
-    content: "\f2be";
-}
+
 
 
 .field-value-module.has-read:before, .field-value-module.is-user:before {right: unset;left: 4px;}
