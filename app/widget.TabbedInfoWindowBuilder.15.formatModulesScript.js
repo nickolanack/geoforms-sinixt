@@ -20,6 +20,9 @@ if(AppClient.getUserType()!=="admin"){
     
 }
 
+application.getNamedValue('userList', function(list){
+    console.log(list);
+})
 
 return list;
 
