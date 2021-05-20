@@ -253,6 +253,10 @@ span.audio.noIcon:after {
     visibility: hidden;
     height: 0;
 }
+.show-custom .text-input.one.with-1-line {
+    height: 30px;
+    visibility: visible;
+}
 
 
 button.form-btn.primary-btn, button.add-document, .btn-group-access button, button.other-btn {
