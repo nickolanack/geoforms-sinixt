@@ -336,6 +336,16 @@ button.add-document, button.other-btn{
     padding-right: 35px;
 }
 
+.field-value-module.has-read:before {
+    color: #008a8a;
+    position: relative;
+    width: 30px;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    font-size: 17px;
+}
+
 
 .field-value-module.has-read:before {right: unset;left: 4px;}
 
