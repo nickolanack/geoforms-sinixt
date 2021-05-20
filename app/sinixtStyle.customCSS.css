@@ -347,10 +347,14 @@ button.add-document, button.other-btn{
     content: "\f2be";
 }
 
+.field-value-module.is-admin:before{
+    content: "\f197";
+    color:#6487ac;
+}
 
-
-.field-value-module.has-read:before, .field-value-module.is-user:before {
-    color: #008a8a;
+.field-value-module.has-read:before, 
+.field-value-module.is-user:before,
+.field-value-module.is-admin:before{
     position: relative;
     width: 30px;
     display: inline-block;
@@ -360,9 +364,22 @@ button.add-document, button.other-btn{
 }
 
 
+.field-value-module.has-read:before, 
+.field-value-module.is-user:before{
+    color: #008a8a;
+
+}
 
 
-.field-value-module.has-read:before, .field-value-module.is-user:before {right: unset;left: 4px;}
+
+
+.field-value-module.has-read:before, 
+.field-value-module.is-user:before,
+.field-value-module.is-admin:before{
+    right: unset;
+    left: 4px;
+    
+}
 
 .field-value-module.has-write:after{right: unset;left: 20px;}
 
