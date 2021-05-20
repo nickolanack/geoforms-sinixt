@@ -5,9 +5,7 @@ $users=array();
 if(!GetClient()->isAdmin()){
    $users=array(GetClient()->getUserMetadata());
 }else{
-    
-    $users=GetClient()->listUsers()
-    
+    $users=GetClient()->listUsers();
 }
 GetPlugin('Attributes');
 
