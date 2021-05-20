@@ -23,7 +23,7 @@ if(AppClient.getUserType()!=="admin"){
 var users=application.getNamedValue('userList')//, function(users){
    users.forEach(function(user){
        if(user.id+""===AppClient.getId()+""){
-           if(user.roles.indexOf("special")||user.roles.indexOf("specialView")){
+           if(user.roles.indexOf("special")<0&&user.roles.indexOf("specialView")<0){
                list.tab.splice(1, 2, null, null); //remove 2 tabs (tabs will keep thier indexes)
            }
            
