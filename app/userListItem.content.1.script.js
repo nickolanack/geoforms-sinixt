@@ -5,7 +5,7 @@ if(item.getRoles().indexOf('special')>=0){
 
 
 var btn= (new ModalFormButtonModule(application, item,{
-        label:"Set Perimission",
+        label:"Set Permission",
         formName:"userAccessForm",
         formOptions:{
             _template:"form"
