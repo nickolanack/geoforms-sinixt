@@ -343,14 +343,16 @@ button.add-document, button.other-btn{
     color:#6487ac;
 }
 
-.field-value-module.is-user:before{
-    content: "\f2be";
-}
 
 .field-value-module.is-admin:before{
     content: "\f197";
     color:#6487ac;
 }
+
+.field-value-module.is-user:before{
+    content: "\f2be";
+}
+
 
 .field-value-module.has-read:before, 
 .field-value-module.is-user:before,
