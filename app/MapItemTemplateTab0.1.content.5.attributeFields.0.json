@@ -3,11 +3,11 @@
     "tableId": "1",
     "tableName": "markerAttributes",
     "tableSuffix": "_8645",
-    "title": "periods",
-    "label": "Periods",
+    "title": "idCode",
+    "label": "Coded Title",
     "description": "",
     "fieldType": "text",
-    "color": "rgb(undefined, undefined, undefined)",
+    "color": "rgb(NaN, NaN, NaN)",
     "searchability": "public",
     "editability": "registered",
     "fieldTextOptions": {
@@ -28,5 +28,5 @@
             "colorize": false
         }
     },
-    "allowMultiple": true
+    "allowMultiple": false
 }
