@@ -312,7 +312,7 @@ button.add-document, button.other-btn{
 .ui-view.read-public:before, 
 .ui-view.read-registered:before, 
 .field-value-module.has-write:after,
-.field-value-module.has-read:before {
+.field-value-module.has-read:before, .field-value-module.is-user:before {
     content: "\f06e";
     position: absolute;
     top:1px;
@@ -336,7 +336,7 @@ button.add-document, button.other-btn{
     padding-right: 35px;
 }
 
-.field-value-module.has-read:before {
+.field-value-module.has-read:before, .field-value-module.is-user:before {
     color: #008a8a;
     position: relative;
     width: 30px;
@@ -346,8 +346,12 @@ button.add-document, button.other-btn{
     font-size: 17px;
 }
 
+.field-value-module.is-user:before{
+    content: "\f2be";
+}
 
-.field-value-module.has-read:before {right: unset;left: 4px;}
+
+.field-value-module.has-read:before, .field-value-module.is-user:before {right: unset;left: 4px;}
 
 .field-value-module.has-write:after{right: unset;left: 20px;}
 
