@@ -2439,16 +2439,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 529,
-                            "y": 515
+                            "x": 539,
+                            "y": 525
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 489,
-                                    "y": 716
+                                    "x": 499,
+                                    "y": 751
                                 }
                             }
                         ],
@@ -2517,7 +2517,7 @@
                                                 "hoverColor": "rgb(143, 188, 143)",
                                                 "selectedColor": "rgb(143, 188, 143)",
                                                 "shuffleTags": false,
-                                                "tags": "[\n    \"tag one\",\n    \"tag two\"\n]",
+                                                "tags": "[\n    \"period one\",\n    \"period two\"\n]",
                                                 "getItemTagsScript": "return defaultTags;",
                                                 "formatModule": ""
                                             }
@@ -2537,7 +2537,7 @@
                                                 "hoverColor": "rgb(143, 188, 143)",
                                                 "selectedColor": "rgb(143, 188, 143)",
                                                 "shuffleTags": false,
-                                                "tags": "[\n    \"tag one\",\n    \"tag two\"\n]",
+                                                "tags": "[\n    \"boundary one\",\n    \"boundary two\"\n]",
                                                 "getItemTagsScript": "return defaultTags;",
                                                 "formatModule": ""
                                             }
