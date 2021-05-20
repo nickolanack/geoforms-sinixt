@@ -2439,16 +2439,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 539,
-                            "y": 525
+                            "x": 549,
+                            "y": 535
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 499,
-                                    "y": 751
+                                    "x": 509,
+                                    "y": 761
                                 }
                             }
                         ],
@@ -2517,7 +2517,7 @@
                                                 "hoverColor": "rgb(143, 188, 143)",
                                                 "selectedColor": "rgb(143, 188, 143)",
                                                 "shuffleTags": false,
-                                                "tags": "[\n    \"period one\",\n    \"period two\"\n]",
+                                                "tags": "[\n    \"Pre-Takumakst Period-3500-2700 BP\",\n    \"Takumakst Period-2700-1600 BP\",\n    \"Sinaikst Period-1600-600 BP\",\n    \"Shwayip Period-600-200 BP\"\n]",
                                                 "getItemTagsScript": "return defaultTags;",
                                                 "formatModule": ""
                                             }
