@@ -1,5 +1,13 @@
+
+
+$users=array();
+
 if(!GetClient()->isAdmin()){
-    return array('results'=>array());
+   $users=array(GetClient()->getUserMetadata());
+}else{
+    
+    $users=GetClient()->listUsers()
+    
 }
 GetPlugin('Attributes');
 
@@ -11,7 +19,7 @@ $list=array_map(function($u){
     
     return $u;
     
-},GetClient()->listUsers());
+}, $users);
 
 
 
