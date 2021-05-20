@@ -386,7 +386,9 @@ button.add-document, button.other-btn{
 .field-value-module.has-write:after{right: unset;left: 20px;}
 
 
-
+span.timer {
+    color: cornflowerblue;
+}
 
 
 
