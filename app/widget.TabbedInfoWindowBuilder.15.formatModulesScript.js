@@ -21,7 +21,15 @@ if(AppClient.getUserType()!=="admin"){
 }
 
 application.getNamedValue('userList', function(list){
-    console.log(list);
+   list.forEach(function(user){
+       if(user.id+""===AppClient.getId()+""){
+           if(user.roles.indexOf("special")||user.roles.indexOf("specialView")){
+               list.tab.splice(1, 2, [null, null]); //remove 2 tabs (tabs will keep thier indexes)
+           }
+           
+           
+       }
+   })
 })
 
 return list;
