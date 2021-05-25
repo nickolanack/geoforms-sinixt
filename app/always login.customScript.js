@@ -1,3 +1,5 @@
 if(AppClient.getUserType()=="guest"){
-    application.login();
+    application.login(function(wizard){
+        
+    });
 }
