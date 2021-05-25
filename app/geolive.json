@@ -1358,8 +1358,8 @@
         "instance": "CustomBehaviorScript",
         "parameters": {
             "target": "forTheMap",
-            "customScript": "widget.CustomBehaviorScript.23.customScript.js",
-            "widgetTitle": "",
+            "customScript": "always login.customScript.js",
+            "widgetTitle": "always login",
             "readAccess": "public"
         }
     },
