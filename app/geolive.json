@@ -1474,8 +1474,8 @@
         "instance": "CustomBehaviorScript",
         "parameters": {
             "target": "forTheMap",
-            "customScript": "widget.CustomBehaviorScript.26.customScript.js",
-            "widgetTitle": "",
+            "customScript": "cluster icons.customScript.js",
+            "widgetTitle": "cluster icons",
             "readAccess": "public"
         }
     },
