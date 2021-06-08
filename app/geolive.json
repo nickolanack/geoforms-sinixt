@@ -2954,7 +2954,7 @@
             "formatOutputScript": "return $parameters;",
             "enableUserAjaxWrite": true,
             "authUserAjaxScript": "XXXX-XXXX",
-            "saveParametersAsData": false,
+            "saveParametersAsData": true,
             "parameters": [
                 "widget.Configuration.59.parameters.0.json"
             ],
