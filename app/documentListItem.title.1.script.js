@@ -32,7 +32,7 @@ var button=new Element('button', {
                     		'field': "documents"
                     	})).addEvent('success',function(response){
                     
-                             var files=response.value.map(funciton(v, i){
+                             var files=response.value.map(function(v, i){
                                  
                                  if(i==item.getId()){
                                      return {
