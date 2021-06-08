@@ -2161,7 +2161,9 @@
                         ]
                     },
                     "content": {
-                        "modules": []
+                        "modules": [
+                            "documentListItem.metadata.positions.content.modules.0.json"
+                        ]
                     },
                     "footer": {
                         "modules": []

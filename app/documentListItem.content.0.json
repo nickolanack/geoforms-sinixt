@@ -1,0 +1,8 @@
+{
+    "type": "WizardScriptElement",
+    "config": {
+        "name": "My Custom Script",
+        "script": "\n\n\nvar button=new Element('button', {\n\n\t\t\t\t\thtml: 'Edit',\n\t\t\t\t\tstyle: \"background-color:#EDC84C;\",\n\t\t\t\t\t\"class\": \"primary-btn add-document\"\n\n\t\t\t\t});\n\n (new UIModalFormButton(button, application, item, {\n\n\t\t\t\t\tformOptions: {\n\t\t\t\t\t\t_template: \"form\"\n\t\t\t\t\t},\n\t\t\t\t\tformName: \"documentForm\",\n\n\t\t\t\t})).addEvent('complete', function() {\n\n\t\t\t\t    \n\n\t\t\t\t});\n\t\t\t\t\n\t\t\t\treturn button;",
+        "description": "Info about my custom script"
+    }
+}

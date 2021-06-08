@@ -1,4 +1,7 @@
 {
     "type": "DefaultTitle",
-    "config": {}
+    "config": {
+        "className": "",
+        "maxChars": 0
+    }
 }
