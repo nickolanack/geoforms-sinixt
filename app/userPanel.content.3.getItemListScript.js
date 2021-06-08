@@ -9,12 +9,14 @@
 
     
        callback(response.value.map(function(item, i){
-            return new MockDataTypeItem({
+            var doc= new MockDataTypeItem({
                 id:i,
                 name:item.name,
                 description:item.description,
                 mutable:true
             });
+            
+            return doc;
             
        }));
 
