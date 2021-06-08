@@ -2950,7 +2950,9 @@
             "parameters": [
                 "widget.Configuration.59.parameters.0.json"
             ],
-            "documents": [],
+            "documents": [
+                "widget.Configuration.59.documents.0.json"
+            ],
             "widgetTitle": "",
             "readAccess": "public"
         }
