@@ -31,8 +31,14 @@ var button=new Element('button', {
                     		'widget': "documents",
                     		'field': "documents"
                     	})).addEvent('success',function(response){
+                    	    
+                    	    
+                    	    var values=response.values;
+                    	    if(!(response.values&&response.values.map)){
+                    	        return;
+                    	    }
                     
-                             var files=response.value.map(function(v, i){
+                             var files=values.map(function(v, i){
                                  
                                  if(i==item._getId()){
                                      return {
