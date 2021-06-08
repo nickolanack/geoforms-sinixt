@@ -15,7 +15,7 @@ var button=new Element('button', {
         		'field': {
         			"name":"documents",
         			"value":[{
-        			    name:item.getName()
+        			    name:item.getName(),
         			    description:item.getDescription()
         			    
         			    
