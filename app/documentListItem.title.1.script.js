@@ -33,7 +33,7 @@ var button=new Element('button', {
                     	})).addEvent('success',function(response){
                     	    
                     	    
-                    	    var values=response.values;
+                    	    var values=response.value;
                     	    if(!(values&&values.map)){
                     	        return;
                     	    }
