@@ -1,7 +1,7 @@
 
 
 (new AjaxControlQuery(CoreAjaxUrlRoot, "get_configuration_field", {
-		'widget': "none",
+		'widget': "documents",
 		'field': "documents"
 	})).addEvent('success',function(response){
 
