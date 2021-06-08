@@ -482,7 +482,7 @@
         }
     },
     "widget.9": {
-        "name": "Generic Wizard",
+        "name": "Generic Form",
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "MapItemTemplate",
@@ -1126,7 +1126,7 @@
         }
     },
     "widget.19": {
-        "name": "Generic Wizard",
+        "name": "Generic Form",
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "",
@@ -1209,7 +1209,7 @@
         }
     },
     "widget.20": {
-        "name": "Generic Wizard",
+        "name": "Generic Form",
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "",
@@ -1391,7 +1391,7 @@
         }
     },
     "widget.25": {
-        "name": "Generic Wizard",
+        "name": "Generic Form",
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "",
@@ -1926,7 +1926,7 @@
         }
     },
     "widget.38": {
-        "name": "Generic Wizard",
+        "name": "Generic Form",
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "userAccessForm",
@@ -2182,7 +2182,7 @@
         }
     },
     "widget.44": {
-        "name": "Generic Wizard",
+        "name": "Generic Form",
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "documentForm",
@@ -2411,7 +2411,7 @@
         }
     },
     "widget.51": {
-        "name": "Generic Wizard",
+        "name": "Generic Form",
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "MapItemTemplateTab0",
@@ -2616,7 +2616,7 @@
         }
     },
     "widget.52": {
-        "name": "Generic Wizard",
+        "name": "Generic Form",
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "MapItemTemplateTab1",
@@ -2718,7 +2718,7 @@
         }
     },
     "widget.53": {
-        "name": "Generic Wizard",
+        "name": "Generic Form",
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "MapItemTemplateTab2",
@@ -2823,13 +2823,14 @@
         "name": "Content",
         "instance": "CustomContent",
         "parameters": {
+            "widgetTitle": "ContentFilter",
             "target": "forTheMap",
             "customScript": "ContentFilter.customScript.js",
-            "widgetTitle": "ContentFilter",
             "language": "javascript",
             "returnsValue": false,
-            "readAccess": "public",
-            "cacheable": true
+            "cacheable": true,
+            "parseMarkdown": false,
+            "readAccess": "public"
         }
     },
     "widget.56": {
@@ -2932,6 +2933,13 @@
             "sendNotifications": false,
             "widgetTitle": "",
             "readAccess": "public"
+        }
+    },
+    "widget.59": {
+        "name": "Configuration",
+        "instance": "Configuration",
+        "parameters": {
+            "target": "none"
         }
     }
 }
