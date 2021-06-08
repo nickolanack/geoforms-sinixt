@@ -2970,8 +2970,8 @@
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "",
-            "target": "none",
-            "templateName": "",
+            "target": "forTheMap",
+            "templateName": "resetPassword",
             "requireTarget": true,
             "resolveItemScript": "return item;",
             "beforeSubmitScript": "",
