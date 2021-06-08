@@ -5,13 +5,17 @@
 		'field': "documents"
 	})).addEvent('success',function(response){
 
-       callback([
-            new MockDataTypeItem({
-                name:"Some file one"
-                
-            }),
-        
-        ]);
+
+
+    
+       callback(response.values.map(function(item, i){
+            return new MockDataTypeItem({
+                id:i
+                name:item.name
+                description:item.description;
+            });
+            
+       }));
 
 
 	}).execute();
