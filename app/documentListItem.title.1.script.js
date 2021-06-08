@@ -34,7 +34,7 @@ var button=new Element('button', {
                     	    
                     	    
                     	    var values=response.values;
-                    	    if(!(response.values&&response.values.map)){
+                    	    if(!(values&&values.map)){
                     	        return;
                     	    }
                     
