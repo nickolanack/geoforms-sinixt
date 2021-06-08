@@ -7,26 +7,13 @@ var button=new Element('button', {
 
 				});
 				
-    item.addEvent('save:once',function(){
+   
         
         
-            (new AjaxControlQuery(CoreAjaxUrlRoot, "set_configuration_field", {
-        		'widget': "documents",
-        		'field': {
-        			"name":"documents",
-        			"value":[{
-        			    name:item.getName(),
-        			    description:item.getDescription()
-        			    
-        			    
-        			}]
-        		}
-        	})).addEvent('success',function(response){
-        
-        	}).execute();
+            
         
         
-    })				
+			
 
 
  (new UIModalFormButton(button, application, item, {
@@ -40,7 +27,20 @@ var button=new Element('button', {
 
 				    
 				    
-				    
+				    (new AjaxControlQuery(CoreAjaxUrlRoot, "set_configuration_field", {
+                		'widget': "documents",
+                		'field': {
+                			"name":"documents",
+                			"value":[{
+                			    name:item.getName(),
+                			    description:item.getDescription()
+                			    
+                			    
+                			}]
+                		}
+                	})).addEvent('success',function(response){
+                
+                	}).execute();
 				    
 				    
 
