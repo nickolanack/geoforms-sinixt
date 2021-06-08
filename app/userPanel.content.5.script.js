@@ -2,7 +2,7 @@
 var button=new Element('button', {
 
 					html: 'Rest Password',
-					style: "background-color:#EDC84C;",
+					style: "background-color:#008a8a;",
 					"class": "primary-btn reset-password add-document"
 
 				});
