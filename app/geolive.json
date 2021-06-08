@@ -2226,16 +2226,16 @@
                             "documentForm.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 141,
-                            "y": 206
+                            "x": 151,
+                            "y": 216
                         },
                         "children": [
                             "documentForm.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 101,
-                                    "y": 372
+                                    "x": 111,
+                                    "y": 382
                                 }
                             }
                         ],
@@ -2267,6 +2267,19 @@
                                                 "textFormatScript": "",
                                                 "mediaIconTint": "rgb(100, 149, 237)",
                                                 "onRenderModuleFn": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "FormBooleanField",
+                                            "config": {
+                                                "className": "",
+                                                "label": "Make this document public",
+                                                "mandatory": false,
+                                                "getValueScript": "",
+                                                "updateValueScript": " object.value=value ",
+                                                "submitValueScript": "",
+                                                "validateValueScript": "",
+                                                "formatElementScript": ""
                                             }
                                         }
                                     ]
