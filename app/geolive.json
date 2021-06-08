@@ -2939,7 +2939,20 @@
         "name": "Configuration",
         "instance": "Configuration",
         "parameters": {
-            "target": "none"
+            "target": "none",
+            "contentTemplate": "",
+            "comments": "",
+            "formatParametersScript": "return $parameters;",
+            "formatOutputScript": "return $parameters;",
+            "enableUserAjaxWrite": false,
+            "authUserAjaxScript": "XXXX-XXXX",
+            "saveParametersAsData": false,
+            "parameters": [
+                "widget.Configuration.59.parameters.0.json"
+            ],
+            "documents": [],
+            "widgetTitle": "",
+            "readAccess": "public"
         }
     }
 }
