@@ -1,5 +1,6 @@
 
 var item=new MockDataTypeItem({
+    id:-1,
     name:"New Document",
     description:"",
     mutable:true
