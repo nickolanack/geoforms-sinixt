@@ -34,7 +34,7 @@ var button=new Element('button', {
                     
                              var files=response.value.map(function(v, i){
                                  
-                                 if(i==item.getId()){
+                                 if(i==item._getId()){
                                      return {
                             			    name:item.getName(),
                             			    description:item.getDescription()
