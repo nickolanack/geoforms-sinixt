@@ -12,7 +12,7 @@
             return new MockDataTypeItem({
                 id:i,
                 name:item.name,
-                description:item.description;
+                description:item.description
             });
             
        }));
