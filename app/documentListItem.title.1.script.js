@@ -38,16 +38,18 @@ var button=new Element('button', {
                     	        return;
                     	    }
                     
-                             var files=values.map(function(v, i){
+                             var files=[];
+                             values.forEach(function(v, i){
                                  
                                  if(i==item._getId()){
-                                     return {
+                                     files.push( {
                             			    name:item.getName(),
                             			    description:item.getDescription()
-                            			};
+                            			});
+                            			return;
                                  }
                                  
-                                 return v;
+                                 return files.push(v);
                                  
                                  
                              })  
