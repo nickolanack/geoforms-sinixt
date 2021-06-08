@@ -3,7 +3,7 @@ var button=new Element('button', {
 
 					html: 'Rest Password',
 					style: "background-color:#EDC84C;",
-					"class": "primary-btn reset-password"
+					"class": "primary-btn reset-password add-document"
 
 				});
 
