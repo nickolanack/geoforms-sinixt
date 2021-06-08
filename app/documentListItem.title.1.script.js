@@ -3,7 +3,7 @@ var button=new Element('button', {
 
 					html: 'Edit',
 					style: "background-color:#EDC84C;",
-					"class": "primary-btn add-document edit-document""
+					"class": "primary-btn add-document edit-document"
 
 				});
 				
