@@ -10,8 +10,8 @@
     
        callback(response.values.map(function(item, i){
             return new MockDataTypeItem({
-                id:i
-                name:item.name
+                id:i,
+                name:item.name,
                 description:item.description;
             });
             
