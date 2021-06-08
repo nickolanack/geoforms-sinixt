@@ -2952,7 +2952,7 @@
             "comments": "",
             "formatParametersScript": "return $parameters;",
             "formatOutputScript": "return $parameters;",
-            "enableUserAjaxWrite": false,
+            "enableUserAjaxWrite": true,
             "authUserAjaxScript": "XXXX-XXXX",
             "saveParametersAsData": false,
             "parameters": [
