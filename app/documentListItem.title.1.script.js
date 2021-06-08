@@ -27,20 +27,42 @@ var button=new Element('button', {
 
 				    
 				    
-				    (new AjaxControlQuery(CoreAjaxUrlRoot, "set_configuration_field", {
-                		'widget': "documents",
-                		'field': {
-                			"name":"documents",
-                			"value":[{
-                			    name:item.getName(),
-                			    description:item.getDescription()
-                			    
-                			    
-                			}]
-                		}
-                	})).addEvent('success',function(response){
-                
-                	}).execute();
+				    (new AjaxControlQuery(CoreAjaxUrlRoot, "get_configuration_field", {
+                    		'widget': "documents",
+                    		'field': "documents"
+                    	})).addEvent('success',function(response){
+                    
+                             var files=response.value.map(funciton(v, i){
+                                 
+                                 if(i==item.getId()){
+                                     return {
+                            			    name:item.getName(),
+                            			    description:item.getDescription()
+                            			};
+                                 }
+                                 
+                                 return v;
+                                 
+                                 
+                             })  
+                    
+                    
+                        (new AjaxControlQuery(CoreAjaxUrlRoot, "set_configuration_field", {
+                    		'widget': "documents",
+                    		'field': {
+                    			"name":"documents",
+                    			"value":files
+                    		}
+                    	})).addEvent('success',function(response){
+                    
+                    	}).execute();
+                    
+                    
+                    }).execute();
+				    
+				    
+				    
+				    
 				    
 				    
 
