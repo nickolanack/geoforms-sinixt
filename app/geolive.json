@@ -2939,7 +2939,7 @@
         "name": "Configuration",
         "instance": "Configuration",
         "parameters": {
-            "target": "none",
+            "target": "documents",
             "contentTemplate": "",
             "comments": "",
             "formatParametersScript": "return $parameters;",
