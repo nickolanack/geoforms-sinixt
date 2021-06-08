@@ -401,4 +401,9 @@ button.primary-btn.add-document.edit-document {
     padding: 3px 7px;
 }
 
+button.primary-btn.reset-password.add-document {
+    margin-left: 100px;
+    background-color: #008a8a;
+}
+
 
