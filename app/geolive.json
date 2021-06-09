@@ -2977,12 +2977,12 @@
             "authUserAjaxScript": "XXXX-XXXX",
             "saveParametersAsData": true,
             "parameters": [
-                "widget.Configuration.59.parameters.0.json"
+                "Documents data.parameters.0.json"
             ],
             "documents": [
-                "widget.Configuration.59.documents.0.json"
+                "Documents data.documents.0.json"
             ],
-            "widgetTitle": "",
+            "widgetTitle": "Documents data",
             "readAccess": "public"
         }
     },
