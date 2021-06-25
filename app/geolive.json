@@ -98,7 +98,7 @@
             "CachingEnabled": false,
             "ExternalizeWidgetScripts": true,
             "PrettyPrintJson": true,
-            "showFrontEndEditButtons": false,
+            "showFrontEndEditButtons": true,
             "JSCacheObfuscationEnabled": false,
             "phase": "production",
             "ForceHTTPS": false,
@@ -495,6 +495,7 @@
             "onUpdateScript": "",
             "onSaveScript": "MapItemTemplate.onSaveScript.js",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -1139,6 +1140,7 @@
             "onUpdateScript": "",
             "onSaveScript": "",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -1222,6 +1224,7 @@
             "onUpdateScript": "",
             "onSaveScript": "",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -1387,7 +1390,9 @@
             "filterRowScript": "return true;",
             "formatFieldsScript": "return $fields;",
             "formatRowScript": "return $record;",
-            "formatMapTile": ""
+            "formatMapTile": "",
+            "exportDataScript": "defaultExportFn();",
+            "formatExporterScript": ""
         }
     },
     "widget.25": {
@@ -1404,6 +1409,7 @@
             "onUpdateScript": "",
             "onSaveScript": "",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -1947,6 +1953,7 @@
             "onUpdateScript": "",
             "onSaveScript": "",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -2211,6 +2218,7 @@
             "onUpdateScript": "",
             "onSaveScript": "",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -2453,6 +2461,7 @@
             "onUpdateScript": "",
             "onSaveScript": "MapItemTemplateTab0.onSaveScript.js",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -2658,6 +2667,7 @@
             "onUpdateScript": "",
             "onSaveScript": "MapItemTemplateTab1.onSaveScript.js",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -2760,6 +2770,7 @@
             "onUpdateScript": "",
             "onSaveScript": "MapItemTemplateTab2.onSaveScript.js",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -3000,6 +3011,7 @@
             "onUpdateScript": "",
             "onSaveScript": "",
             "onLoadScript": "",
+            "formatStepModulesScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
