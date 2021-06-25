@@ -1,7 +1,26 @@
 var ContentFilter = (function() {
 
 
-	var ContentFilterBase = new Class({
+	if (typeof Class_ == 'undefined') {
+		//define locally
+		var Class_ = function(def) {
+
+			var c = function() {
+
+			}
+
+			Object.keys(def).forEach(function(name) {
+				c.prototype[name] = def[name];
+			});
+
+			return c;
+
+		}
+	}
+
+
+
+	var ContentFilterBase = new Class_({
 
 
 
@@ -9,24 +28,94 @@ var ContentFilter = (function() {
 
 	var ContentFilter = new ContentFilterBase();
 
+	ContentFilter.CombineSections = function(sections) {
 
-	ContentFilter.ParseNameSection = function(text) {
-		return text.split("\n\n").shift().split('Layer Keywords:').shift();
-	}
 
-	ContentFilter.ReplaceNameSection=function(text, replace){
+		var text = sections.name +
+			"\n\n" +
+			(sections.layerKeywords.length == 0 ? '' : ('Layer Keywords: ' + sections.layerKeywords.join(', ') + "\n\n")) +
+			sections.source +
+			"\n\n" +
+			"Personal Notes:\n\n" + sections.notes;
+		return text;
+	};
 
-		if(text===false){
-			return replace;
+
+	ContentFilter.ParseSections = function(text) {
+
+
+		var sections = {
+			name: '',
+			layerKeywords: [],
+			source: '',
+			notes: ''
 		}
 
-		var chunks = text.split("\n\n");
-		var section = chunks[0].split('Layer Keywords:')
-		var parts=section[0].split("<");
-		parts[0]=replace;
-		section[0] = parts.join("<");
-		chunks[0] = section.join('Layer Keywords:');
-		return chunks.join("\n\n");
+
+		var blocks = text.split("\n\n");
+
+		sections.name = blocks[0].split('Layer Keywords:').shift().trim();
+
+
+		if (text.indexOf('Layer Keywords:') > 0) {
+			var keywords = text.split('Layer Keywords:').pop().split("\n\n").shift().split(',');
+
+			sections.layerKeywords = keywords.map(function(k) {
+				return k.trim();
+			});
+		}
+
+
+		var remainingText = blocks.slice(1).join('\n\n');
+
+		if (remainingText.indexOf('Layer Keywords:') >= 0) {
+			remainingText=remainingText.split('Layer Keywords:').pop().split('\n\n').slice(1).join('\n\n');
+		}
+
+		sections.source = remainingText.split('Personal Notes:').shift().trim();
+
+
+		if (text.indexOf('Personal Notes:') == -1) {
+			return '';
+		}
+
+		sections.notes = text.split('Personal Notes:').pop().trim();
+
+		return sections;
+	}
+
+
+	ContentFilter.ParseLayerKeywordsSection = function(text) {
+		
+		return ContentFilter.ParseSections(text).layerKeywords;
+
+	}
+
+	ContentFilter.ReplaceLayerKeywordsSection = function(text, keywords) {
+
+		if (typeof keywords == "string") {
+			keyords = keywords.split(',');
+		}
+
+		var sections = ContentFilter.ParseSections(text);
+		sections.layerKeywords = keyords.map(function(k) {
+			return k.trim();
+		});
+		return ContentFilter.CombineSections(sections);
+
+
+	}
+
+	ContentFilter.ParseNameSection = function(text) {
+		return ContentFilter.ParseSections(text).name;
+	}
+
+	ContentFilter.ReplaceNameSection = function(text, replace) {
+
+		var sections = ContentFilter.ParseSections(text);
+		sections.name = replace.trim();
+		return ContentFilter.CombineSections(sections);
+
 
 	}
 
@@ -36,18 +125,14 @@ var ContentFilter = (function() {
 
 
 	ContentFilter.ParseSourceSection = function(text) {
-		var text = text.split("\n\n").slice(1).join('\n\n');
-
-		if (text.indexOf('Layer Keywords:') >= 0) {
-			text.split('Layer Keywords:').pop().split('\n\n').slice(1).join('\n\n');
-		}
-
-		return text.split('Personal Notes:').shift();
+		return ContentFilter.ParseSections(text).source;
 	}
 
-	ContentFilter.ReplaceSourceSection=function(text, replace){
+	ContentFilter.ReplaceSourceSection = function(text, replace) {
 
-		
+		var sections = ContentFilter.ParseSections(text);
+		sections.source = replace.trim();
+		return ContentFilter.CombineSections(sections);
 
 	}
 
@@ -58,16 +143,14 @@ var ContentFilter = (function() {
 	}
 
 	ContentFilter.ParseNotesSection = function(text) {
-		if (text.indexOf('Personal Notes:') == -1) {
-			return '';
-		}
-
-		return text.split('Personal Notes:').pop();
+		return ContentFilter.ParseSections(text).notes;
 	}
 
-	ContentFilter.ReplaceNotesSection=function(text, replace){
+	ContentFilter.ReplaceNotesSection = function(text, replace) {
 
-		
+		var sections = ContentFilter.ParseSections(text);
+		sections.notes = replace.trim();
+		return ContentFilter.CombineSections(sections);
 
 	}
 
@@ -75,7 +158,6 @@ var ContentFilter = (function() {
 		return ContentFilter.ParseNotesSection(text).split("\n").join("<br/>");
 	}
 
-	
 
 
 	ContentFilter.AddTextFieldNameFilter = function(textField) {
@@ -154,3 +236,9 @@ var ContentFilter = (function() {
 	return ContentFilter;
 
 })();
+
+
+
+if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
+	module.exports = ContentFilter;
+}
