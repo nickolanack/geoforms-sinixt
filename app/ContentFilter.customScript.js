@@ -31,18 +31,23 @@ var ContentFilter = (function() {
 	ContentFilter.CombineSections = function(sections) {
 
 
-		var text = sections.name +
+		var text = (sections.name.trim()) +
 			"\n\n" +
 			(sections.layerKeywords.length == 0 ? '' : ('Layer Keywords: ' + sections.layerKeywords.join(', ') + "\n\n")) +
-			sections.source +
+			(sections.source.trim()) +
 			"\n\n" +
-			"Personal Notes:\n\n" + sections.notes;
+			"Personal Notes:\n\n" + (sections.notes.trim());
 		return text;
 	};
 
 
 	ContentFilter.ParseSections = function(text) {
 
+
+		if (typeof text !== "string") {
+			console.trace();
+			throw 'Not a string: ' + (typeof text);
+		}
 
 		var sections = {
 			name: '',
@@ -69,7 +74,7 @@ var ContentFilter = (function() {
 		var remainingText = blocks.slice(1).join('\n\n');
 
 		if (remainingText.indexOf('Layer Keywords:') >= 0) {
-			remainingText=remainingText.split('Layer Keywords:').pop().split('\n\n').slice(1).join('\n\n');
+			remainingText = remainingText.split('Layer Keywords:').pop().split('\n\n').slice(1).join('\n\n');
 		}
 
 		sections.source = remainingText.split('Personal Notes:').shift().trim();
@@ -86,10 +91,8 @@ var ContentFilter = (function() {
 
 
 	ContentFilter.ParseLayerKeywordsSection = function(text) {
-		
-		return ContentFilter.ParseSections(text).layerKeywords;
-
-	}
+		return _ParseSection(text, 'layerKeywords');
+	};
 
 	ContentFilter.ReplaceLayerKeywordsSection = function(text, keywords) {
 
@@ -104,63 +107,72 @@ var ContentFilter = (function() {
 		return ContentFilter.CombineSections(sections);
 
 
-	}
+	};
 
-	ContentFilter.ParseNameSection = function(text) {
-		return ContentFilter.ParseSections(text).name;
-	}
+	var _ParseSection = function(text, name) {
 
-	ContentFilter.ReplaceNameSection = function(text, replace) {
+		return ContentFilter.ParseSections(text)[name];
+	};
 
-		var sections = ContentFilter.ParseSections(text);
-		sections.name = replace.trim();
-		return ContentFilter.CombineSections(sections);
+	var _ReplaceSection = function(text, replace, name) {
 
+		if (typeof name !== "string") {
+			console.trace();
+			throw 'Not a string, field name:  ' + name + ': ' + (typeof name);
+		}
 
-	}
+		if (typeof text !== "string") {
+			console.trace();
+			throw 'Not a string, replace ' + name + ' - text: ' + (typeof text) + JSON.stringify(text);
+		}
 
-	ContentFilter.ParseNameSectionHtml = function(text) {
-		return ContentFilter.ParseNameSection(text).split("\n").join("<br/>");
-	}
-
-
-	ContentFilter.ParseSourceSection = function(text) {
-		return ContentFilter.ParseSections(text).source;
-	}
-
-	ContentFilter.ReplaceSourceSection = function(text, replace) {
+		if (typeof replace !== "string") {
+			console.trace();
+			throw 'Not a string, replace: ' + (typeof replace);
+		}
 
 		var sections = ContentFilter.ParseSections(text);
-		sections.source = replace.trim();
+		sections[name] = replace;
 		return ContentFilter.CombineSections(sections);
 
-	}
+	};
+
+
+	(['name', 'source', 'notes']).forEach(function(name) {
+
+		var N = (name[0]).toUpperCase() + name.substring(1);
+
+
+		//console.log(name);
+
+
+		ContentFilter['Parse' + N + 'Section'] = function(text) {
+			//console.log("_ParseSection," + name);
+			return _ParseSection(text, name);
+		};
+
+		ContentFilter['Replace' + N + 'Section'] = function(text, replace) {
+			//console.log("_ReplaceSection," + name);
+			return _ReplaceSection(text, replace, name);
+		};
+
+		ContentFilter['Parse' + N + 'SectionHtml'] = function(text) {
+			//console.log("_ParseSection," + name);
+			return _ParseSection(text, name).split("\n").join("<br/>");
+		};
+
+		ContentFilter['AddTextField'+N+'Filter'] = function(textField) {
+
+			_AddTextFieldNameFilter(textField, name);
+
+		};
+
+
+	});
 
 
 
-	ContentFilter.ParseSourceSectionHtml = function(text) {
-		return ContentFilter.ParseSourceSection(text).split("\n").join("<br/>");
-	}
-
-	ContentFilter.ParseNotesSection = function(text) {
-		return ContentFilter.ParseSections(text).notes;
-	}
-
-	ContentFilter.ReplaceNotesSection = function(text, replace) {
-
-		var sections = ContentFilter.ParseSections(text);
-		sections.notes = replace.trim();
-		return ContentFilter.CombineSections(sections);
-
-	}
-
-	ContentFilter.ParseNotesSectionHtml = function(text) {
-		return ContentFilter.ParseNotesSection(text).split("\n").join("<br/>");
-	}
-
-
-
-	ContentFilter.AddTextFieldNameFilter = function(textField) {
+	var _AddTextFieldNameFilter = function(textField, name) {
 
 
 		var initialText = false
@@ -172,64 +184,71 @@ var ContentFilter = (function() {
 				initialText = text;
 			}
 
-			return ContentFilter.ParseNameSection(text);
+			return _ParseSection(text, name);
 		});
-		textField.addOutputFilter(function(text) {
+		textField.addOutputFilter(function(replace) {
 			console.error('output filter');
-			return ContentFilter.ReplaceNameSection(initialText, text);
+			return _ReplaceSection(initialText, replace, name);
 			//return initialText;
 
 		});
 
 
-	}
-
-	ContentFilter.AddTextFieldSourceFilter = function(textField) {
-
-		var initialText = false
-
-		textField.addInputFilter(function(text) {
-			console.error('input filter')
-
-			if (initialText === false) {
-				initialText = text;
-			}
-
-			return ContentFilter.ParseSourceSection(text);
-
-		});
-		textField.addOutputFilter(function(text) {
-			console.error('output filter');
-			console.log(ContentFilter.ReplaceSourceSection(initialText, text));
-			return initialText;
-
-		});
-
-	}
-	ContentFilter.AddTextFieldNotesFilter = function(textField) {
+	};
 
 
-		var initialText = false
 
-		textField.addInputFilter(function(text) {
-			console.error('input filter')
+	// ContentFilter.AddTextFieldNameFilter = function(textField) {
 
-			if (initialText === false) {
-				initialText = text;
-			}
 
-			return ContentFilter.ParseNotesSection(text);
+	// 	var initialText = false
 
-		});
-		textField.addOutputFilter(function(text) {
+	// 	textField.addInputFilter(function(text) {
+	// 		console.error('input filter')
 
-			console.error('output filter');
-			console.log(ContentFilter.ReplaceNotesSection(initialText, text));
-			return initialText;
+	// 		if (initialText === false) {
+	// 			initialText = text;
+	// 		}
 
-		});
+	// 		return ContentFilter.ParseNameSection(text);
+	// 	});
+	// 	textField.addOutputFilter(function(text) {
+	// 		console.error('output filter');
+	// 		return ContentFilter.ReplaceNameSection(initialText, text);
+	// 		//return initialText;
 
-	}
+	// 	});
+
+
+	// };
+
+	// ContentFilter.AddTextFieldSourceFilter = function(textField) {
+
+	// 	var initialText = false
+
+	// 	textField.addInputFilter(function(text) {
+	// 		console.error('input filter')
+
+	// 		if (initialText === false) {
+	// 			initialText = text;
+	// 		}
+
+	// 		return ContentFilter.ParseSourceSection(text);
+
+	// 	});
+	// 	textField.addOutputFilter(function(text) {
+	// 		console.error('output filter');
+	// 		console.log(ContentFilter.ReplaceSourceSection(initialText, text));
+	// 		return initialText;
+
+	// 	});
+
+	// };
+	// ContentFilter.AddTextFieldNotesFilter = function(textField) {
+
+	// 	_AddTextFieldNameFilter(textField, 'notes');
+
+	// };
 
 
 
