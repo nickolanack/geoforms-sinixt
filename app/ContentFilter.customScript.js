@@ -177,6 +177,7 @@ var ContentFilter = (function() {
 
 		var initialText = false
 
+		textField.options.reverseOutputfilterOrder=true;
 		textField.addInputFilter(function(text) {
 			console.error('input filter')
 
@@ -195,60 +196,6 @@ var ContentFilter = (function() {
 
 
 	};
-
-
-
-	// ContentFilter.AddTextFieldNameFilter = function(textField) {
-
-
-	// 	var initialText = false
-
-	// 	textField.addInputFilter(function(text) {
-	// 		console.error('input filter')
-
-	// 		if (initialText === false) {
-	// 			initialText = text;
-	// 		}
-
-	// 		return ContentFilter.ParseNameSection(text);
-	// 	});
-	// 	textField.addOutputFilter(function(text) {
-	// 		console.error('output filter');
-	// 		return ContentFilter.ReplaceNameSection(initialText, text);
-	// 		//return initialText;
-
-	// 	});
-
-
-	// };
-
-	// ContentFilter.AddTextFieldSourceFilter = function(textField) {
-
-	// 	var initialText = false
-
-	// 	textField.addInputFilter(function(text) {
-	// 		console.error('input filter')
-
-	// 		if (initialText === false) {
-	// 			initialText = text;
-	// 		}
-
-	// 		return ContentFilter.ParseSourceSection(text);
-
-	// 	});
-	// 	textField.addOutputFilter(function(text) {
-	// 		console.error('output filter');
-	// 		console.log(ContentFilter.ReplaceSourceSection(initialText, text));
-	// 		return initialText;
-
-	// 	});
-
-	// };
-	// ContentFilter.AddTextFieldNotesFilter = function(textField) {
-
-	// 	_AddTextFieldNameFilter(textField, 'notes');
-
-	// };
 
 
 
