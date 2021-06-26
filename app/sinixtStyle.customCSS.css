@@ -8,7 +8,39 @@ span.array-module.tab-3.tab {
 }
 
 
-span.video.noIcon:after {
+span.document.noIcon {
+    background: #25adaa;
+    position: relative;
+    float: revert;
+    padding: 10px 40px;
+    z-index: inherit;
+    line-height: 24px;
+    color: white;
+    font-size: 19px;
+    margin: 5px;
+    float: right;
+}
+
+span.document.noIcon:after {
+    content: "Add File";
+}
+
+
+span.ImageModule.image {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+.media-selection.ToolbarBottom {
+    height: 55px;
+    margin-top: 5px;
+}
+
+
+span.video.noIcon:after, span.document.noIcon {
     background-color: #086c8c;
 }
 
