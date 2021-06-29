@@ -2420,16 +2420,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 569,
-                            "y": 555
+                            "x": 579,
+                            "y": 565
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 529,
-                                    "y": 781
+                                    "x": 539,
+                                    "y": 791
                                 }
                             }
                         ],
@@ -2480,7 +2480,7 @@
                                                 "shuffleTags": false,
                                                 "tags": "[\n    \"cultural\",\n    \"under water\",\n    \"contentious claim\",\n    \"sinixt member killed\",\n    \"sites of resistance\"\n]",
                                                 "getItemTagsScript": "return defaultTags;",
-                                                "formatModule": ""
+                                                "formatModule": "\n\n\n\nmodule.runOnceOnLoad(function(){\n                    module.getCloud().getElement().appendChild(new Element('span', {\n\t\t\t\t\t\thtml:\"+\",\n\t\t\t\t\t\t\"class\":\"tag-el add-tag\",\n\t\t\t\t\t\tevents:{\n\t\t\t\t\t\t\tclick:function(){\n\n\t\t\t\t\t\t\t\t(new UIModalDialog(application, new MockDataTypeItem({name:\"New Thing\"}), {\n\t\t                \t\t\"formName\":\"newCloudValueForm\", \"formOptions\":{template:\"form\"}})).show();\n\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}));\n\t\t\t\t\t\n});"
                                             }
                                         },
                                         {
