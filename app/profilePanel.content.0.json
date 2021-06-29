@@ -2,7 +2,7 @@
     "type": "InlineHtml",
     "config": {
         "className": "",
-        "text": "<h2>User access<\/h2>",
+        "text": "<h2>Your account<\/h2>",
         "template": "",
         "templateVariablesScript": "",
         "formatTextScript": ""
