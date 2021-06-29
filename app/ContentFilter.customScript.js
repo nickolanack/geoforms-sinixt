@@ -55,6 +55,8 @@ var ContentFilter = (function() {
 						if(insert.indexOf('target="_blank"')===-1){
 							insert=insert.replace('<a ', '<a target="_blank" ');
 						}
+
+						insert=insert.replace('<a ', '<a download="'+doc+'" ');
 					}
 
 					
