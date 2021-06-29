@@ -9,7 +9,7 @@
         "showImages": true,
         "showDocuments": true,
         "showVideos": true,
-        "className": "--no-video",
+        "className": "--no-video show-documents focus-documents",
         "maxChars": 0,
         "showExpandInput": true,
         "toolbarPosition": "bottom",
