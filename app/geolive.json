@@ -1681,7 +1681,7 @@
             "target": "forTheMap",
             "position": "RIGHT_TOP",
             "customScript": "",
-            "namedView": "userPanel",
+            "namedView": "sidePanel",
             "readAccess": "public"
         }
     },
