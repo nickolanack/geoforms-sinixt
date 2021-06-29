@@ -25,14 +25,17 @@ span.document.noIcon {
 
 
 
-span.ImageModule.image {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    background-size: contain;
-    background-position: center;
+.media-item{
+    
+    .image, .document {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        background-size: contain;
+        background-position: center;
+    }
 }
 
 
