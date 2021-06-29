@@ -1,10 +1,10 @@
 {
-    "type": "WizardTitleField",
+    "type": "InlineHtml",
     "config": {
-        "label": "Title",
-        "message": "add a title",
         "className": "",
-        "maxChars": 0,
-        "textFormatScript": ""
+        "text": "<h2>Add a new category value<\/h2>",
+        "template": "",
+        "templateVariablesScript": "",
+        "formatTextScript": ""
     }
 }
