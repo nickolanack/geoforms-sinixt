@@ -3238,16 +3238,16 @@
                             "Add Cloud Tag.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 148,
-                            "y": 280
+                            "x": 158,
+                            "y": 290
                         },
                         "children": [
                             "Add Cloud Tag.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 108,
-                                    "y": 446
+                                    "x": 118,
+                                    "y": 456
                                 }
                             }
                         ],
@@ -3264,8 +3264,8 @@
                                         {
                                             "type": "WizardTitleField",
                                             "config": {
-                                                "label": "Title",
-                                                "message": "add a title",
+                                                "label": "Label",
+                                                "message": "add a label",
                                                 "className": "",
                                                 "maxChars": 0,
                                                 "textFormatScript": ""
