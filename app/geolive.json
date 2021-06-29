@@ -3084,7 +3084,7 @@
             "templateName": "sidePanel",
             "requireTarget": true,
             "resolveItemScript": "return item",
-            "onRenderApplictionScript": "",
+            "onRenderApplictionScript": "sidePanel.onRenderApplictionScript.js",
             "formatModulesScript": "",
             "notifyViewer": false,
             "metadata": {
