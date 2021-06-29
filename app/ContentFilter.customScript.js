@@ -40,6 +40,7 @@ var ContentFilter = (function() {
 
 					var insert=_docs[doc];
 					insert=insert.replace('>link<', '>'+doc+'<');
+					insert=insert.replace('></a', '>'+doc+'</a');
 
 					str=str.substring(0, start)+insert+str.substring(start+doc.length);
 				}
