@@ -2420,16 +2420,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 609,
-                            "y": 595
+                            "x": 619,
+                            "y": 605
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 569,
-                                    "y": 821
+                                    "x": 579,
+                                    "y": 831
                                 }
                             }
                         ],
@@ -2500,7 +2500,7 @@
                                                 "shuffleTags": false,
                                                 "tags": "[\n    \"Pre-Takumakst Period-3500-2700 BP\",\n    \"Takumakst Period-2700-1600 BP\",\n    \"Sinaikst Period-1600-600 BP\",\n    \"Shwayip Period-600-200 BP\"\n]",
                                                 "getItemTagsScript": "return defaultTags;",
-                                                "formatModule": ""
+                                                "formatModule": "\n\n\n\nmodule.runOnceOnLoad(function(){\n    \n                var appendButton=function(){\n                    module.getCloud().getElement().appendChild(new Element('span', {\n\t\t\t\t\t\thtml:\"+\",\n\t\t\t\t\t\t\"class\":\"tag-el add-tag\",\n\t\t\t\t\t\tevents:{\n\t\t\t\t\t\t\tclick:function(){\n\t\t\t\t\t\t\t    \n\t\t\t\t\t\t\t    var newItem=new MockDataTypeItem({name:\"New Thing\"});\n\n\t\t\t\t\t\t\t\t(new UIModalDialog(application, newItem, {\n\t\t                \t\t\"formName\":\"newCloudValueForm\"})).show();\n\t\t                \t\t\n\t\t                \t\tnewItem.addEvent('save',function(){\n\t\t                \t\t    module.addValue(newItem.getName());\n\t\t                \t\t    appendButton();\n\t\t                \t\t});\n\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}));\n                };\n                \n                appendButton();\n\t\t\t\t\t\n});"
                                             }
                                         },
                                         {
@@ -2520,7 +2520,7 @@
                                                 "shuffleTags": false,
                                                 "tags": "[\n    \"boundary one\",\n    \"boundary two\"\n]",
                                                 "getItemTagsScript": "return defaultTags;",
-                                                "formatModule": ""
+                                                "formatModule": "\n\n\n\nmodule.runOnceOnLoad(function(){\n    \n                var appendButton=function(){\n                    module.getCloud().getElement().appendChild(new Element('span', {\n\t\t\t\t\t\thtml:\"+\",\n\t\t\t\t\t\t\"class\":\"tag-el add-tag\",\n\t\t\t\t\t\tevents:{\n\t\t\t\t\t\t\tclick:function(){\n\t\t\t\t\t\t\t    \n\t\t\t\t\t\t\t    var newItem=new MockDataTypeItem({name:\"New Thing\"});\n\n\t\t\t\t\t\t\t\t(new UIModalDialog(application, newItem, {\n\t\t                \t\t\"formName\":\"newCloudValueForm\"})).show();\n\t\t                \t\t\n\t\t                \t\tnewItem.addEvent('save',function(){\n\t\t                \t\t    module.addValue(newItem.getName());\n\t\t                \t\t    appendButton();\n\t\t                \t\t});\n\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}));\n                };\n                \n                appendButton();\n\t\t\t\t\t\n});"
                                             }
                                         },
                                         {
