@@ -23,7 +23,9 @@ span.document.noIcon {
 }
 
 
-
+.iw-content a.document-link {
+    display: none;
+}
 
 .media-item{
     
