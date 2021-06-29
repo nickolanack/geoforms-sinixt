@@ -9,7 +9,15 @@
             })).addEvent("onSuccess", function(distinct) {
                 
                 
-            callback(defaultTags());
+                var tags=defaultTags().concat(distinct.values)
+                
+                callback(tags.filter(function(t, i){
+                    if((!t)||t===""){
+                        return false;
+                    }
+                    return tags.indexOf(t)===i;
+                }));
+           
 
                 
             }).execute();

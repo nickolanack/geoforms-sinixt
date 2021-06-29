@@ -2420,16 +2420,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 639,
-                            "y": 625
+                            "x": 649,
+                            "y": 635
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 599,
-                                    "y": 851
+                                    "x": 609,
+                                    "y": 861
                                 }
                             }
                         ],
