@@ -8,8 +8,11 @@
               plugin: "Attributes"
             })).addEvent("onSuccess", function(distinct) {
                 
-                
-                var tags=defaultTags().concat(distinct.values)
+                var tags=defaultTags;
+                if(typeof defaultTags=="string"){
+                    tags=JSON.parse(defaultTags);
+                }
+                var tags=tags.concat(distinct.values)
                 
                 callback(tags.filter(function(t, i){
                     if((!t)||t===""){
