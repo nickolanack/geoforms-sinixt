@@ -19,11 +19,10 @@ span.document.noIcon {
     font-size: 19px;
     margin: 5px;
     float: right;
+    font-weight:100;
 }
 
-span.document.noIcon:after {
-    content: "Add File";
-}
+
 
 
 span.ImageModule.image {
@@ -239,19 +238,7 @@ span.video.noIcon:after, span.document.noIcon {
         content: "Add document";
     }
     
-    .upload-btns span.document:after{
-        background-color: #549ae6;
-        border: none;
-        box-shadow: 0 0 3px rgb(0 0 0 / 20%);
-        margin: 5px;
-        padding: 10px 25px;
-        color: white;
-        font-weight: 100;
-        text-shadow: 0 0 5px rgb(0 0 0 / 50%);
-        font-size: 22px;
-        margin-top: 25px;
-        border-radius: 3px;
-    }
+    
     
     
     
