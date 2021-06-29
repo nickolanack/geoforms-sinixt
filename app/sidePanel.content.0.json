@@ -2,7 +2,7 @@
     "type": "WizardScriptElement",
     "config": {
         "name": "My Custom Script",
-        "script": "return new NavigationMenuModule({\n    \"Main\":[\n        {\n            \"name\":\"Users\"\n            \n        }, {\n            \"name\":\"Documents\",\n        }, {\n            \"name\":\"Profile\"\n            \n        }\n    ]\n    },{\n        targetUIView:function(button, section, viewer){\n            return viewer.findChildViews(function(v) {\n   \t\t\t\treturn v instanceof UIViewModule;\n   \t\t\t}).pop();\n        }\n        initialView:{view:\"Users\", section:\"Main\"}\n    });",
+        "script": "return new NavigationMenuModule({\n    \"Main\":[\n        {\n            \"name\":\"Users\"\n            \n        }, {\n            \"name\":\"Documents\",\n        }, {\n            \"name\":\"Profile\"\n            \n        }\n    ]\n    },{\n        targetUIView:function(button, section, viewer){\n            return viewer.findChildViews(function(v) {\n   \t\t\t\treturn v instanceof UIViewModule;\n   \t\t\t}).pop();\n        },\n        initialView:{view:\"Users\", section:\"Main\"}\n    });",
         "description": "Info about my custom script"
     }
 }
