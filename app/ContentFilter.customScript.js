@@ -18,11 +18,35 @@ var ContentFilter = (function() {
 		}
 	}
 
-
+	var _docs={};
 
 	var ContentFilterBase = new Class_({
 
+		addDocuments:function(docs){
+			docs.forEach(function(d){
 
+				_docs[d.name]=d.description;
+
+			});
+		},
+		parseDocuments:function(str){
+
+			var strLower=str.toLowerCase();
+
+			Object.keys(_docs).forEach(function(doc){
+				var start=strLower.indexOf(doc.toLowerCase());
+				console.log(doc+": "+start);
+				if(start>=0){
+
+					var insert=_docs[doc];
+					insert=insert.replace('>link<', '>'+doc+'<');
+
+					str=str.substring(0, start)+insert+str.substring(start+doc.length);
+				}
+			});
+
+			return str;
+		}
 
 	});
 
@@ -158,7 +182,7 @@ var ContentFilter = (function() {
 
 		ContentFilter['Parse' + N + 'SectionHtml'] = function(text) {
 			//console.log("_ParseSection," + name);
-			return _ParseSection(text, name).split("\n").join("<br/>");
+			return ContentFilter.parseDocuments(_ParseSection(text, name).split("\n").join("<br/>"));
 		};
 
 		ContentFilter['AddTextField'+N+'Filter'] = function(textField) {
