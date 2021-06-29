@@ -8,6 +8,21 @@ span.array-module.tab-3.tab {
 }
 
 
+a.formatted_link:before {
+    content: "\0f1c1";
+    display: inline-block;
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+    color: #750106;
+ }
+
+
+
+a.formatted_link {
+    color: #3a6dcf;
+    font-weight: 400;
+}
+
 span.document.noIcon {
     background: #25adaa;
     position: relative;
