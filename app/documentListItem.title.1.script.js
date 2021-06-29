@@ -52,7 +52,7 @@ var button=new Element('button', {
                                  return files.push(v);
                                  
                                  
-                             })  
+                             });
                     
                     
                         (new AjaxControlQuery(CoreAjaxUrlRoot, "set_configuration_field", {
