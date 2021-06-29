@@ -3,6 +3,15 @@
 @import url("/webresources/font-awesome-4.7.0/css/font-awesome.min.css");
 
 
+span.tag-el.add-tag:hover {
+    background-color: #549ae6;
+    color:white;
+}
+
+span.tag-el.add-tag {
+    color: #096c8c;
+}
+
 ul.main>label {
     display: none;
 }
