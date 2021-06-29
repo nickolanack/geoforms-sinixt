@@ -2477,16 +2477,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 559,
-                            "y": 545
+                            "x": 569,
+                            "y": 555
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 519,
-                                    "y": 771
+                                    "x": 529,
+                                    "y": 781
                                 }
                             }
                         ],
@@ -2511,7 +2511,7 @@
                                                 "showImages": true,
                                                 "showDocuments": true,
                                                 "showVideos": true,
-                                                "className": "--no-video",
+                                                "className": "--no-video show-documents focus-documents",
                                                 "maxChars": 0,
                                                 "showExpandInput": true,
                                                 "toolbarPosition": "bottom",
