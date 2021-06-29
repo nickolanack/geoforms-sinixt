@@ -130,7 +130,7 @@ var ContentFilter = (function() {
 
 
 		if (text.indexOf('Personal Notes:') == -1) {
-			return '';
+			return sections;
 		}
 
 		sections.notes = text.split('Personal Notes:').pop().trim();
