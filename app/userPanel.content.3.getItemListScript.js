@@ -7,8 +7,8 @@
 
 
 
-    
-       callback(response.value.map(function(item, i){
+        ContentFilter.addDocuments(response.value);
+        callback(response.value.map(function(item, i){
             var doc= new MockDataTypeItem({
                 id:i,
                 name:item.name,
