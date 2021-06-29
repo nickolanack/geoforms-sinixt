@@ -18,31 +18,53 @@ var ContentFilter = (function() {
 		}
 	}
 
-	var _docs={};
+	var _docs = {};
 
 	var ContentFilterBase = new Class_({
 
-		addDocuments:function(docs){
-			docs.forEach(function(d){
+		addDocuments: function(docs) {
+			docs.forEach(function(d) {
 
-				_docs[d.name]=d.description;
+				_docs[d.name] = d.description;
 
 			});
 		},
-		parseDocuments:function(str){
+		parseDocuments: function(str) {
 
-			var strLower=str.toLowerCase();
+			var strLower = str.toLowerCase();
 
-			Object.keys(_docs).forEach(function(doc){
-				var start=strLower.indexOf(doc.toLowerCase());
-				console.log(doc+": "+start);
-				if(start>=0){
+			Object.keys(_docs).forEach(function(doc) {
+				var start = strLower.indexOf(doc.toLowerCase());
+				console.log(doc + ": " + start);
+				if (start >= 0) {
 
-					var insert=_docs[doc];
-					insert=insert.replace('>link<', '>'+doc+'<');
-					insert=insert.replace('></a', '>'+doc+'</a');
 
-					str=str.substring(0, start)+insert+str.substring(start+doc.length);
+
+					var trailingString = str.substring(start + doc.length);
+
+					var name = doc;
+					var insert = _docs[doc];
+
+					const regex = /\s*[p][.]?\s*([0-9]+)/;
+					const match = trailingString.match(regex);
+					if (match && trailingString.indexOf(match[0]) === 0) {
+						var page = match[1];
+						name = doc + match[0];
+						trailingString = trailingString.substring(match[0].length);
+						insert=insert.replace('.pdf','.pdf#page='+page);
+						if(insert.indexOf('target="_blank"')===-1){
+							insert=insert.replace('<a ', '<a target="_blank" ');
+						}
+					}
+
+					
+					
+					insert = insert.replace('>link<', '>' + name + '<');
+					insert = insert.replace('></a', '>' + name + '</a');
+					
+					var newString = str.substring(0, start) + insert + trailingString;
+					str = newString;
+
 				}
 			});
 
@@ -186,7 +208,7 @@ var ContentFilter = (function() {
 			return ContentFilter.parseDocuments(_ParseSection(text, name).split("\n").join("<br/>"));
 		};
 
-		ContentFilter['AddTextField'+N+'Filter'] = function(textField) {
+		ContentFilter['AddTextField' + N + 'Filter'] = function(textField) {
 
 			_AddTextFieldNameFilter(textField, name);
 
@@ -202,7 +224,7 @@ var ContentFilter = (function() {
 
 		var initialText = false
 
-		textField.options.reverseOutputfilterOrder=true;
+		textField.options.reverseOutputfilterOrder = true;
 		textField.addInputFilter(function(text) {
 			console.error('input filter')
 
