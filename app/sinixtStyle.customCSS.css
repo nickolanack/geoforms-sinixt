@@ -3,6 +3,41 @@
 @import url("/webresources/font-awesome-4.7.0/css/font-awesome.min.css");
 
 
+ul.main>label {
+    display: none;
+}
+
+ul.main {
+    list-style: none;
+    white-space:nowrap;
+    text-align: right;
+    margin: 25px;
+    border-bottom: 1px dashed #008a8a;
+}
+
+ul.main li {
+    display:inline-block;
+    margin: 5px;
+    margin-left: 0;
+}
+
+
+ul.main button {
+    float: none;
+    background-color: #b5e4f9;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 3px;
+}
+
+ul.main li.active button {
+    background-color: #0c9696;
+    color: white;
+    text-shadow: 0 0 2px rgba(0,0,0,0.4);
+    font-size: 18px;
+}
+
+
 span.array-module.tab-3.tab {
     opacity: 0.2;
 }
