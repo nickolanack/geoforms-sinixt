@@ -13,7 +13,7 @@
                 id:i,
                 name:item.name,
                 description:item.description,
-                english:item.english
+                english:item.english,
                 mutable:true
             });
             
