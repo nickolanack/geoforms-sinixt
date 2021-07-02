@@ -25,7 +25,7 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 	      var wordEl=wotd.appendChild(new Element('span',{html:name, "class":"wotd-item"}));
 	      
 	      new UIPopover(wordEl,{
-            description:`<h2>`+word+`</h2>
+            description:`<h2>`+name+`</h2>
             
             en: `+english+`
             definition: `+description,
