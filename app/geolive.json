@@ -3304,7 +3304,7 @@
         "parameters": {
             "widgetTitle": "dictionaryPanel",
             "target": "dictionaryPanel",
-            "templateName": "{dictionaryPanel",
+            "templateName": "dictionaryPanel",
             "requireTarget": true,
             "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
