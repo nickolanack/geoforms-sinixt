@@ -6,5 +6,5 @@ if(empty($list)){
 }
 array_shuffle($list);
 return array(
-        'word'=>array_shift($list);
+        'word'=>array_shift($list)
     );
