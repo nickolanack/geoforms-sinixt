@@ -27,8 +27,7 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 	      new UIPopover(wordEl,{
             description:`<h2>`+name+`</h2>
             
-            en: `+english+`
-            definition: `+description,
+            en: `+english+(description?`<br/>definition: `+description:``),
             anchor:UIPopover.AnchorAuto()
 	      });
   
