@@ -3571,9 +3571,10 @@
         "name": "Ajax Method",
         "instance": "AjaxMethod",
         "parameters": {
-            "widgetTitle": "",
-            "target": "none",
-            "customScript": "return true;"
+            "widgetTitle": "dailyWord",
+            "target": "dailyWord",
+            "customScript": "return true;",
+            "readAccess": "public"
         }
     }
 }
