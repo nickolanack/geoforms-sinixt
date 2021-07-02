@@ -17,11 +17,12 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 	})).addEvent('success',function(response){
 	    
 	       var word=response.word;
-	       var english=response.english;
-	       var description=response.description;
+	       var name=word.name;
+	       var english=word.english;
+	       var description=word.description;
 	       
 	      var wotd= titleEl.appendChild(new Element('span', {html:'Sinixt word of the day', "class":"wotd-span"}));
-	      var wordEl=wotd.appendChild(new Element('span',{html:word, "class":"wotd-item"}));
+	      var wordEl=wotd.appendChild(new Element('span',{html:name, "class":"wotd-item"}));
 	      
 	      new UIPopover(wordEl,{
             description:`<h2>`+word+`</h2>
