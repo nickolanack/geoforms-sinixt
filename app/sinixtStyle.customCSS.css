@@ -4,6 +4,8 @@
 
 .popover h2 {
     color: white;
+    margin-top:0;
+    margin-bottom:5px;
 }
 
 span.wotd-span:before {
