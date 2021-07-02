@@ -21,15 +21,15 @@ var button=new Element('button', {
 					formOptions: {
 						_template: "form"
 					},
-					formName: "documentForm",
+					formName: "wordForm",
 
 				})).addEvent('complete', function() {
 
 				    
 				    
 				    (new AjaxControlQuery(CoreAjaxUrlRoot, "get_configuration_field", {
-                    		'widget': "documents",
-                    		'field': "documents"
+                    		'widget': "dictionary",
+                    		'field': "dictionary"
                     	})).addEvent('success',function(response){
                     	    
                     	    
@@ -44,6 +44,7 @@ var button=new Element('button', {
                                  if(i==item._getId()){
                                      files.push( {
                             			    name:item.getName(),
+                            			    english:item.getEnglish(),
                             			    description:item.getDescription()
                             			});
                             			return;
@@ -56,9 +57,9 @@ var button=new Element('button', {
                     
                     
                         (new AjaxControlQuery(CoreAjaxUrlRoot, "set_configuration_field", {
-                    		'widget': "documents",
+                    		'widget': "dictionary",
                     		'field': {
-                    			"name":"documents",
+                    			"name":"dictionary",
                     			"value":files
                     		}
                     	})).addEvent('success',function(response){
