@@ -1,6 +1,6 @@
 
 
-$list=GetWidget('dictionary').getParameter('dictionary');
+$list=GetWidget('dictionary')->getParameter('dictionary');
 if(empty($list)){
     $list=array((object) array('name'=>'add some words', 'english'=>'', 'description'=>''));
 }
