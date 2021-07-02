@@ -27,14 +27,10 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
             content:`<h2>`+word+`</h2>
             
             en: `+english+`
-            definition: `+description+`
-            
-            `,
+            definition: `+description,
             anchor:UIPopover.AnchorAuto()
 	      });
-    });
-	       
-	    
+  
 	}).execute(); 
  
  
