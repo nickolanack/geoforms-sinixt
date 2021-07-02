@@ -23,7 +23,7 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 	      var wotd= titleEl.appendChild(new Element('span', {html:'Sinixt word of the day'}));
 	      var wordEl=wotd.appendChild(new Element('span',{html:word}));
 	      
-	      new UIPopover(mod.getElement(),{
+	      new UIPopover(wordEl,{
             content:`<h2>`+word+`</h2>
             
             en: `+english+`
