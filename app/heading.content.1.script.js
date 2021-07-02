@@ -6,8 +6,8 @@ Sinixt continue their work of resurgence from bureaucratic genocide through init
 which offers information on their millennia-long and ongoing relationship to the land.`+'</p>';
 
 var header=new Element('heading');
- header.appendChild(new Element('h1', {html:title}));
- header.appendChild(new Element('h2', {html:sub}));
+var titleEl=header.appendChild(new Element('h1', {html:title}));
+var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
  
  
  
@@ -15,6 +15,25 @@ var header=new Element('heading');
 		'widget': "dailyWord"
 		
 	})).addEvent('success',function(response){
+	    
+	       var word=response.word;
+	       var english=response.english;
+	       var description=response.description;
+	       
+	      var wotd= titleEl.appendChild(new Element('span', {html:'Sinixt word of the day'}));
+	      var wordEl=wotd.appendChild(new Element('span',{html:word}));
+	      
+	      new UIPopover(mod.getElement(),{
+            content:`<h2>`+word+`</h2>
+            
+            en: `+english+`
+            definition: `+description+`
+            
+            `,
+            anchor:UIPopover.AnchorAuto()
+	      });
+    });
+	       
 	    
 	}).execute(); 
  
