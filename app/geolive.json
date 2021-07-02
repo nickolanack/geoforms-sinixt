@@ -3320,11 +3320,42 @@
                             "dictionaryPanel.metadata.positions.content.modules.0.json",
                             {
                                 "type": "UIListView",
-                                "config": []
+                                "config": {
+                                    "listClassName": "",
+                                    "className": "",
+                                    "identifier": "",
+                                    "viewType": "view",
+                                    "namedView": "documentListItem",
+                                    "shouldRender": true,
+                                    "namedViewScript": "return namedView",
+                                    "showInlineEdit": false,
+                                    "namedFormView": "defaultView",
+                                    "formOptions": "\"{}\"",
+                                    "showDeleteButton": false,
+                                    "deleteItemScript": "defaultBehaviorFn()",
+                                    "initModuleScript": "",
+                                    "formatModuleScript": "",
+                                    "resolveItemScript": "return item",
+                                    "filterModulesScript": "return list",
+                                    "itemButtonsScript": "return [];",
+                                    "insertAtTop": false,
+                                    "targetName": "",
+                                    "getItemListScript": "dictionaryPanel.metadata.positions.content.modules.1.config.getItemListScript.js",
+                                    "formatItemListScript": "return list;",
+                                    "formatListItemModuleScript": "return item;",
+                                    "emptyNamedView": "emptyListView",
+                                    "filterItemsScript": "return true;",
+                                    "sortItemsScript": "",
+                                    "maxItems": "-1"
+                                }
                             },
                             {
                                 "type": "WizardScriptElement",
-                                "config": []
+                                "config": {
+                                    "name": "My Custom Script",
+                                    "script": "dictionaryPanel.metadata.positions.content.modules.2.config.script.js",
+                                    "description": "Info about my custom script"
+                                }
                             }
                         ]
                     },
