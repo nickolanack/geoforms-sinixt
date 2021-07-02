@@ -3566,5 +3566,14 @@
             },
             "readAccess": "public"
         }
+    },
+    "widget.69": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "none",
+            "customScript": "return true;"
+        }
     }
 }
