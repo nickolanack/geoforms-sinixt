@@ -3388,7 +3388,7 @@
             "formatOutputScript": "return $parameters;",
             "enableUserAjaxWrite": false,
             "authUserAjaxScript": "XXXX-XXXX",
-            "saveParametersAsData": false,
+            "saveParametersAsData": true,
             "parameters": [
                 "dictionary.parameters.0.json"
             ],
