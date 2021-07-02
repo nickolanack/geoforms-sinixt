@@ -3325,7 +3325,7 @@
                                     "className": "",
                                     "identifier": "",
                                     "viewType": "view",
-                                    "namedView": "documentListItem",
+                                    "namedView": "wordListItem",
                                     "shouldRender": true,
                                     "namedViewScript": "return namedView",
                                     "showInlineEdit": false,
