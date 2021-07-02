@@ -20,8 +20,8 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 	       var english=response.english;
 	       var description=response.description;
 	       
-	      var wotd= titleEl.appendChild(new Element('span', {html:'Sinixt word of the day'}));
-	      var wordEl=wotd.appendChild(new Element('span',{html:word}));
+	      var wotd= titleEl.appendChild(new Element('span', {html:'Sinixt word of the day', "class":"wotd-span"}));
+	      var wordEl=wotd.appendChild(new Element('span',{html:word, "class":"wotd-item"}));
 	      
 	      new UIPopover(wordEl,{
             content:`<h2>`+word+`</h2>
