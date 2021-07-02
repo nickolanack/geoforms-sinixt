@@ -2,6 +2,9 @@
 
 @import url("/webresources/font-awesome-4.7.0/css/font-awesome.min.css");
 
+.popover h2 {
+    color: white;
+}
 
 span.wotd-span:before {
     content: " - ";
