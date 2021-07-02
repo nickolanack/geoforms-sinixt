@@ -9,4 +9,15 @@ var header=new Element('heading');
  header.appendChild(new Element('h1', {html:title}));
  header.appendChild(new Element('h2', {html:sub}));
  
+ 
+ 
+ (new AjaxControlQuery(CoreAjaxUrlRoot, "user_function", {
+		'widget': "dailyWord"
+		
+	})).addEvent('success',function(response){
+	    
+	}).execute(); 
+ 
+ 
+ 
 return header;
