@@ -1,7 +1,8 @@
 
 var item=new MockDataTypeItem({
     id:-1,
-    name:"New Word",
+    name:"New Sinixt word",
+    english:"English word",
     description:"",
     mutable:true
     
@@ -35,6 +36,7 @@ var button=new Element('button', {
                              var words=response.value.concat([
                                     {
                             			    name:item.getName(),
+                            			    english:item.getEnglish(),
                             			    description:item.getDescription()
                             	    }
                                  ]);
