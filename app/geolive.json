@@ -3573,7 +3573,7 @@
         "parameters": {
             "widgetTitle": "dailyWord",
             "target": "dailyWord",
-            "customScript": "return true;",
+            "customScript": "dailyWord.customScript.js",
             "readAccess": "public"
         }
     }
