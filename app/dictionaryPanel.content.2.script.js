@@ -1,7 +1,7 @@
 
 var item=new MockDataTypeItem({
     id:-1,
-    name:"New Document",
+    name:"New Word",
     description:"",
     mutable:true
     
@@ -10,7 +10,7 @@ var item=new MockDataTypeItem({
 
 var button=new Element('button', {
 
-					html: 'Add a document',
+					html: 'Add a word',
 					style: "background-color:#EDC84C;",
 					"class": "primary-btn add-document"
 
@@ -21,18 +21,18 @@ var button=new Element('button', {
 					formOptions: {
 						_template: "form"
 					},
-					formName: "documentForm",
+					formName: "wordForm",
 
 				})).addEvent('complete', function() {
 
 				    
 				    
 				    (new AjaxControlQuery(CoreAjaxUrlRoot, "get_configuration_field", {
-                    		'widget': "documents",
-                    		'field': "documents"
+                    		'widget': "dictionary",
+                    		'field': "dictionary"
                     	})).addEvent('success',function(response){
                     
-                             var files=response.value.concat([
+                             var words=response.value.concat([
                                     {
                             			    name:item.getName(),
                             			    description:item.getDescription()
@@ -41,10 +41,10 @@ var button=new Element('button', {
                     
                     
                         (new AjaxControlQuery(CoreAjaxUrlRoot, "set_configuration_field", {
-                    		'widget': "documents",
+                    		'widget': "dictionary",
                     		'field': {
-                    			"name":"documents",
-                    			"value":files
+                    			"name":"dictionary",
+                    			"value":words
                     		}
                     	})).addEvent('success',function(response){
                     

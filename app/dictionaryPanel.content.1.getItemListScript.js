@@ -1,13 +1,13 @@
 
 
 (new AjaxControlQuery(CoreAjaxUrlRoot, "get_configuration_field", {
-		'widget': "documents",
-		'field': "documents"
+		'widget': "dictionary",
+		'field': "dictionary"
 	})).addEvent('success',function(response){
 
 
 
-        ContentFilter.addDocuments(response.value);
+        //ContentFilter.addDictionary(response.value);
         callback(response.value.map(function(item, i){
             var doc= new MockDataTypeItem({
                 id:i,
