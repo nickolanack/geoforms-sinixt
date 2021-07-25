@@ -2045,14 +2045,17 @@
         "name": "Uncluster Button",
         "instance": "LayerClusterToggleTile",
         "parameters": {
+            "widgetTitle": "",
             "target": "forTheMap",
+            "position": "RIGHT_CENTER",
+            "readAccess": "public",
             "controlColor": "rgb(100, 149, 237)",
             "tileIcon": [],
+            "showHeatmapTile": false,
+            "heatmapIcon": [],
             "unclusterTip": "Toggle Placemark Clustering",
             "clusterTip": "",
-            "widgetTitle": "",
-            "readAccess": "public",
-            "position": "RIGHT_CENTER"
+            "heatmapTip": "Show heatmap"
         }
     },
     "widget.41": {
@@ -2811,7 +2814,7 @@
             "customScript": "ContentFilter.customScript.js",
             "language": "javascript",
             "returnsValue": false,
-            "cacheable": true,
+            "cacheable": false,
             "parseMarkdown": false,
             "readAccess": "public"
         }
