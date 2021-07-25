@@ -1,4 +1,3 @@
-<?php throw new \Exception('test'); ?>
 var ContentFilter = (function() {
 
 
