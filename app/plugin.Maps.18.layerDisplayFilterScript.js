@@ -1,6 +1,6 @@
 
 
-if($layer->getId()!==17){
+if($layer->getId()!==17||$layer->getId()!==26){
     
     
    //error_log(print_r($feature['icon'],true));
