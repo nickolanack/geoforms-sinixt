@@ -785,7 +785,11 @@ textarea[disabled] {
 }
 
 
-span.image-file.media-item, span.external-file.media-item, span.video-file.media-item, span.document-file.media-item {
+span.image-file.media-item, 
+span.external-file.media-item, 
+span.video-file.media-item, 
+span.document-file.media-item
+span.audio-file.media-item{
     position: relative;
     display: inline-block;
     text-align: center;
