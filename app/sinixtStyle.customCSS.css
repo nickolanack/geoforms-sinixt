@@ -37,7 +37,7 @@ span.AudioModule.audio.hasAudio {
 }
 
 
-span.wotd-item .audio:after,  span.wotd-item.has-audio:after{
+span.wotd-item .audio:after,  span.wotd-item.no-audio:after{
     content: "";
     font-family: 'FontAwesome';
     color: #29c02e;
