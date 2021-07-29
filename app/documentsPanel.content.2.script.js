@@ -1,4 +1,8 @@
 
+if(AppClient.getUserType()!="admin"){
+    return;
+}
+
 var item=new MockDataTypeItem({
     id:-1,
     name:"New Document",
