@@ -2051,7 +2051,7 @@
             "readAccess": "public",
             "controlColor": "rgb(100, 149, 237)",
             "tileIcon": [],
-            "showHeatmapTile": false,
+            "showHeatmapTile": true,
             "heatmapIcon": [],
             "unclusterTip": "Toggle Placemark Clustering",
             "clusterTip": "",
