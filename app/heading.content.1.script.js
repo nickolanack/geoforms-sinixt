@@ -19,10 +19,22 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 	       var word=response.word;
 	       var name=word.name;
 	       var english=word.english;
-	       var description=word.description;
+	       var description=JSTextUtilities.StripTags(word.description);
+	       
+	       var audios=JSTextUtilities.ParseAudios(word.description);
+	       
+	       
 	       
 	      var wotd= titleEl.appendChild(new Element('span', {html:'Sinixt word of the day', "class":"wotd-span"}));
 	      var wordEl=wotd.appendChild(new Element('span',{html:name, "class":"wotd-item"}));
+	      
+	      if(audios.length>0){
+	       (new AudioModule({
+					textQuery: function(callback) {
+						callback(audios[0].html);
+					}
+			})).addEvent('load', callback).load(null, wordEl, null);
+	      }
 	      
 	      new UIPopover(wordEl,{
             description:`<h2>`+name+`</h2>
