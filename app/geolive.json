@@ -3546,6 +3546,16 @@
                                     "script": "wordListItem.metadata.positions.title.modules.1.config.script.js",
                                     "description": "Info about my custom script"
                                 }
+                            },
+                            {
+                                "type": "FieldValue",
+                                "config": {
+                                    "loadAsync": false,
+                                    "identifier": "",
+                                    "fieldLabelScript": "return \"\";",
+                                    "fieldValueScript": "return \"\";",
+                                    "formatElementScript": "wordListItem.metadata.positions.title.modules.2.config.formatElementScript.js"
+                                }
                             }
                         ]
                     },
