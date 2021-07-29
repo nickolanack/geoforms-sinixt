@@ -33,7 +33,7 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 					textQuery: function(callback) {
 						callback(audios[0].html);
 					}
-			})).addEvent('load', callback).load(null, wordEl, null);
+			})).load(null, wordEl, null);
 	      }
 	      
 	      new UIPopover(wordEl,{
