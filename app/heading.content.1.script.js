@@ -34,6 +34,9 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 						callback(audios[0].html);
 					}
 			})).load(null, wordEl, null);
+			wordEl.addClass('has-audio');
+	      }else{
+	          wordEl.addClass('no-audio');
 	      }
 	      
 	      new UIPopover(wordEl,{
