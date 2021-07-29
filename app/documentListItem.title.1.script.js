@@ -1,4 +1,8 @@
 
+if(AppClient.getUserType()!="admin"){
+    return;
+}
+
 var button=new Element('button', {
 
 					html: 'Edit',
