@@ -30,13 +30,24 @@ span.wotd-item {
    cursor: pointer;
 }
 
-span.wotd-item:after {
-    content: "\0f028";
+span.AudioModule.audio.hasAudio {
+    vertical-align: top;
+    line-height: 18px;
+    margin-right: 14px;
+}
+
+
+span.wotd-item .audio:after,  span.wotd-item.has-audio:after{
+    content: "";
     font-family: 'FontAwesome';
     color: #29c02e;
     margin: 2px 10px;
     font-size: 16px;
     text-shadow: 0 0 5px white;
+}
+
+ span.wotd-item.has-audio:after {
+    color: #c1c1c1;
 }
 
 
