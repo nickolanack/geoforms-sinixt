@@ -46,7 +46,7 @@ span.wotd-item .audio:after,  span.wotd-item.has-audio:after{
     text-shadow: 0 0 5px white;
 }
 
- span.wotd-item.has-audio:after {
+ span.wotd-item.no-audio:after {
     color: #c1c1c1;
 }
 
