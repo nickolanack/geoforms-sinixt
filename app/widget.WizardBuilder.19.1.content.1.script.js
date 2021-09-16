@@ -1,0 +1,2 @@
+AppClient.logout();
+localStorage.clear();
