@@ -3084,7 +3084,7 @@
                                     "viewType": "view",
                                     "namedView": "userPanel",
                                     "shouldRender": true,
-                                    "namedViewScript": "return namedView",
+                                    "namedViewScript": "sidePanel.metadata.positions.content.modules.1.config.namedViewScript.js",
                                     "showInlineEdit": false,
                                     "namedFormView": "defaultView",
                                     "formOptions": "\"{}\"",
