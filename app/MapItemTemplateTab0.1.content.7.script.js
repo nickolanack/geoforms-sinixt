@@ -1,3 +1,7 @@
+if(AppClient.getUserType()!=="admin"){
+    return null;
+}
+
 var button=new Element('button', {
 
 					html: 'Delete',
