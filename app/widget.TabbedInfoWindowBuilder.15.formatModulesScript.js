@@ -1,5 +1,5 @@
 if(AppClient.getUserType()=="guest"){
-    list.tab=[];
+    list.tab=[list.tab[0]];
     list.footer=[];
     return list;
 }
