@@ -75,6 +75,7 @@ ul.main {
     text-align: right;
     margin: 25px;
     border-bottom: 1px dashed #008a8a;
+    padding:0;
 }
 
 ul.main li {
@@ -88,7 +89,7 @@ ul.main button {
     float: none;
     background-color: #b5e4f9;
     border: none;
-    padding: 7px 20px;
+    padding: 7px 13px;
     border-radius: 3px;
 }
 
