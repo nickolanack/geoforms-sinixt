@@ -6,7 +6,7 @@ var button=new Element('button', {
 					events:{click:function(){
 					    
 					    if(confirm("Are you sure you want to delete this marker?")){					       
-					        wizard.cancel(); 
+					        wizard.close(); 
 					    }
 					    
 					}}
