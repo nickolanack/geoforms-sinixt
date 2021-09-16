@@ -4,7 +4,7 @@
 
 
 
-span.AudioModule.audio.hasAudio:after {
+.media-selection span.AudioModule.audio.hasAudio:after {
     content: "\0f04b";
     font-family: 'FontAwesome';
     font-size: 25px;
