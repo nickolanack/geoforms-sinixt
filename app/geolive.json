@@ -64,7 +64,9 @@
                         "mapId": 1
                     }
                 }
-            ]
+            ],
+            "useRemoteServerUI": false,
+            "remoteServerUrl": ""
         }
     },
     "plugin.6": {
@@ -249,9 +251,12 @@
         "name": "Template",
         "instance": "Template",
         "parameters": {
-            "contentTemplate": "Error",
             "widgetTitle": "site.error.html",
-            "target": "site.error.html"
+            "target": "site.error.html",
+            "comments": "",
+            "formatVariablesScript": "return $variables;",
+            "convertStylesToInline": false,
+            "contentTemplate": "Error"
         }
     },
     "widget.2": {
@@ -266,6 +271,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -350,6 +356,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positionList": [
                     "title",
@@ -422,6 +429,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -839,9 +847,12 @@
         "name": "Template",
         "instance": "Template",
         "parameters": {
-            "contentTemplate": "",
             "widgetTitle": "module..text",
-            "target": "module..text"
+            "target": "module..text",
+            "comments": "",
+            "formatVariablesScript": "return $variables;",
+            "convertStylesToInline": false,
+            "contentTemplate": ""
         }
     },
     "widget.12": {
@@ -911,6 +922,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "widget.TabbedInfoWindowBuilder.15.formatModulesScript.js",
             "notifyViewer": false,
+            "useRemote": "",
             "includeStyle": false,
             "metadata": [
                 "widget.TabbedInfoWindowBuilder.15.metadata.0.json",
@@ -1123,6 +1135,8 @@
             "target": "forTheMap",
             "customCSS": "Map Style.customCSS.css",
             "sassParamters": [],
+            "formatSassParametersScript": "return $parameters;",
+            "useRemote": "",
             "readAccess": "public"
         }
     },
@@ -1496,6 +1510,8 @@
             "target": "forTheMap",
             "customCSS": "sinixtStyle.customCSS.css",
             "sassParamters": [],
+            "formatSassParametersScript": "return $parameters;",
+            "useRemote": "",
             "readAccess": "public"
         }
     },
@@ -1697,6 +1713,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -1846,6 +1863,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -2114,6 +2132,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -2275,6 +2294,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -2332,6 +2352,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -2375,10 +2396,12 @@
         "name": "Template",
         "instance": "Template",
         "parameters": {
-            "contentTemplate": "email-VerifyEmailLink-subject.contentTemplate.html",
             "widgetTitle": "email.VerifyEmailLink.subject",
             "target": "email.VerifyEmailLink.subject",
             "comments": "",
+            "formatVariablesScript": "return $variables;",
+            "convertStylesToInline": false,
+            "contentTemplate": "email-VerifyEmailLink-subject.contentTemplate.html",
             "readAccess": "public"
         }
     },
@@ -2386,10 +2409,12 @@
         "name": "Template",
         "instance": "Template",
         "parameters": {
-            "contentTemplate": "email-VerifyEmailLink-content.contentTemplate.html",
             "widgetTitle": "email.VerifyEmailLink.content",
             "target": "email.VerifyEmailLink.content",
             "comments": "",
+            "formatVariablesScript": "return $variables;",
+            "convertStylesToInline": false,
+            "contentTemplate": "email-VerifyEmailLink-content.contentTemplate.html",
             "readAccess": "public"
         }
     },
@@ -2831,6 +2856,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -3033,6 +3059,7 @@
             "onRenderApplictionScript": "sidePanel.onRenderApplictionScript.js",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -3096,6 +3123,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -3144,6 +3172,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -3313,6 +3342,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -3534,6 +3564,7 @@
             "onRenderApplictionScript": "",
             "formatModulesScript": "",
             "notifyViewer": false,
+            "useRemote": "",
             "metadata": {
                 "positions": {
                     "title": {

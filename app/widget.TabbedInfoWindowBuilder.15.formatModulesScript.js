@@ -1,3 +1,10 @@
+if(AppClient.getUserType()=="guest"){
+    list.tab=[];
+    list.footer=[];
+    return list;
+}
+
+
 if(AppClient.getUserType()!=="admin"){
     list.footer=[];
     list.tab.pop();
