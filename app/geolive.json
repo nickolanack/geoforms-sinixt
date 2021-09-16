@@ -2448,16 +2448,16 @@
                             "MapItemTemplateTab0.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 669,
-                            "y": 655
+                            "x": 679,
+                            "y": 665
                         },
                         "children": [
                             "MapItemTemplateTab0.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 629,
-                                    "y": 881
+                                    "x": 639,
+                                    "y": 891
                                 }
                             }
                         ],
@@ -2472,7 +2472,7 @@
                                     "modules": [
                                         "MapItemTemplateTab0.metadata.children.1.builderMetadata.positions.content.modules.0.json",
                                         {
-                                            "type": "WizardDescriptionField",
+                                            "type": "FormTextDescriptionField",
                                             "config": {
                                                 "label": "Place description",
                                                 "message": "add description",
@@ -2595,6 +2595,14 @@
                                                 "itemButtonsScript": "return [];",
                                                 "insertAtTop": false,
                                                 "targetName": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardScriptElement",
+                                            "config": {
+                                                "name": "My Custom Script",
+                                                "script": "MapItemTemplateTab0.metadata.children.1.builderMetadata.positions.content.modules.7.config.script.js",
+                                                "description": "Info about my custom script"
                                             }
                                         }
                                     ]
