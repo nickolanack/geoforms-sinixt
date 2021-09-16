@@ -7,6 +7,14 @@ var button=new Element('button', {
 					    
 					    if(confirm("Are you sure you want to delete this marker?")){					       
 					        wizard.close(); 
+					        
+					        item.destroy(function(success) {
+                                if (success) {
+                                    NotificationBubble.Make('', 'Deleted item');
+                                } else {
+                                    NotificationBubble.Make('', 'Failed to delete item');
+                                }
+                            });
 					    }
 					    
 					}}
