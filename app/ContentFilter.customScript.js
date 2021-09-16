@@ -247,6 +247,14 @@ var ContentFilter = (function() {
 	};
 
 
+    (new AjaxControlQuery(CoreAjaxUrlRoot, "get_configuration_field", {
+		'widget': "documents",
+		'field': "documents"
+	})).addEvent('success',function(response){
+
+        ContentFilter.addDocuments(response.value);
+       
+	}).execute();
 
 	return ContentFilter;
 
