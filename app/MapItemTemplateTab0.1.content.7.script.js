@@ -10,3 +10,6 @@ var button=new Element('button', {
 					}}
 
 				});
+				
+				
+return button;
