@@ -100,7 +100,7 @@
             "CachingEnabled": false,
             "ExternalizeWidgetScripts": true,
             "PrettyPrintJson": true,
-            "showFrontEndEditButtons": false,
+            "showFrontEndEditButtons": true,
             "JSCacheObfuscationEnabled": false,
             "phase": "production",
             "ForceHTTPS": false,
