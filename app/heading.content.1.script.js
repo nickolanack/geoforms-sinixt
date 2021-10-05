@@ -25,7 +25,7 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 	       
 	       
 	       
-	      var wotd= titleEl.appendChild(new Element('span', {html:'Sinixt word of the day', "class":"wotd-span"}));
+	      var wotd= titleEl.appendChild(new Element('span', {html:'word of the day', "class":"wotd-span"}));
 	      var wordEl=wotd.appendChild(new Element('span',{html:name, "class":"wotd-item"}));
 	      
 	      if(audios.length>0){
