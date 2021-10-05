@@ -3386,7 +3386,7 @@
                                     "formatListItemModuleScript": "return item;",
                                     "emptyNamedView": "emptyListView",
                                     "filterItemsScript": "return true;",
-                                    "sortItemsScript": "",
+                                    "sortItemsScript": "dictionaryPanel.metadata.positions.content.modules.1.config.sortItemsScript.js",
                                     "maxItems": "-1"
                                 }
                             },
