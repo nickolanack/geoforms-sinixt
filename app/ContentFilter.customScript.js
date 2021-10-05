@@ -1,6 +1,7 @@
 var ContentFilter = (function() {
 
 
+
 	if (typeof Class_ == 'undefined') {
 		//define locally
 		var Class_ = function(def) {
@@ -31,9 +32,10 @@ var ContentFilter = (function() {
 		},
 		parseDocuments: function(str) {
 
-			var strLower = str.toLowerCase();
+			
 
 			Object.keys(_docs).forEach(function(doc) {
+				var strLower = str.toLowerCase();
 				var start = strLower.indexOf(doc.toLowerCase());
 				console.log(doc + ": " + start);
 				if (start >= 0) {
@@ -246,15 +248,22 @@ var ContentFilter = (function() {
 
 	};
 
+	try{
 
-    (new AjaxControlQuery(CoreAjaxUrlRoot, "get_configuration_field", {
-		'widget': "documents",
-		'field': "documents"
-	})).addEvent('success',function(response){
+		(new AjaxControlQuery(CoreAjaxUrlRoot, "get_configuration_field", {
+			'widget': "documents",
+			'field': "documents"
+		})).addEvent('success',function(response){
 
-        ContentFilter.addDocuments(response.value);
-       
-	}).execute();
+	        ContentFilter.addDocuments(response.value);
+	       
+		}).execute();
+
+
+	}catch(e){
+		console.error(e);
+	}
+
 
 	return ContentFilter;
 
