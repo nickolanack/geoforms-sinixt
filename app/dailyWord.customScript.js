@@ -7,8 +7,7 @@ if(empty($list)){
 
 
 //https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
-$fisherYatesShuffle=function(&$items, $seed)
-{
+$fisherYatesShuffle=function(&$items, $seed){
     @mt_srand($seed);
     for ($i = count($items) - 1; $i > 0; $i--)
     {
@@ -28,5 +27,5 @@ $day=intval(date('z'))%count($list);
 
 
 return array(
-        'word'=>$list[$day];
+        'word'=>$list[$day]
     );
