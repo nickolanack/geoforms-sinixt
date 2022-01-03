@@ -411,7 +411,7 @@
         "parameters": {
             "widgetTitle": "",
             "target": "forTheMap",
-            "offset": "120",
+            "offset": "130",
             "maxHeight": "5000",
             "minHeight": "400",
             "offsetScript": "",
