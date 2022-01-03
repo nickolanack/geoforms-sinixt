@@ -133,7 +133,7 @@ a.formatted_link {
     font-weight: 400;
 }
 
-span.document.noIcon {
+span.document.noIcon, button.document.noIcon {
     background: #25adaa;
     position: relative;
     float: revert;
@@ -172,7 +172,7 @@ span.document.noIcon {
 }
 
 
-span.video.noIcon:after, span.document.noIcon {
+span.video.noIcon:after, span.document.noIcon, button.video.noIcon:after, button.document.noIcon {
     background-color: #086c8c;
 }
 
@@ -354,17 +354,17 @@ span.video.noIcon:after, span.document.noIcon {
         text-shadow: 0 0 5px rgb(0 0 0 / 50%);
     }
     
-    .upload-btns span.document:after {
+    .upload-btns span.document:after, .upload-btns button.document:after {
         white-space: nowrap;
         display: inline-block;
         margin: 0;
         margin-left: 10px;
     }
     
-    span.document.noIcon:after {
+    span.document.noIcon:after, button.document.noIcon:after {
         background-color: #086c8c;
     }
-    .upload-btns span.document:after {
+    .upload-btns span.document:after, .upload-btns button.document:after {
         content: "Add document";
     }
     
@@ -374,14 +374,14 @@ span.video.noIcon:after, span.document.noIcon {
     
 }
 
-span.audio.noIcon:after {
+span.audio.noIcon:after, button.audio.noIcon:after {
         background-color: #2695b9;
     }
-.upload-btns span.audio:after {
+.upload-btns span.audio:after, .upload-btns button.audio:after {
         content: "Add audio";
 }
 
-.upload-btns span.audio{
+.upload-btns span.audio, .upload-btns button.audio{
     background-size: 100%;
     display: inline-block;
     text-align: right;
@@ -390,12 +390,14 @@ span.audio.noIcon:after {
 
 .focus-documents{
 
-    .upload-btns span.image:after, .upload-btns span.video:after, .upload-btns span.audio:after{
+    .upload-btns span.image:after, .upload-btns span.video:after, .upload-btns span.audio:after,
+    .upload-btns button.image:after, .upload-btns button.video:after, .upload-btns button.audio:after{
         padding:5px 10px;
         font-size:15px
     }
     
-    .upload-btns span.video, .upload-btns span.audio{
+    .upload-btns span.video, .upload-btns span.audio,
+    .upload-btns button.video, .upload-btns button.audio{
         display:none;
     }
 

@@ -256,6 +256,8 @@
             "comments": "",
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
+            "parseMarkdown": false,
+            "saveTemplateAsData": false,
             "contentTemplate": "Error"
         }
     },
@@ -852,6 +854,8 @@
             "comments": "",
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
+            "parseMarkdown": false,
+            "saveTemplateAsData": false,
             "contentTemplate": ""
         }
     },
@@ -2401,6 +2405,8 @@
             "comments": "",
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
+            "parseMarkdown": false,
+            "saveTemplateAsData": false,
             "contentTemplate": "email-VerifyEmailLink-subject.contentTemplate.html",
             "readAccess": "public"
         }
@@ -2414,6 +2420,8 @@
             "comments": "",
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
+            "parseMarkdown": false,
+            "saveTemplateAsData": false,
             "contentTemplate": "email-VerifyEmailLink-content.contentTemplate.html",
             "readAccess": "public"
         }
