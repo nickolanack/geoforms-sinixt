@@ -21,4 +21,4 @@ var btn= (new ModalFormButtonModule(application, item,{
     }));
 
 
-return btn;
+return [btn];
