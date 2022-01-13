@@ -22,6 +22,7 @@ var setAccess= (new ModalFormButtonModule(application, item,{
 
 
 var revokeAccess= (new Element('button',{
+        html:"Revoke",
         "events":{
             click:function(){
                 console.log('click');
