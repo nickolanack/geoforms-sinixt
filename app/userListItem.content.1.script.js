@@ -10,7 +10,7 @@ if(AppClient.getUserType()!="admin"){
     return null;
 }
 
-var btn= (new ModalFormButtonModule(application, item,{
+var setAccess= (new ModalFormButtonModule(application, item,{
         label:"Set Permission",
         formName:"userAccessForm",
         formOptions:{
@@ -21,4 +21,14 @@ var btn= (new ModalFormButtonModule(application, item,{
     }));
 
 
-return [btn];
+var setAccess= (new Element('button',{
+        "events":{
+            click:function(){
+                console.log('click');
+            }  
+        },
+        "class":"primary-btn"
+    }));
+
+
+return [revokeAccess, setAccess];
