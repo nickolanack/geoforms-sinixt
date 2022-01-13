@@ -28,8 +28,13 @@ var revokeAccess= (new Element('button',{
                 console.log('click');
             }  
         },
-        "class":"primary-btn"
+        "class":"primary-btn form-btn"
     }));
+    
+    revokeAccess.setStyles({
+        "background-color": "crimson",
+        "margin-left": "5px"
+    });
 
 
 return [revokeAccess, setAccess];
