@@ -19,7 +19,23 @@ var setAccess= (new ModalFormButtonModule(application, item,{
         //hideText:true,
         "class":"primary-btn"
     }));
+    
+    
+    
+var read=item.getAccess().editAccessEnd;
+var write=item.getAccess().readAccessEnd;
+var hasAccess=function(time){
+  
+  if(parseInt(time)>parseInt((new Date()).getTime()/1000)){
+     return true;
+  }
+  return false;
+    
+};
 
+var btns=[];
+
+if(hasAccess()||hasAccess()){
 
 var revokeAccess= (new Element('button',{
         html:"Revoke",
@@ -36,5 +52,11 @@ var revokeAccess= (new Element('button',{
         "margin-left": "5px"
     });
 
+    btns.push(revokeAccess);
+    
+}
 
-return [revokeAccess, setAccess];
+
+btns.push(setAccess);
+
+return btns;
