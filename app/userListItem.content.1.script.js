@@ -35,7 +35,7 @@ var hasAccess=function(time){
 
 var btns=[];
 
-if(hasAccess()||hasAccess()){
+if(hasAccess(read)||hasAccess(write)){
 
 var revokeAccess= (new Element('button',{
         html:"Revoke",
