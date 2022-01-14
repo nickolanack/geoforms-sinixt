@@ -1,3 +1,5 @@
+return null;
+
 var button=new Element('button', {
 
 					html: 'Create account',
