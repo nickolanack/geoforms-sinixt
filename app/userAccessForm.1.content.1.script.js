@@ -3,6 +3,15 @@ var removeUser= (new Element('button',{
         "events":{
             click:function(){
                 
+                confirm('Are you sure you want to delete this user',function(){
+                    (new AjaxControlQuery(CoreAjaxUrlRoot, "delete_user", {
+										'plugin': "Users",
+										'user': item.getId()
+									})).addEvent('success', function() {
+                                        wizard.cancel();
+									}).execute();
+									
+                });
                
             }  
         },
