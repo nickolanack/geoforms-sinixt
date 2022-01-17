@@ -8,7 +8,7 @@ var removeUser= (new Element('button',{
 										'plugin': "Users",
 										'user': item.getId()
 									})).addEvent('success', function() {
-                                        wizard.cancel();
+                                        wizard.close();
 									}).execute();
 									
                 }
