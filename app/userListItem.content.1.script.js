@@ -41,10 +41,11 @@ var revokeAccess= (new Element('button',{
         html:"Revoke",
         "events":{
             click:function(){
+                
                 (new SaveAttributeItemValuesQuery(item.getId(), item.getType(), "userTimedAccess",{
                     editAccessEnd:0,
                     viewAccessEnd:0
-                }).addEvent('success',function(){
+                })).addEvent('success',function(){
                     revokeAccess.remove();
                 }).execute();
             }  
