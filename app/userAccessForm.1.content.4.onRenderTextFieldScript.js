@@ -1,6 +1,5 @@
 var div=new Element('container',{"class":"btn-group-access"});
 
-
 var label=new Element('label');
 
 div.appendChild(label);
@@ -35,7 +34,6 @@ div.appendChild(new Element('button',{
     }}
 }))
 
-
 div.appendChild(new Element('button',{
     html:"Custom",
     events:{
@@ -57,6 +55,7 @@ div.appendChild(new Element('button',{
         textField.setValue(0)
     }}
 }))
+
 
 
 

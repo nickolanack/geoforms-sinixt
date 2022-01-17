@@ -1934,16 +1934,16 @@
                             "userAccessForm.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 490,
-                            "y": 406
+                            "x": 500,
+                            "y": 416
                         },
                         "children": [
                             "userAccessForm.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 450,
-                                    "y": 619
+                                    "x": 460,
+                                    "y": 629
                                 }
                             }
                         ],
@@ -1957,6 +1957,14 @@
                                 "content": {
                                     "modules": [
                                         "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        {
+                                            "type": "WizardScriptElement",
+                                            "config": {
+                                                "name": "My Custom Script",
+                                                "script": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.1.config.script.js",
+                                                "description": "Info about my custom script"
+                                            }
+                                        },
                                         {
                                             "type": "InlineHtml",
                                             "config": {
@@ -1995,33 +2003,10 @@
                                             "type": "plugin.Attributes.WizardTextAttribute",
                                             "config": {
                                                 "attributeFields": [
-                                                    "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
-                                                ],
-                                                "className": "hide-input",
-                                                "label": "Enable editing for:",
-                                                "message": "",
-                                                "lines": 1,
-                                                "maxChars": 0,
-                                                "mandatory": false,
-                                                "multiEntry": false,
-                                                "muliTemplate": "lines",
-                                                "multiMessage": "add more values",
-                                                "formatter": "none",
-                                                "iconTint": "rgb(100, 149, 237)",
-                                                "autocomplete": true,
-                                                "inputOptions": "{}",
-                                                "onRenderTextFieldScript": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.3.config.onRenderTextFieldScript.js",
-                                                "formatValueScript": ""
-                                            }
-                                        },
-                                        {
-                                            "type": "plugin.Attributes.WizardTextAttribute",
-                                            "config": {
-                                                "attributeFields": [
                                                     "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.4.config.attributeFields.0.json"
                                                 ],
                                                 "className": "hide-input",
-                                                "label": "Enable view access for:",
+                                                "label": "Enable editing for:",
                                                 "message": "",
                                                 "lines": 1,
                                                 "maxChars": 0,
@@ -2038,11 +2023,26 @@
                                             }
                                         },
                                         {
-                                            "type": "WizardScriptElement",
+                                            "type": "plugin.Attributes.WizardTextAttribute",
                                             "config": {
-                                                "name": "My Custom Script",
-                                                "script": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.5.config.script.js",
-                                                "description": "Info about my custom script"
+                                                "attributeFields": [
+                                                    "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.5.config.attributeFields.0.json"
+                                                ],
+                                                "className": "hide-input",
+                                                "label": "Enable view access for:",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "add more values",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "autocomplete": true,
+                                                "inputOptions": "{}",
+                                                "onRenderTextFieldScript": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.5.config.onRenderTextFieldScript.js",
+                                                "formatValueScript": ""
                                             }
                                         }
                                     ]
