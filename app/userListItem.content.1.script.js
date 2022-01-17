@@ -41,7 +41,12 @@ var revokeAccess= (new Element('button',{
         html:"Revoke",
         "events":{
             click:function(){
-                console.log('click');
+                (new SaveAttributeItemValuesQuery(item.getId(), item.getType(), "userTimedAccess",{
+                    editAccessEnd:0,
+                    viewAccessEnd:0
+                }).addEvent('success',function(){
+                    revokeAccess.remove();
+                }).execute();
             }  
         },
         "class":"primary-btn form-btn"
