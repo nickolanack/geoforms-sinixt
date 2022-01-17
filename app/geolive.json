@@ -3684,16 +3684,16 @@
                             "inviteUserForm.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 147,
-                            "y": 247
+                            "x": 157,
+                            "y": 257
                         },
                         "children": [
                             "inviteUserForm.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 107,
-                                    "y": 413
+                                    "x": 117,
+                                    "y": 423
                                 }
                             }
                         ],
