@@ -32,7 +32,7 @@ var button=new Element('button', {
 				    
 				  
                     
-                    }).execute();
+                })
 
 				
 				return button;
