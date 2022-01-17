@@ -5,6 +5,7 @@
         "text": "<h2>User access<\/h2>",
         "template": "",
         "templateVariablesScript": "",
-        "formatTextScript": ""
+        "formatTextScript": "",
+        "ajaxRequestTemplate": false
     }
 }
