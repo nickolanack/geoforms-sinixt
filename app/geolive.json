@@ -3659,7 +3659,7 @@
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "inviteUserForm",
-            "target": "forTheMap\r\n",
+            "target": "forTheMap",
             "templateName": "inviteUserForm",
             "requireTarget": true,
             "resolveItemScript": "return item;",
