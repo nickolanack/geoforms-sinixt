@@ -9,5 +9,9 @@ var removeUser= (new Element('button',{
         "class":"primary-btn form-btn"
     }));
     
+    removeUser.setStyles({
+        "background-color": "crimson",
+    });
+    
     
 return removeUser;
