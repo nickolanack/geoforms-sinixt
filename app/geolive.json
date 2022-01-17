@@ -1934,16 +1934,16 @@
                             "userAccessForm.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 520,
-                            "y": 436
+                            "x": 530,
+                            "y": 446
                         },
                         "children": [
                             "userAccessForm.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 480,
-                                    "y": 649
+                                    "x": 490,
+                                    "y": 659
                                 }
                             }
                         ],
