@@ -1922,8 +1922,8 @@
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
-                    "x": 62,
-                    "y": 328
+                    "x": 138,
+                    "y": 310
                 },
                 "children": [
                     "userAccessForm.metadata.children.0.json",
@@ -1934,16 +1934,16 @@
                             "userAccessForm.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 508,
-                            "y": 567
+                            "x": 480,
+                            "y": 396
                         },
                         "children": [
                             "userAccessForm.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 468,
-                                    "y": 768
+                                    "x": 440,
+                                    "y": 597
                                 }
                             }
                         ],
@@ -1964,7 +1964,8 @@
                                                 "text": "<span class=\"uitext-container\"><label>Select Layers<\/label><\/span>",
                                                 "template": "",
                                                 "templateVariablesScript": "",
-                                                "formatTextScript": ""
+                                                "formatTextScript": "",
+                                                "ajaxRequestTemplate": false
                                             }
                                         },
                                         {
@@ -2034,6 +2035,14 @@
                                                 "inputOptions": "{}",
                                                 "onRenderTextFieldScript": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.4.config.onRenderTextFieldScript.js",
                                                 "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardScriptElement",
+                                            "config": {
+                                                "name": "My Custom Script",
+                                                "script": "userAccessForm.metadata.children.1.builderMetadata.positions.content.modules.5.config.script.js",
+                                                "description": "Info about my custom script"
                                             }
                                         }
                                     ]
