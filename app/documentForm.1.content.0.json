@@ -2,7 +2,7 @@
     "type": "WizardScriptElement",
     "config": {
         "name": "My Custom Script",
-        "script": "var button=new Element('button', {\n\n\t\t\t\t\thtml: 'Delete Document',\n\t\t\t\t\tstyle: \"background-color:crimson;\",\n\t\t\t\t\t\"class\": \"primary-btn remove\"\n                    events:{\n                        click:function(){\n                                \n                            wizard.close();\n                            \n                        }\n                    }\n\t\t\t\t});\n\t\t\t\n\t\t\t\t\nreturn button;",
+        "script": "var button=new Element('button', {\n\n\t\t\t\t\thtml: 'Delete Document',\n\t\t\t\t\tstyle: \"background-color:crimson;\",\n\t\t\t\t\t\"class\": \"primary-btn remove\",\n                    events:{\n                        click:function(){\n                                \n                            wizard.close();\n                            \n                        }\n                    }\n\t\t\t\t});\n\t\t\t\n\t\t\t\t\nreturn button;",
         "description": "Info about my custom script"
     }
 }
