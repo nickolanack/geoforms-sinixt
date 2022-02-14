@@ -19,4 +19,4 @@
 			
 			})();
 
-			uiview.load(application, element, null);
+			uiview.load(map, element, null);
