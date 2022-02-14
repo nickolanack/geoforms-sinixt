@@ -82,9 +82,11 @@ var ContentFilter = (function() {
 	ContentFilter.CombineSections = function(sections) {
 
 
+		var needsKeywords=(sections.layerKeywords.length>0||sections.name.trim().indexOf('\n\n')>0);
+
 		var text = (sections.name.trim()) +
 			"\n\n" +
-			(sections.layerKeywords.length == 0 ? '' : ('Layer Keywords: ' + sections.layerKeywords.join(', ') + "\n\n")) +
+			(needsKeywords?'Layer Keywords: ' + sections.layerKeywords.join(', ') + "\n\n":'') +
 			(sections.source.trim()) +
 			"\n\n" +
 			"Personal Notes:\n\n" + (sections.notes.trim());
@@ -113,11 +115,17 @@ var ContentFilter = (function() {
 		sections.name = blocks[0].split('Layer Keywords:').shift().trim();
 
 
+
 		if (text.indexOf('Layer Keywords:') > 0) {
+
+			sections.name=text.split('Layer Keywords:').shift().trim();
+
 			var keywords = text.split('Layer Keywords:').pop().split("\n\n").shift().split(',');
 
 			sections.layerKeywords = keywords.map(function(k) {
 				return k.trim();
+			}).filter(function(k){
+				return k&&k!="";
 			});
 		}
 
