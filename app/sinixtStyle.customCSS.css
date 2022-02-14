@@ -4,6 +4,17 @@
 
 
 
+p.info-warn {
+    background-color: #e9d967;
+    text-align: left;
+
+    border-radius: 6px 6px 6px 6px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
 .media-selection span.AudioModule.audio.hasAudio:after {
     content: "\0f04b";
     font-family: 'FontAwesome';
