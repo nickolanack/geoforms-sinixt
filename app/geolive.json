@@ -2220,16 +2220,16 @@
                             "documentForm.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 161,
-                            "y": 226
+                            "x": 171,
+                            "y": 236
                         },
                         "children": [
                             "documentForm.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 121,
-                                    "y": 402
+                                    "x": 131,
+                                    "y": 412
                                 }
                             }
                         ],
@@ -2244,7 +2244,17 @@
                                     "modules": [
                                         "documentForm.metadata.children.1.builderMetadata.positions.content.modules.0.json",
                                         {
-                                            "type": "WizardDescriptionField",
+                                            "type": "WizardTitleField",
+                                            "config": {
+                                                "label": "Title",
+                                                "message": "add a title",
+                                                "className": "",
+                                                "maxChars": 0,
+                                                "textFormatScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "FormTextDescriptionField",
                                             "config": {
                                                 "label": "Description",
                                                 "message": "add a description",
@@ -2268,6 +2278,7 @@
                                             "config": {
                                                 "className": "",
                                                 "label": "Make this document public",
+                                                "identifier": "boolean-field",
                                                 "mandatory": false,
                                                 "getValueScript": "",
                                                 "updateValueScript": " object.value=value ",
