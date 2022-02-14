@@ -2933,7 +2933,7 @@
         "name": "Attribute Cloud",
         "instance": "AttributesCloud",
         "parameters": {
-            "target": "forTheMap",
+            "target": "forTheMap-disabled",
             "tabLabel": "Sinixt Boundaries",
             "className": "",
             "showDemoTags": false,
