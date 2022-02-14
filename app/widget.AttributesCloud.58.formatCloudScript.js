@@ -9,7 +9,7 @@
 				
 				
 				    $parameters=(object)array(
-				       // ""=>""    
+				        "namedView"=>"disclaimerPeriods"    
 				    );
 				
 					Modules();
