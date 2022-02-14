@@ -8,7 +8,9 @@
 				uiview=<?php
 				
 				
-				    $parameters=(object)array();
+				    $parameters=(object)array(
+				       // ""=>""    
+				    );
 				
 					Modules();
 					$module = GetModule('UIView');
@@ -20,3 +22,5 @@
 			})();
 
 			uiview.load(map, element, null);
+			
+			console.error('disclaimer');
