@@ -2982,7 +2982,7 @@
                 "widget.AttributesCloud.58.attributeSelection.0.json"
             ],
             "cloudMetadata": [],
-            "formatCloudScript": "",
+            "formatCloudScript": "widget.AttributesCloud.58.formatCloudScript.js",
             "formatTagScript": "",
             "formatTabButtonScript": "",
             "onSelectionChangedScript": "defaultBehaviorFn();",
