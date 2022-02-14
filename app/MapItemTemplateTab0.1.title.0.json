@@ -12,6 +12,7 @@
         "elasticity": true,
         "fitContent": true,
         "minWidth": 346,
-        "minHeight": 651
+        "minHeight": 651,
+        "formatStepOptionsScript": ""
     }
 }
