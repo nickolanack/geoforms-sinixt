@@ -2,7 +2,7 @@
     "type": "InlineHtml",
     "config": {
         "className": "",
-        "text": "<p>Disclaimer about sinixt periods...<\/p>",
+        "text": "<p class=\"info-warn\">Disclaimer about sinixt periods...<\/p>",
         "template": "",
         "templateVariablesScript": "",
         "formatTextScript": "",
