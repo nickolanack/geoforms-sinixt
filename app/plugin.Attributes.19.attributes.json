@@ -9,7 +9,7 @@
             "title": "markerAttributes",
             "readAccess": "public",
             "appliesTo": [
-                "marker"
+                "mapitem"
             ],
             "id": "1",
             "suffix": "_8645",

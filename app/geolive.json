@@ -650,7 +650,7 @@
                     "y": 275
                 },
                 "appliesTo": [
-                    "marker"
+                    "mapitem"
                 ],
                 "_typeDiagramState": {
                     "x": 100,
