@@ -3855,7 +3855,8 @@
             "convertStylesToInline": false,
             "parseMarkdown": false,
             "saveTemplateAsData": false,
-            "contentTemplate": "Message Content"
+            "contentTemplate": "email-InvitationVerifyEmailLink-content.contentTemplate.html",
+            "readAccess": "public"
         }
     }
 }
