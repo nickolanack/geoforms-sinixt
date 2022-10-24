@@ -3856,7 +3856,7 @@
             "convertStylesToInline": false,
             "parseMarkdown": false,
             "saveTemplateAsData": false,
-            "contentTemplate": "Welcome to the map",
+            "contentTemplate": "email-InvitationVerifyEmailLink-content.contentTemplate.html",
             "readAccess": "public"
         }
     }
