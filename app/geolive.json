@@ -33,6 +33,7 @@
         "name": "Events",
         "instance": "Events",
         "parameters": {
+            "logEvents": true,
             "logPath": "{front}\/log"
         }
     },
@@ -66,7 +67,9 @@
                 }
             ],
             "useRemoteServerUI": false,
-            "remoteServerUrl": ""
+            "remoteServerUrl": "",
+            "templateEditAuthScript": "XXXX-XXXX",
+            "configurationFieldEditAuthScript": "XXXX-XXXX"
         }
     },
     "plugin.6": {
@@ -78,6 +81,7 @@
             ],
             "customUserScript": "",
             "customGroupMemberOfGroupScript": "",
+            "customUserAuthorizeScript": "",
             "defaultImage": [],
             "userProfileImageScript": "return $defaultImage;",
             "validateEmail": true,
@@ -257,6 +261,7 @@
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
             "parseMarkdown": false,
+            "allowHtmlInMarkdown": false,
             "saveTemplateAsData": false,
             "contentTemplate": "Error"
         }
@@ -274,6 +279,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -359,6 +365,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positionList": [
                     "title",
@@ -432,6 +439,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -472,22 +480,23 @@
         "name": "Draggable Marker Tile",
         "instance": "MarkerTile",
         "parameters": {
+            "widgetTitle": "",
             "target": "forTheMap",
-            "customScript": "",
-            "controlColor": "rgb(48,84,107)",
+            "position": "RIGHT_CENTER",
+            "hoverTip": "",
+            "className": "",
             "markerIconset": [
                 "uploads-sinixt.geoforms.ca\/user_files_1\/Uploads\/j8C_[ImAgE]_1Sa_[G]_Qac.png"
             ],
             "markerSize": 47,
-            "hoverTip": "",
-            "className": "",
-            "wizardName": "MapItemTemplate",
+            "formatTipScript": "",
             "guestLoginDrag": true,
             "onDragEndScript": "defaultBehaviorFn();",
-            "formatTipScript": "",
-            "widgetTitle": "",
+            "wizardName": "MapItemTemplate",
+            "formOptions": [],
+            "customScript": "",
+            "controlColor": "rgb(48,84,107)",
             "readAccess": "registered",
-            "position": "RIGHT_CENTER",
             "profileIcon": null
         }
     },
@@ -855,6 +864,7 @@
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
             "parseMarkdown": false,
+            "allowHtmlInMarkdown": false,
             "saveTemplateAsData": false,
             "contentTemplate": ""
         }
@@ -927,6 +937,7 @@
             "formatModulesScript": "widget.TabbedInfoWindowBuilder.15.formatModulesScript.js",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "includeStyle": false,
             "metadata": [
                 "widget.TabbedInfoWindowBuilder.15.metadata.0.json",
@@ -1141,6 +1152,7 @@
             "sassParamters": [],
             "formatSassParametersScript": "return $parameters;",
             "useRemote": "",
+            "saveAsData": false,
             "readAccess": "public"
         }
     },
@@ -1516,6 +1528,7 @@
             "sassParamters": [],
             "formatSassParametersScript": "return $parameters;",
             "useRemote": "",
+            "saveAsData": false,
             "readAccess": "public"
         }
     },
@@ -1718,6 +1731,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -1792,6 +1806,7 @@
             "widgetTitle": "userList",
             "target": "userList",
             "customScript": "userList.customScript.js",
+            "requireCSRF": true,
             "readAccess": "public"
         }
     },
@@ -1876,6 +1891,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -2154,6 +2170,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -2327,6 +2344,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -2385,6 +2403,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -2434,6 +2453,7 @@
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
             "parseMarkdown": false,
+            "allowHtmlInMarkdown": false,
             "saveTemplateAsData": false,
             "contentTemplate": "email-VerifyEmailLink-subject.contentTemplate.html",
             "readAccess": "public"
@@ -2449,6 +2469,7 @@
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
             "parseMarkdown": false,
+            "allowHtmlInMarkdown": false,
             "saveTemplateAsData": false,
             "contentTemplate": "email-VerifyEmailLink-content.contentTemplate.html",
             "readAccess": "public"
@@ -2901,6 +2922,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3104,6 +3126,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3168,6 +3191,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3217,6 +3241,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3387,6 +3412,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3609,6 +3635,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3662,6 +3689,7 @@
             "widgetTitle": "dailyWord",
             "target": "dailyWord",
             "customScript": "dailyWord.customScript.js",
+            "requireCSRF": true,
             "readAccess": "public"
         }
     },
@@ -3802,6 +3830,7 @@
             "formatModulesScript": "",
             "notifyViewer": false,
             "useRemote": "",
+            "saveViewAsData": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3840,6 +3869,7 @@
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
             "parseMarkdown": false,
+            "allowHtmlInMarkdown": false,
             "saveTemplateAsData": false,
             "contentTemplate": "email-InvitationVerifyEmailLink-subject.contentTemplate.html",
             "readAccess": "public"
@@ -3855,6 +3885,7 @@
             "formatVariablesScript": "return $variables;",
             "convertStylesToInline": false,
             "parseMarkdown": true,
+            "allowHtmlInMarkdown": false,
             "saveTemplateAsData": false,
             "contentTemplate": "email-InvitationVerifyEmailLink-content.contentTemplate.html",
             "readAccess": "public"

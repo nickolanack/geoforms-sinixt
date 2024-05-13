@@ -19,9 +19,9 @@ var descriptionEl=header.appendChild(new Element('h2', {html:sub}));
 	       var word=response.word;
 	       var name=word.name;
 	       var english=word.english;
-	       var description=JSTextUtilities.StripTags(word.description);
+	       var description=(new HTMLTagParser()).stripSafeMedia(word.description); //JSTextUtilities.StripTags(word.description);
 	       
-	       var audios=JSTextUtilities.ParseAudios(word.description);
+	       var audios=(new HTMLTagParser()).parseAudios(word.description); //JSTextUtilities.ParseAudios(word.description);
 	       
 	       
 	       
