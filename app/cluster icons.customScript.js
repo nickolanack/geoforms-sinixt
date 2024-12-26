@@ -49,7 +49,7 @@ if (window.Cluster) {
 				fillOpacity: 0.7,
 				strokeWeight: 1.5,
 				strokeColor: getColor(activeColorsForLayer, "rgb(130, 51, 130)"),
-				labelOrigin: google.maps.Point(0, 0)
+				labelOrigin: new google.maps.Point(0, 0)
 			};
 
 
@@ -62,7 +62,7 @@ if (window.Cluster) {
 				fillOpacity: 0.4,
 				strokeWeight: 1.5,
 				strokeColor: getColor(colorsForLayer, "#0A79B1"),
-				labelOrigin: google.maps.Point(0, 0)
+				labelOrigin: new google.maps.Point(0, 0)
 
 			};
 
